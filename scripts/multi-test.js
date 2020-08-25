@@ -40,14 +40,14 @@ liquid-name is .json file name
 
 {
   _output:[
-    [[["cold-war-mod"+"-"+"iron",1]],null,null],
-    [[["cold-war-mod"+"-"+"aluminum",1]],null,null],
-    [[["cold-war-mod"+"-"+"tungsten",1]],null,null],
+    [[["WW2"+"-"+"iron",1]],null,null],
+    [[["WW2"+"-"+"aluminum",1]],null,null],
+    [[["WW2"+"-"+"tungsten",1]],null,null],
   ],
   _input:[
-    [[["cold-war-mod"+"-"+"hematite",1]],null,300],
-    [[["cold-war-mod"+"-"+"aluminum-org",1]],null,300],
-    [[["cold-war-mod"+"-"+"tungsten-org",1]],null,300],
+    [[["WW2"+"-"+"hematite",1]],null,300],
+    [[["WW2"+"-"+"aluminum-org",1]],null,300],
+    [[["WW2"+"-"+"tungsten-org",1]],null,300],
   ],
   craftTimes:[60,60,60],
   //DON'T MODIFY THESE

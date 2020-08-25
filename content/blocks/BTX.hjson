@@ -1,7 +1,5 @@
 type: GenericSmelter
 size: 2
-hasPower: true
-hasItems: true
 updateEffect: lancerLaserCharge
 requirements: [
         silicon/300
