@@ -1,7 +1,5 @@
-
+type: GenericSmelter
 size: 3
-hasPower: true
-hasItems: true
 updateEffect: teleportOut
 requirements: [
         silicon/100

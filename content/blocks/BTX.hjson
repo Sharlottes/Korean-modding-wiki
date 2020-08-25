@@ -1,4 +1,4 @@
-
+type: GenericSmelter
 size: 2
 hasPower: true
 hasItems: true
