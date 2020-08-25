@@ -1,0 +1,15 @@
+
+size: 3
+hasPower: true
+hasItems: true
+updateEffect: teleportOut
+requirements: [
+        silicon/100
+        graphite/75
+        copper/150
+        lead/150
+        titanium/50
+]
+category: crafting
+idleSound: respawning
+idleSoundVolume: 0.5

@@ -1,0 +1,25 @@
+type: GenericSmelter
+size: 2
+  hasItems: true
+hasPower: true
+craftTime: 30
+itemCapacity: 20
+updateEffect: lightningCharge
+consumes: {
+  power: 2.5
+  items: {
+    items: [
+      spore-pod/5
+    ]
+  }
+}
+requirements: [
+  silicon/120
+  graphite/50
+  lead/150
+  titanium/90
+]
+category: crafting
+idleSoundVolume: 0.75
+idleSound: 0.75
+outputItem: cellulose/1

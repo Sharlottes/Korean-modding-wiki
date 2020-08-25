@@ -1,0 +1,7 @@
+size: 1
+hasShadow: false
+destructible: true
+breakable: true
+category: effect
+expanded: true
+alwaysReplace: true

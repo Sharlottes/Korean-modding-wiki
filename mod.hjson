@@ -1,0 +1,7 @@
+name: "cold-war-mod"
+displayName: "The [#4073ff]Cold [#fc0d05]War[][] Mod"
+author: "[royal]sk7725, Sharlotte[]"
+description: "As the enemy grows tall, we shall wait for our chance to strike."
+version: "0.21"
+minGameVersion: "103"
+dependencies:["multi-lib"]

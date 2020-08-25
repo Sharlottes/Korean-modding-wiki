@@ -1,0 +1,24 @@
+type: GenericCrafter
+size: 2
+hasPower: true
+hasItems: true
+craftTime: 90
+updateEffect: lightningCharge
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+        spore-pod/3
+    ]
+  }
+}
+requirements: [
+  silicon/50
+  titanium/100
+  iron/40
+  aluminum/50
+]
+category: crafting
+idleSound: respawning
+idleSoundVolume: 0.75
+outputItem: diatominte/1

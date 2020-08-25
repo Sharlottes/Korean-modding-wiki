@@ -1,0 +1,3 @@
+type: OreBlock
+itemDrop: aluminum-org
+oreDefault: true
