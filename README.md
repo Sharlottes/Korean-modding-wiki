@@ -13,6 +13,6 @@ Pencil : liquid Sprite maker
 
 크앙, serious : org item maker
 
-윾비 : 돈가방
+윾비 : 황금돈가방
 
 
