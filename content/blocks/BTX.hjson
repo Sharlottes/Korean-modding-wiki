@@ -1,3 +1,6 @@
+name: BTX Extractor
+description: you can get Toluene, Benzene, Xylene!
+
 size: 2
 updateEffect: lancerLaserCharge
 requirements: [

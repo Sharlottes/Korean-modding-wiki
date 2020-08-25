@@ -1,3 +1,5 @@
+name: TGF Smelter
+description: the first multi-smelter!
 size: 3
 updateEffect: teleportOut
 requirements: [
