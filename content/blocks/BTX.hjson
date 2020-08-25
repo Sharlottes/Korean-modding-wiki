@@ -1,6 +1,5 @@
 name: BTX Extractor
 description: you can get Toluene, Benzene, Xylene!
-
 size: 2
 updateEffect: lancerLaserCharge
 requirements: [
@@ -13,3 +12,4 @@ requirements: [
 category: crafting
 idleSound: respawning
 idleSoundVolume: 0.5
+health: 500

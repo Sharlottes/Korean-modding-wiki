@@ -12,3 +12,4 @@ requirements: [
 category: crafting
 idleSound: respawning
 idleSoundVolume: 0.5
+health: 500
