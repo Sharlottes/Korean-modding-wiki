@@ -1,4 +1,4 @@
-/get script from multi-lib
+//get script from multi-lib
 const multiLib=require("multi-lib/wrapper");
 //you can use GenericSmelter
 const multi=multiLib.extend(GenericCrafter,GenericCrafter.GenericCrafterEntity,"BTX",{
