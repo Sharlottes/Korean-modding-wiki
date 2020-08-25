@@ -1,4 +1,3 @@
-type: GenericSmelter
 size: 2
 updateEffect: lancerLaserCharge
 requirements: [
