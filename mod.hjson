@@ -4,4 +4,4 @@ author: "[royal]sk7725, Sharlotte[]"
 description: "As the enemy grows tall, we shall wait for our chance to strike."
 version: "0.22"
 minGameVersion: "104.10"
-dependencies:["multi-lib"]
+dependencies:["multi-lib2"]
