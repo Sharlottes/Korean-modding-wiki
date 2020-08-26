@@ -6,8 +6,7 @@ requirements: [ silicon/300
         graphite/230
         thorium/200
         lead/500
-        titanium/250
-]
+        titanium/250 ]
 category: crafting
 idleSound: respawning
 idleSoundVolume: 0.5

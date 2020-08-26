@@ -69,5 +69,5 @@ try{
   */
 
 catch(err){
-  print("multi-lib is not enabled")
+  print("multi-lib is not enabled");
 }
