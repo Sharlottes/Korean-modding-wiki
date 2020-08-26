@@ -1,3 +1,4 @@
-require("ww2/diatominte-press");
-require("ww2/multi-test");
-require("ww2/multi-test2");
+require("diatominte-press");
+require("multi-test");
+require("multi-test2");
+require('ww2/multi-test2');
