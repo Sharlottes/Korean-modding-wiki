@@ -24,7 +24,7 @@ try{//nvm
         power:100
       },
       output:{
-        item:["WW2-iron/1"],
+        items:["WW2-iron/1"],
       },
       craftTime:20
     },
