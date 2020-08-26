@@ -1,9 +1,8 @@
-"name": "TGF Smelter"
+name: "TGF Smelter"
 description: "the first multi-smelter!"
 size: 3
 updateEffect: teleportOut
-requirements: [
-        silicon/100
+requirements: [ silicon/100
         graphite/75
         copper/150
         lead/150
