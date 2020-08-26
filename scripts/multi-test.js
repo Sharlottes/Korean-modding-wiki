@@ -24,27 +24,27 @@ try{//nvm
         power:100
       },
       output:{
-        items:["WW2-iron/1"],
+        items:["ww2-iron/1"],
       },
       craftTime:20
     },
     {//2
       input:{
-        items:["WW2-aluminum-org/5"],
+        items:["ww2-aluminum-org/5"],
         power:150
       },
       output:{
-        items:["WW2-aluminum/1"],
+        items:["ww2-aluminum/1"],
       },
       craftTime:30
     },
     {//3
       input:{
-        items:["WW2-tungsten-org/10"],
+        items:["ww2-tungsten-org/10"],
         power:500
       },
       output:{
-        items:["WW2-tungsten/1"],
+        items:["ww2-tungsten/1"],
       },
       craftTime:90
     }
