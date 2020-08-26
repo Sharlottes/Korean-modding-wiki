@@ -3,7 +3,7 @@ try{//nvm
   const multiLib=require("multi-lib2/wrapper");
   //you can use GenericSmelter instead GenericCrafter
                                           // ▼this has to be same with .json file name
-  const multi2=multiLib.extend(GenericCrafter,"BTX",/*Array [] not {} ->*/[
+  const multi=multiLib.extend(GenericCrafter,"TGF",/*Array [] not {} ->*/[
     /*default form for each recipes. You can change values.
     {
       input:{
@@ -18,41 +18,34 @@ try{//nvm
       },
       craftTime:80,
     },*/
-    {//1  you can skip recipe properties
       input:{
-        items:["sand/1","lead/1"],
+        items:["WW2-hematite/3"],
+        power:100
       },
-      craftTime:12
+      output:{
+        item:["WW2-iron/1"],
+      },
+      craftTime:20
     },
     {//2
       input:{
-        items:["coal/1","sand/1"],
+        items:["WW2-aluminum-org/5"],
+        power:150
       },
       output:{
-        items:["thorium/1","surge-alloy/2"],
-        power:10
+        items:["WW2-aluminum/1"],
       },
-      craftTime:60
+      craftTime:30
     },
     {//3
       input:{
-        items:["pyratite/1","blast-compound/1"],
+        items:["WW2-tungsten-org/10"],
+        power:500
       },
       output:{
-        items:["scrap/1","plastanium/2","spore-pod/2"],
+        items:["WW2-tungsten/1"],
       },
-      craftTime:72
-    },
-    {//4
-      input:{
-        items:["sand/1"],
-        power:15
-      },
-      output:{
-        items:["silicon/1"],
-        power:10
-      },
-      craftTime:30
+      craftTime:90
     }
   ],{
     /*you can customize block here. ex)draw()
@@ -80,11 +73,10 @@ try{//nvm
   */
   /*true: dump items and liquids of output according to button
   false: dump items and liquids of output unconditionally*/
-  multi2.dumpToggle=true;
+  multi.dumpToggle=false;
 
-  multi2.requirements(Category.crafting,ItemStack.with(Items.copper,75));
-
+  multi.requirements(Category.crafting,ItemStack.with(Items.copper,75));
 }
 catch(err){
-
+  print("multi-lib2 is not enabled");
 }

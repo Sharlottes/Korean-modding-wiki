@@ -1,0 +1,15 @@
+color: #949494
+barColor: #949494
+flammability: 0.75
+explosiveness: 0.1
+temperature: 0.5
+heatCapacity: 0
+viscosity: 0.2
+effect:{
+  damageMultiplier: 1
+  armorMultiplier: 0.9
+  speedMultiplier: 0.7
+  color: white
+  damage: 0
+  effect: shieldBreak
+}
