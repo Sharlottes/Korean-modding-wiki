@@ -24,7 +24,7 @@ try{//nvm
         power:100
       },
       output:{
-        liquids:["ww2-benzene/3"],
+        liquids:["ww2-benzene/4"],
       },
       craftTime:30
     },
@@ -34,7 +34,7 @@ try{//nvm
         power:100
       },
       output:{
-        liquids:["ww2-toluene/3"],
+        liquids:["ww2-toluene/4"],
       },
       craftTime:30
     },
@@ -43,7 +43,7 @@ try{//nvm
         liquids:["oil/20"],
       },
       output:{
-        liquids:["ww2-xylene/3"],
+        liquids:["ww2-xylene/4"],
       },
       craftTime:30
     }
