@@ -20,7 +20,7 @@ try{//nvm
     },*/
     {
       input:{
-        items:["WW2-hematite1/3"],
+        items:["WW2-hematiter/3"],
         power:100
       },
       output:{
