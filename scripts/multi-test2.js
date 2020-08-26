@@ -3,7 +3,7 @@ try{//nvm
   const multiLib=require("multi-lib2/wrapper");
   //you can use GenericSmelter instead GenericCrafter
                                           // ▼this has to be same with .json file name
-  const multi2=multiLib.extend(GenericCrafter,"multi2_",/*Array [] not {} ->*/[
+  const multi2=multiLib.extend(GenericCrafter,"BTX",/*Array [] not {} ->*/[
     /*default form for each recipes. You can change values.
     {
       input:{

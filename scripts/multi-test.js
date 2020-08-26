@@ -18,6 +18,7 @@ try{//nvm
       },
       craftTime:80,
     },*/
+    {
       input:{
         items:["WW2-hematite/3"],
         power:100
