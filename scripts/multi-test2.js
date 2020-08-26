@@ -20,30 +20,30 @@ try{//nvm
     },*/
     {//1  you can skip recipe properties
       input:{
-        liquid:["oil/20"],
+        liquids:["oil/20"],
         power:100
       },
       output:{
-        liquid:["ww2-Benzene/3"],
+        liquids:["ww2-Benzene/3"],
       },
       craftTime:30
     },
     {//2
       input:{
-        liquid:["oil/20"],
+        liquids:["oil/20"],
         power:100
       },
       output:{
-        liquid:["ww2-Toluene/3"],
+        liquids:["ww2-Toluene/3"],
       },
       craftTime:30
     },
     {//3
       input:{
-        liquid:["oil/20"],
+        liquids:["oil/20"],
       },
       output:{
-        liquid:["ww2-Xylene/3"],
+        liquids:["ww2-Xylene/3"],
       },
       craftTime:30
     }
