@@ -24,7 +24,7 @@ try{//nvm
         power:100
       },
       output:{
-        liquids:["ww2-benzene/3"],
+        liquids:["ww2-benzene/4"],
       },
       craftTime:30
     },
