@@ -7,6 +7,7 @@ const xylene = extendContent(Liquid, "benzene", {
   }),
   color: Color.valueOf("ccd97f"),
   barColor: Color.valueOf("ccd97f"),
+  lightColor: Color.valueOf("ccd97f"),
   flammability: 0.75,
   explosiveness: 0.1,
   temperature: 0.5,
