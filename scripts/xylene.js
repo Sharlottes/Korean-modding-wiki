@@ -5,12 +5,12 @@ const xylene = extendContent(Liquid, "xylene", {
     speedMultiplier: 0.7,
     effect: Fx.shieldBreak
   }),
-  color: Color.valueOf("cfa580"),
-  barColor: Color.valueOf("cfa580"),
-  lightColor: Color.valueOf("cfa580"),
-  flammability: 0.75,
-  explosiveness: 0.1,
-  temperature: 0.5,
-  heatCapacity: 0,
-  viscosity: 0.2
+  xylene.color: Color.valueOf("cfa580ff"),
+  xylene.barColor: Color.valueOf("cfa580ff"),
+  xylene.lightColor: Color.valueOf("cfa580ff"),
+  xylene.flammability: 0.75,
+  xylene.explosiveness: 0.1,
+  xylene.temperature: 0.5,
+  xylene.heatCapacity: 0,
+  xylene.viscosity: 0.2
 });
