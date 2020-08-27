@@ -2,7 +2,7 @@
 size: 2
 hasPower: true
 hasItems: true
-craftTime: 90
+craftTime: 150
 updateEffect: lightningCharge
 consumes: {
   power: 0.5
