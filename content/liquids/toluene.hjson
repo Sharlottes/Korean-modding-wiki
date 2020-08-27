@@ -7,12 +7,10 @@ temperature: 0.5
 heatCapacity: 0
 viscosity: 0.2
 effect:{
-  type: StatusEffects
-  name: "btxed"
+  type: StatusEffect
+  name: btxed
   damageMultiplier: 1
   armorMultiplier: 0.9
   speedMultiplier: 0.7
-  color: white
-  damage: 0
   effect: shieldBreak
 }
