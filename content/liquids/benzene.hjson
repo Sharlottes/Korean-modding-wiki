@@ -1,0 +1,10 @@
+name: benzene
+color: ccd97f
+barColor: ccd97f
+lightColor: ccd97f
+flammability: 0.75
+explosiveness: 0.1
+temperature: 0.5
+heatCapacity: 0
+viscosity: 0.2
+effect: benzened

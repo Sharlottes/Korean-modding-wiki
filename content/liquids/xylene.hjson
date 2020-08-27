@@ -1,0 +1,10 @@
+name: xylene
+color: cfa580
+barColor: cfa580
+lightColor: cfa580
+flammability: 0.75
+explosiveness: 0.1
+temperature: 0.5
+heatCapacity: 0
+viscosity: 0.2
+effect: xylened
