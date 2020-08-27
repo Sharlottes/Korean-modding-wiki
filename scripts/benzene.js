@@ -5,12 +5,12 @@ const benzene = extendContent(Liquid, "benzene", {
     speedMultiplier: 0.7,
     effect: Fx.shieldBreak
   }),
-  benzene.color: Color.valueOf("ccd97fff"),
-  benzene.barColor: Color.valueOf("ccd97fff"),
-  benzene.lightColor: Color.valueOf("ccd97fff"),
-  benzene.flammability: 0.75,
-  benzene.explosiveness: 0.1,
-  benzene.temperature: 0.5,
-  benzene.heatCapacity: 0,
-  benzene.viscosity: 0.2
+  color: Color.valueOf("ccd97fff"),
+  barColor: Color.valueOf("ccd97fff"),
+  lightColor: Color.valueOf("ccd97fff"),
+  flammability: 0.75,
+  explosiveness: 0.1,
+  temperature: 0.5,
+  heatCapacity: 0,
+  viscosity: 0.2
 });
