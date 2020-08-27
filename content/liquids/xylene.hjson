@@ -7,6 +7,7 @@ temperature: 0.5
 heatCapacity: 0
 viscosity: 0.2
 effect:{
+  type: StatusEffect
   name: "btxed"
   damageMultiplier: 1
   armorMultiplier: 0.9
