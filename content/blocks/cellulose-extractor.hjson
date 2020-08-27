@@ -1,6 +1,6 @@
 type: GenericSmelter
 size: 2
-  hasItems: true
+hasItems: true
 hasPower: true
 craftTime: 30
 itemCapacity: 20
