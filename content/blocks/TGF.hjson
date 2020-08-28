@@ -2,11 +2,13 @@ name: TGF Smelter
 description: craft iron, aluminum, tungsten from hematiter, aluminum-org, tungsten-org.
 size: 3
 updateEffect: teleportOut
-requirements: [ silicon/100
+requirements: [
+        silicon/100
         graphite/75
         copper/150
         lead/150
-        titanium/50 ]
+        titanium/50
+]
 category: crafting
 idleSound: respawning
 idleSoundVolume: 0.5
