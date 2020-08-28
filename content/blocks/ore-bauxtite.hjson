@@ -16,7 +16,7 @@ isLiquid: false
 playerUnmineable: false
 blendGroup: ore-bauxtite
 updateEffect: none
-attributes: [0, 0, 0, 0]
+attributes: {array:[0, 0, 0, 0]}
 oreDefault: true
 oreScale: 24
 oreThreshold: 0.828
