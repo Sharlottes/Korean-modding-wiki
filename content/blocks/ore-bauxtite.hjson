@@ -10,7 +10,7 @@ walkEffect: ripple
 drownUpdateEffect: bubble
 status: none
 statusDruation: 60
-liquidDrop:
+liquidDrop: water
 itemDrop: aluminum-org
 isLiquid: false
 playerUnmineable: false
