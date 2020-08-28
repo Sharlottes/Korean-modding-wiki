@@ -2,6 +2,7 @@
 int : 정수
 float : 실수
 boolean : true/false
+this는 그 블록 자신을 말합니다. 모드일 경우 꼭 모드명-블록명 으로 작성하셔야 됩니다.
 중괄호{}로 감싸진 유형은 밑에 작성된 단어를 선택해야 하며, {}를 무조건 제외하고 작성하셔야 됩니다.
 
 hjson 또는 json으로 저장한 파일은 content-blocks-environment 경로로, 스프라이트는 sprites-blocks-environment 경로로 저장하시면 됩니다.
