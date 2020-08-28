@@ -12,7 +12,7 @@ status: none
 statusDuration: 60
 liquidDrop: water
 itemDrop: aluminum-org
-isLiquid: false
+isLiquid: true
 playerUnmineable: false
 blendGroup: ww2-ore-bauxtite
 updateEffect: none
