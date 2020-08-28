@@ -1,5 +1,5 @@
-type: material
 name: Aluminum
-description: aluminum is now weak!
+description: you can make reinforced PET by this.
+type: material
 cost: 1
 color: dcd16b
