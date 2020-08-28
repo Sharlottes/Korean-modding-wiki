@@ -14,7 +14,7 @@ liquidDrop: water
 itemDrop: aluminum-org
 isLiquid: false
 playerUnmineable: false
-blendGroup: this
+blendGroup: ore-bauxtite
 updateEffect: none
 attributes: [0, 0, 0, 0]
 oreDefault: true
