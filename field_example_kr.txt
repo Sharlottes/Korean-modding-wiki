@@ -17,14 +17,14 @@ drownTime: float [기본값: 0][익사할때 걸리는 틱 수]
 walkEffect: {Effect} [기본값: ripple][유닛이 타일 위를 걸어갈 때 생기는 그래픽 효과]
 drownUpdateEffect: {Effect} [기본값: bubble][유닛이 타일에 익사되는 중에 생기는 그래픽 효과]
 status: {StatusEffect} [기본값: none][유닛이 타일 위를 걸어갈 때 생기는 상태이상 효과]
-statusDruation: float [기본값: 60][상태이상 지속 틱 수]
+statusDuration: float [기본값: 60][상태이상 지속 틱 수]
 liquidDrop: {Liquid} [기본값: ][펌프를 사용했을 때 나오는 액체]
 itemDrop: {Item} [기본값: ][드릴을 사용했을 때 나오는 아이템]
 isLiquid: boolean [기본값: ][타일이 익사시킬 수 있는 여부]
 playerUnmineable: boolean [기본값: false][플레이어에 의해 채광되지 않는 여부]
-blendGroup: {Block} [기본값: this][
+blendGroup: {Block} [기본값: this][타일간 경계 모양을 결정하지 않는 블록을 결정]
 updateEffect: {Effect} [기본값: none][타일에서 생기는 랜덤 그래픽 효과, 잘 되지 않음]
-        attributes: {Attributes} [기본값: ][각 블록간의 효율성 상호작용, attributes: [a, b, c, d] 형식으로 작성하며
+        attributes: {Attributes} [기본값: ][각 블록간의 효율성 상호작용, attributes: {array:[a, b, c, d]} 형식으로 작성하며
         a는 뜨거운, b는 포자스러운, c는 수분, d는 기름진으로 해석된다. 열발전소: 깔고 있는 모든 타일의 a값 총합*60 발전,
         온실: (깐 모든 타일의 b값 합+1)*100% 가속. 일반적으로 0~1 실수값이 밸런스에 맞으며, 1를 초과해도 된다.]
 oreDefault: boolean [기본값: false][이 광석이 기본적으로 맵에 생성되는 여부]
@@ -41,7 +41,7 @@ drownTime: 0
 walkEffect: ripple
 drownUpdateEffect: bubble
 status: none
-statusDruation: 60
+statusDuration: 60
 liquidDrop:
 itemDrop:
 isLiquid:

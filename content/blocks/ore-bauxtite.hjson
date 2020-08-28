@@ -9,7 +9,7 @@ drownTime: 0
 walkEffect: ripple
 drownUpdateEffect: bubble
 status: none
-statusDruation: 60
+statusDuration: 60
 liquidDrop: water
 itemDrop: aluminum-org
 isLiquid: false
