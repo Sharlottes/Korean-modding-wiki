@@ -1,3 +1,22 @@
 type: OreBlock
+name: bauxtite ore
+variants: 3
+edge: stone
+speedMultiplier: 1
+dragMultiplier: 0
+damageTaken: 0
+drownTime: 0
+walkEffect: ripple
+drownUpdateEffect: bubble
+status: none
+statusDruation: 60
+liquidDrop:
 itemDrop: aluminum-org
+isLiquid: false
+playerUnmineable: false
+blendGroup: this
+updateEffect: none
+attributes: [0, 0, 0, 0]
 oreDefault: true
+oreScale: 24
+oreThreshold: 0.828
