@@ -20,32 +20,43 @@ try{//nvm
     },*/
     {//1  you can skip recipe properties
       input:{
-        liquids:["oil/20"],
-        power:100
+        liquids:["oil/8"],
+        power:60
       },
       output:{
-        liquids:["ww2-benzene/4"],
+        liquids:["ww2-benzene/5"],
       },
       craftTime:30
     },
     {//2
       input:{
-        liquids:["oil/20"],
-        power:100
+        items:["coal/3"],
+        power:70
       },
       output:{
-        liquids:["ww2-toluene/3"],
+        liquids:["ww2-benzene/3"],
       },
-      craftTime:30
+      craftTime:60
+    },
+    {//2
+      input:{
+        liquids:["oil/8"],
+        power:60
+      },
+      output:{
+        liquids:["ww2-toluene/5"],
+      },
+      craftTime:60
     },
     {//3
       input:{
-        liquids:["oil/20"],
+        liquids:["oil/8"],
+        power:60
       },
       output:{
-        liquids:["ww2-xylene/3"],
+        liquids:["ww2-xylene/5"],
       },
-      craftTime:30
+      craftTime:60
     }
   ],{
     /*you can customize block here. ex)draw()

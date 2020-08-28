@@ -21,30 +21,33 @@ try{//nvm
     {
       input:{
         items:["ww2-hematiter/3"],
+        liquids:["water/5"],
         power:100
       },
       output:{
-        items:["ww2-iron/1"],
+        items:["ww2-iron/2"],
       },
-      craftTime:20
+      craftTime:60
     },
     {//2
       input:{
-        items:["ww2-aluminum-org/5"],
+        items:["ww2-aluminum-org/3"],
+        liquids:["water/7"],
         power:150
       },
       output:{
-        items:["ww2-aluminum/1"],
+        items:["ww2-aluminum/2"],
       },
-      craftTime:30
+      craftTime:60
     },
     {//3
       input:{
-        items:["ww2-tungsten-org/10"],
-        power:500
+        items:["ww2-tungsten-org/3"],
+        liquids:["water/15"],
+        power:300
       },
       output:{
-        items:["ww2-tungsten/1"],
+        items:["ww2-tungsten/2"],
       },
       craftTime:90
     }
