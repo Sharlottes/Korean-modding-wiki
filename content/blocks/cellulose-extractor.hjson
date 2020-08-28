@@ -1,3 +1,5 @@
+name: cellulose extractor
+description: extract celluloses from spore pods.
 type: GenericSmelter
 size: 2
 hasItems: true

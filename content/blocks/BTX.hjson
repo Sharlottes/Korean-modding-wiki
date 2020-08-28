@@ -1,5 +1,5 @@
 name: BTX Extractor
-description: you can get Toluene, Benzene, Xylene!
+description: you can get Toluene, Benzene, Xylene from oil.
 size: 2
 updateEffect: lancerLaserCharge
 requirements: [ silicon/300

@@ -1,5 +1,5 @@
 name: TGF Smelter
-description: the first multi-smelter!
+description: craft iron, aluminum, tungsten from hematiter, aluminum-org, tungsten-org.
 size: 3
 updateEffect: teleportOut
 requirements: [ silicon/100

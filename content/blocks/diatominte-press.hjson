@@ -1,4 +1,5 @@
-
+name: diatominte presser
+description: press spore to get diatominte.
 size: 2
 hasPower: true
 hasItems: true
