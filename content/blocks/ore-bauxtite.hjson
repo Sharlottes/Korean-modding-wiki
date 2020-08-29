@@ -10,9 +10,7 @@ walkEffect: ripple
 drownUpdateEffect: bubble
 status: none
 statusDuration: 60
-liquidDrop: water
 itemDrop: aluminum-org
-isLiquid: true
 playerUnmineable: false
 blendGroup: ww2-ore-bauxtite
 updateEffect: none

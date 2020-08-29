@@ -9,7 +9,7 @@ hjson 또는 json으로 저장한 파일은 content-blocks-environment 경로로
 
  필드 목록
 
-variants: int [기본값: 3][타일 스프라이트 갯수를 결정, 스프라이트(블록 이름-1...)를 만들어서 갯수를 늘릴 수 있습니다]
+variants: int [기본값: 3][타일 스프라이트 갯수를 결정, 스프라이트(블록 이름1...)를 만들어서 갯수를 늘릴 수 있습니다]
 edge: string [기본값: stone][타일간 경계(가장자리) 모양을 결정, 스프라이트(블록 이름-edge)를 만들어서 경계 모양을 바꿀 수 있습니다]
 speedMultiplier: float [기본값: 1][유닛이 타일 위를 걸어갈 때 이동속도에 곱함]
 dragMultiplier: float [기본값: 0][유닛이 타일 위를 걸어갈 때 마찰력에 곱함]
@@ -25,9 +25,14 @@ isLiquid: boolean [기본값: ][타일이 익사시킬 수 있는 여부]
 playerUnmineable: boolean [기본값: false][플레이어에 의해 채광되지 않는 여부]
 blendGroup: {Block} [기본값: this][타일간 경계 모양을 결정하지 않는 블록을 결정]
 updateEffect: {Effect} [기본값: none][타일에서 생기는 랜덤 그래픽 효과, 잘 되지 않음]
-        attributes: {Attributes} [기본값: ][각 블록간의 효율성 상호작용, attributes: {array:[a, b, c, d]} 형식으로 작성하며
-        a는 뜨거운, b는 포자스러운, c는 수분, d는 기름진으로 해석된다. 열발전소: 깔고 있는 모든 타일의 a값 총합*60 발전,
-        온실: (깐 모든 타일의 b값 합+1)*100% 가속. 일반적으로 0~1 실수값이 밸런스에 맞으며, 1를 초과해도 된다.]
+
+attributes: {Attributes} [기본값: ][각 블록간의 효율성 상호작용, attributes: {array:[a, b, c, d]} 형식으로 작성하며
+        a는 뜨거운, b는 포자스러운, c는 수분, d는 기름진으로 해석된다.
+            열발전소: (깔고 있는 모든 타일의 a값 총합)*60 발전,
+            온실: (깐 모든 타일의 b값 합+1)*100% 가속.
+            물추출기/석유추출기: (기본 효율+깐 모든 타일의 c혹은d값 합)*100% 가속
+        일반적으로 0~1 실수값이 밸런스에 맞으며, 1를 초과해도 된다.]
+
 oreDefault: boolean [기본값: false][이 광석이 기본적으로 맵에 생성되는 여부]
 oreScale: float [기본값: 24][광석 생성 매개변수]
 oreThreshold: float [기본값: 0.828][광석 생성 매개변수]
@@ -96,7 +101,7 @@ oreThreshold:
     unitSpawn, spawnShockwave, magmasmoke, impactShockwave, impactcloud, impactsmoke, dynamicExplosion, padlaunch, commandSend, coreLand
 
 {Item} 목록
-    copper, lead, metaglass, graphite, sand, coal, titanium, thorium, scrap, silicon, plastanium, phasefabric, surgealloy, sporePod, blastCompound, pyratite
+    copper, lead, silicon, graphite, thorium, titanium, sand, coal, phase-fabric, surge-alloy, blast-compound, pyratite, spore-pod, metaglass, plastanium
 
 {Liquid} 목록
     water, slag, oil, cryofluid
