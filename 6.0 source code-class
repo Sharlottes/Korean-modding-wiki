@@ -119,6 +119,22 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		implements 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc	
 		
 
+	public abstract class Unit implements Itemsc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Shieldc, Entityc, Drawc, Syncc, Weaponsc, Unitc
+		접근 제어자: public
+		클래스 형식: abstract class
+		클래스명: class
+		extends 상속: Unit
+		implements 상속: Itemsc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Shieldc, Entityc, Drawc, Syncc, Weaponsc, Unitc
+		
+
+	public class MinerUnit extends Unit implements Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: MinerUnit
+		extends 상속: Unit
+		implements 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+		
+
 	public class Building implements Buildingc, Healthc, Posc, Teamc, Timerc, Entityc
 		접근 제어자: public
 		클래스 형식: class
@@ -237,14 +253,6 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		extends 상속: 
 		implements 상속: 
 		
-
-	public class MinerUnit extends Unit implements Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
-		접근 제어자: public
-		클래스 형식: class
-		클래스명: MinerUnit
-		extends 상속: Unit
-		implements 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
-		
 		
 	public class Musics
 		접근 제어자: public
@@ -309,13 +317,6 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		extends 상속:
 		implements 상속: Pool.Poolable, WeatherStatec, Posc, Entityc, Drawc
 
-	public abstract class Unit implements Itemsc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Shieldc, Entityc, Drawc, Syncc, Weaponsc, Unitc
-		접근 제어자: public
-		클래스 형식: abstract class
-		클래스명: class
-		extends 상속: Unit
-		implements 상속: Itemsc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Shieldc, Entityc, Drawc, Syncc, Weaponsc, Unitc
-		
 	
 	public final class Nulls
 		접근 제어자: public
@@ -438,19 +439,142 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		클래스명: NullBlockUnit
 		extends 상속: Unit
 		implements 상속: BlockUnitc
+			
+
+        final class NullUnit extends Unit implements Unitc
+		접근 제어자: default
+                클래스 형식: class
+                클래스명: NullUnit
+                extends 상속: Unit
+                implements 상속: Unitc
+
+		
+	final class NullMiner extends Unit implements Minerc
+		접근 제어자: default
+                클래스 형식: class
+		클래스명: NullMiner
+		extends 상속: Unit
+		implements 상속: Minerc
+		
+        final class NullLegs extends Unit implements Legsc
+		접근 제어자: default
+                클래스 형식: class
+		클래스명: NullLegs
+		extends 상속: Unit
+		implements 상속: Legsc
+		
+		
+	final class NullMech extends Unit implements Mechc
+		접근 제어자: default
+                클래스 형식: class
+		클래스명: NullMech
+		extends 상속: Unit
+		implements 상속: Mechc
 		
 
+	final class NullTrail extends Unit implements Trailc
+		접근 제어자: default
+                클래스 형식: class
+                클래스명: NullTrail
+                extends 상속: Unit
+                implements 상속: Trailc
+
+
+	final class NullWaterMove extends Unit implements WaterMovec
+		접근 제어자: default
+                클래스 형식: class
+                클래스명: NullWaterMove
+                extends 상속: Unit
+                implements 상속: WaterMovec
+
+
 	final class NullCommander extends Unit implements Commanderc
-		클래스명: NullCommander
+		접근 제어자: default
+                클래스 형식: class
+                클래스명: NullCommander
 		extends 상속: Unit
-		implements 상속:
+		implements 상속: Commanderc
 		
 
 	final class NullBuilder extends Unit implements Builderc
-		클래스명: NullBuilder
+		접근 제어자: default
+                클래스 형식: class		
+                클래스명: NullBuilder
 		extends 상속: Unit
-		implements 상속: Builderc		
+		implements 상속: Builderc 
+	
 		
+	final class NullBuilding extends Building implements Buildingc
+		접근 제어자: default
+                클래스 형식: class
+                클래스명: NullBuilding
+		extends 상속: Building
+		implements 상속: Buildingc
+		
+		
+	final class NullBullet extends Bullet implements Bulletc
+		접근 제어자: default
+                클래스 형식: class		
+                클래스명: NullBullet
+		extends 상속: Bullet
+		implements 상속: Bulletc
+
+
+	final class NullFire extends Fire implements Firec
+		접근 제어자: default
+                클래스 형식: class
+		클래스명: NullFire
+		extends 상속: Fire
+		implements 상속: Firec
+		
+
+	final class NullLaunchPayload extends LaunchPayload implements LaunchPayloadc
+		접근 제어자: default
+                클래스 형식: class
+		클래스명: NullLaunchPayload
+		extends 상속: LaunchPayload
+		implements 상속: LaunchPayloadc
+
+
+	final class NullPlayer extends Player implements Playerc
+		접근 제어자: default
+                클래스 형식: class
+		클래스명: NullPlayer
+		extends 상속: Player
+		implements 상속: Playerc
+
+
+	final class NullPuddle extends Puddle implements Puddlec
+		접근 제어자: default
+                클래스 형식: class
+		클래스명 : NullPuddle
+		extends 상속: Puddle
+		implements 상속: Puddlec
+		
+
+	final class NullWeatherState extends WeatherState implements WeatherStatec
+		접근 제어자: default
+                클래스 형식: class
+                클래스명: NullWeatherState
+                extends 상속: WeatherState
+                implements 상속: WeatherStatec
+
+
+	final class NullDecal extends Decal implements Decalc
+		접근 제어자: default
+                클래스 형식: class
+		클래스명: NullDecal
+		extends 상속: Decal
+		implements 상속: Decalc
+		
+
+	final class NullEffectState extends EffectState implements EffectStatec
+		접근 제어자: default
+                클래스 형식: class
+		클래스명: NullEffectState
+		extends 상속: EffectState
+		implements 상속: EffectStatec
+
 
 	final class NullBounded implements Boundedc
 		접근 제어자: default
@@ -458,200 +582,198 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		클래스명: NullBounded
 		extends 상속:
 		implements 상속: Boundedc
-		
-		
-	final class NullBuilding extends Building implements Buildingc
-		클래스명: NullBuilding
-		extends 상속: Building
-		implements 상속: Builderc
-		
-		
-	final class NullBullet extends Bullet implements Bulletc
-		클래스명: NullBullet
-		extends 상속: Bullet
-		implements 상속: Bulletc
-		
-		
+
+
 	final class NullChild implements Childc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullChild
 		extends 상속: 
 		implements 상속: Childc
 		
 		
 	final class NullDamage implements Damagec
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullDamage
 		extends 상속: 
 		implements 상속: Damagec
 		
-		
-	final class NullDecal extends Decal implements Decalc
-		클래스명: NullDecal
-		extends 상속: Decal
-		implements 상속: Decalc
-		
 
 	final class NullDraw implements Drawc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullDraw
 		extends 상속: 
 		implements 상속: Drawc
 		
 		
-	final class NullEffectState extends EffectState implements EffectStatec
-		클래스명: NullEffectState
-		extends 상속: EffectState
-		implements 상속: EffectStatec
-		
-		
 	final class NullElevationMove implements ElevationMovec
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullElevationMove
 		extends 상속: 
 		implements 상속: ElevationMovec
 		
 		
 	final class NullEntity implements Entityc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullEntity
 		extends 상속: 
 		implements 상속: Entityc
 		
-		
-	final class NullFire extends Fire implements Firec
-		클래스명: NullFire
-		extends 상속: Fire
-		implements 상속: Firec
-		
-		
+				
 	final class NullFlying implements Flyingc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullFlying
 		extends 상속: 
 		implements 상속: Flyingc
 		
 		
 	final class NullHealth implements Healthc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullHealth
 		extends 상속: 
 		implements 상속: Healthc
 		
 		
 	final class NullHitbox implements Hitboxc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullHitbox
 		extends 상속:
 		implements 상속: Hitboxc
 		
 		
 	final class NullItems implements Itemsc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullItems
 		extends 상속: 
 		implements 상속: Itemsc
 		
 		
 	final class NullLaunchCore implements LaunchCorec
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullLaunchCore
 		extends 상속: 
 		implements 상속: LaunchCorec
-		
-		
-	final class NullLaunchPayload extends LaunchPayload implements LaunchPayloadc
-		클래스명: NullLaunchPayload
-		extends 상속: LaunchPayload
-		implements 상속: LaunchPayloadc
-		
-		
-	final class NullLegs extends Unit implements Legsc
-		클래스명: NullLegs
-		extends 상속: Unit
-		implements 상속: Legsc
-		
-		
-	final class NullMech extends Unit implements Mechc
-		클래스명: NullMech
-		extends 상속: Unit
-		implements 상속: Mechc
-		
-		
-	final class NullMiner extends Unit implements Minerc
-		클래스명: NullMiner
-		extends 상속: Unit
-		implements 상속: Minerc
-		
-		
+
+
 	final class NullOwner implements Ownerc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullOwner
 		extends 상속: 
 		implements 상속: Ownerc
 		
 		
 	final class NullPayload implements Payloadc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullPayload
 		extends 상속: 
 		implements 상속: Payloadc
 		
 		
 	final class NullPhysics implements Physicsc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullPhysics
 		extends 상속: 
 		implements 상속: Physicsc
 		
 		
-	final class NullPlayer extends Player implements Playerc
-		클래스명: NullPlayer
-		extends 상속: Player
-		implements 상속: Playerc
-		
-		
 	final class NullPos implements Posc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullPos
 		extends 상속: 
 		implements 상속: Posc
 		
-
-	final class NullPuddle extends Puddle implements Puddlec
-		클래스명 : NullPuddle
-		extends 상속: Puddle
-		implements 상속: Puddlec
-		
 		
 	final class NullRot implements Rotc
-		클래스명: NullRot
+		접근 제어자: default
+                클래스 형식: class		
+                클래스명: NullRot
 		extends 상속: 
 		implements 상속: Rotc
 		
 		
 	final class NullShield implements Shieldc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullShield
 		extends 상속: 
 		implements 상속: Shieldc
 		
 		
 	final class NullShielder implements Shielderc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullShielder
 		extends 상속: 
 		implements 상속: Shieldc
 		
 		
 	final class NullStatus implements Statusc
+		접근 제어자: default
+                클래스 형식: class
 		클래스명: NullStatus
 		extends 상속: 
 		implements 상속: Statusc
 		
 
 	final class NullSync implements Syncc
-		클래스명: NullSync
+		접근 제어자: default
+                클래스 형식: class		
+                클래스명: NullSync
 		extends 상속:
 		implements 상속:
+
+
 	final class NullTeam implements Teamc
+		접근 제어자: default
+                클래스 형식: class
+                클래스명: NullTeam
+                extends 상속: 
+                implements 상속: Teamc
+
 
 	final class NullTimed implements Timedc
+		접근 제어자: default
+                클래스 형식: class
+                클래스명: NullTimed
+                extends 상속: 
+                implements 상속: Timedc
+ 
 
 	final class NullTimer implements Timerc
+		접근 제어자: default
+                클래스 형식: class
+                클래스명: NullTimer
+                extends 상속:
+                implements 상속: Timerc
 
-	final class NullTrail extends Unit implements Trailc
-
-	final class NullUnit extends Unit implements Unitc
 
 	final class NullVel implements Velc
+		접근 제어자: default
+                클래스 형식: class
+                클래스명: NullVel
+                extends 상속:
+                implements 상속: Velc
 
-	final class NullWaterMove extends Unit implements WaterMovec
 
 	final class NullWeapons implements Weaponsc
+		접근 제어자: default
+                클래스 형식: class
+                클래스명: NullWeapons
+                extends 상속:
+                implements 상속: Weaponsc
 
-	final class NullWeatherState extends WeatherState implements WeatherStatec
+
+
