@@ -1,0 +1,11 @@
+hasItems: boolean [][아이템을 보유하는 여부]
+hasLiquids: boolean [][액체를 보유하는 여부]
+hasPower: boolean [][전력을 보유하는 여부]
+outputsLiquid: boolean [false][액체를 출력하는 여부]
+consumesPower: boolean [true][전력을 소모하는 여부]
+outputsPower: boolean [false][전력을 출력하는 여부]
+itemCapacity: int [10][아이템 저장용량]
+liquidCapacity: float [10][액체 저장용량]
+item: float [10][
+liquidPressure: float [1][
+consumes: {Consumers}[
