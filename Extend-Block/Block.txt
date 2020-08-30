@@ -1,0 +1,47 @@
+Block
+
+update: boolean [][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+destructible: boolean [][체력을 보유하고, 파괴될 수 있는 여부]
+unloadable: boolean [true][언로더가 작동되는 여부]
+solid: boolean [][지상 유닛이 지나갈 수 없는 여부]
+solidifes: boolean [][지상유닛이 지나갈 수 있게 될 수 있는 여부, 오직 type: door를 위한 필드]
+rotate: boolean [][돌아갈 수 있는 여부]
+breakable: boolean [][우클릭으로 철거할 수 있는 여부]
+rebuildable: boolean [true][건설 드론이 재건설할 수 있는 여부]
+placeableOn: boolean [true][다른 건물들을 위에 지을 수 있는 여부]
+health: int [-1][체력, 체력 기본값 -1는 40인 셈]
+baseExplosiveness: float [0][블록 폭발성 기본값]
+floating: boolean [false][물의 가장자리 위에 지을 수 있는 여부]
+size: int [1][한 변의 크기, 1이면 1x1, 2는 2x2..]
+expanded: boolean [false][화면 밖으로 나갈 때 8블록쯤까지 그려지는 여부]
+timers: int [0][new Interval에 할당되는 정숫값, JaveScript 전용]
+cacheLayer: {CacheLayer} [normal][CacheLayer의 쉐이더를 표현해준다. wall는 모름]
+filesTile: boolean [true][
+alwaysReplace: boolean [flase][언제나 교체될 수 있는 여부]
+group: {BlockGroup} [none][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체할 수 있다]
+priority: {TargetPriority} [base][
+configurable: boolean [][블록을 누르고 구성하도록 선택할 수 있는 여부]
+consumesTap: boolean [][눌러졌을 때 touchDown 이벤트를 요구하는 여부]
+drawLiquidLight: boolean [true][이 블록에 액체가 있는 경우, 액체의 광채를 그리는 여부]
+posConfig: boolean [][
+sync: booelan [][
+targetable: boolean [true][유닛들이 이 블록을 조준하는 여부]
+canOverdrive: boolean [true][
+outlineColor: {Color} [404049][이미지 외곽선 색]
+outlineIcon: boolean [false][
+hasShadow: boolean [true][밑에 그림자를 가질 여부]
+breakSound: {Sound} [boom][이 블록이 부숴질 때 생기는 소리]
+activeSound: {Sound} [none][
+activeSoundVolume: float [0.5][activeSound의 기본 볼륨]
+idleSound: {Sound} [none][
+idleSoundVolume: float [0.5][idleSound의 기본 볼륨]
+requirements: [{ItemStack}] [][건설 및 연구 비용]
+category: {Category} [distribution][메뉴 배치되는 카테고리]
+buildCost: folat [][이 블록을 짓는 비용; 절대 직접 수정하지 마시오!]
+buildVisibility: {BuildVisibility} [hidden][
+buildCostMultiplier: float [1][
+instantTransfer: boolean [false][
+alwaysUnlocked: boolean [false][
+layer: {Layer} [null][
+layer2: {Layer} [null][
+
