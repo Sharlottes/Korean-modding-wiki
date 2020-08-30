@@ -17,7 +17,7 @@ expanded: boolean [false][화면 밖으로 나갈 때 8블록쯤까지 그려지
 timers: int [0][new Interval에 할당되는 정숫값, JaveScript 전용]
 cacheLayer: {CacheLayer} [normal][CacheLayer의 쉐이더를 표현해준다. wall는 모름]
 filesTile: boolean [true][
-alwaysReplace: boolean [flase][언제나 교체될 수 있는 여부]
+alwaysReplace: boolean [false][언제나 교체될 수 있는 여부]
 group: {BlockGroup} [none][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체할 수 있다]
 priority: {TargetPriority} [base][
 configurable: boolean [][블록을 누르고 구성하도록 선택할 수 있는 여부]
