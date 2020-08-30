@@ -6,6 +6,6 @@ consumesPower: boolean [true][전력을 소모하는 여부]
 outputsPower: boolean [false][전력을 출력하는 여부]
 itemCapacity: int [10][아이템 저장용량]
 liquidCapacity: float [10][액체 저장용량]
-item: float [10][
 liquidPressure: float [1][
+item: float [10][
 consumes: {Consumers}[

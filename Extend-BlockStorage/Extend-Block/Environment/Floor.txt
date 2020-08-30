@@ -24,7 +24,7 @@ itemDrop: {Item} [기본값: ][드릴을 사용했을 때 나오는 아이템]
 isLiquid: boolean [기본값: ][타일이 익사시킬 수 있는 여부]
 playerUnmineable: boolean [기본값: false][플레이어에 의해 채광되지 않는 여부]
 blendGroup: {Block} [기본값: this][타일간 경계 모양을 결정하지 않는 블록을 결정]
-updateEffect: {Effect} [기본값: none][타일에서 생기는 랜덤 그래픽 효과, 잘 되지 않음]
+updateEffect: {Effect} [기본값: none][블록에서 생기는 랜덤 그래픽 효과, 잘 되지 않음]
 
 attributes: {Attributes} [기본값: ][각 블록간의 효율성 상호작용, attributes: {array:[a, b, c, d]} 형식으로 작성하며
         a는 뜨거운, b는 포자스러운, c는 수분, d는 기름진으로 해석된다.
