@@ -365,7 +365,75 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		extends 상속: 
 		implements 상속: 
 		
-		
+        public interface BlockUnitc extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+
+        public interface Boundedc extends Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+
+        public interface Builderc extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+
+        public interface Buildingc extends QuadTreeObject, Displayable, Senseable, Controllable, Healthc, Posc, Teamc, Timerc, Entityc
+
+        public interface Bulletc extends Shielderc, Damagec, Hitboxc, Ownerc, Timedc, Posc, Teamc, Velc, Timerc, Entityc, Drawc
+
+        public interface Childc extends Posc, Entityc
+
+        public interface Commanderc extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+
+        public interface Damagec extends Entityc
+
+        public interface Decalc extends Timedc, Posc, Rotc, Entityc, Drawc
+
+        public interface Drawc extends Posc, Entityc
+
+        public interface EffectStatec extends Timedc, Posc, Rotc, Childc, Entityc, Drawc
+
+        public interface ElevationMovec extends Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+
+        public interface Entityc
+
+        public interface Firec extends Timedc, Posc, Entityc, Syncc
+
+        public interface Flyingc extends Hitboxc, Healthc, Posc, Velc, Entityc
+
+        public interface Healthc extends Posc, Entityc
+
+        public interface Hitboxc extends QuadTreeObject, Posc, Entityc
+
+        public interface Itemsc extends Posc, Entityc
+
+        public interface LaunchCorec extends Timedc, Posc, Entityc, Drawc
+
+        public interface LaunchPayloadc extends Timedc, Posc, Teamc, Entityc, Drawc
+
+        public interface Legsc extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+ 
+        public interface Mechc extends ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+  
+        public interface Ownerc extends Entityc 
+ 
+        public interface Payloadc extends Hitboxc, Posc, Rotc, Entityc
+
+        public interface Physicsc extends Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+
+        public interface Playerc extends UnitController, Posc, Timerc, Entityc, Drawc, Syncc
+
+        public interface Posc extends Position, Entityc
+
+        public interface Rotc extends Entityc
+
+        public interface Puddlec extends Posc, Entityc, Drawc
+
+        public interface Shieldc extends Healthc, Posc, Entityc
+
+        public interface Shielderc extends Damagec, Posc, Teamc, Entityc
+
+        public interface Statusc extends Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+
+        public interface Syncc extends Entityc
+
+        public interface Teamc extends Posc, Entityc
+
+
 	public interface Timedc extends Scaled, Entityc
 		접근 제어자: public
 		클래스 형식: interface
