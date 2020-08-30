@@ -1,0 +1,657 @@
+접근 제어자
+public > protected > default > private
+
+public: 접근을 제한이 없음
+protected: 동일한 패키지 내에 존재하거나 파생클래스에서만 접근 가능
+default: 아무런 접근 제한자를 명시하지 않으면(공백) default 값이 되며, 통일한 패키지 내에서만 접근이 가능
+private: 오직 자기 자신의 클래스 내에서만 접근이 가능
+
+class: 일반 클래스
+	멤버변수(필드), 생성자, 메소드(method)를 구성.
+	(h)json에서는 멤버변수(field)만 사용하기에 생성자와 메소드는 필요없다.
+	js에서는 모두 접근이 가능하지만, (json도)접근 제어자에 의해 제한될 수 있다.
+	() 또는 () {}이 보이면 생성자 또는 메소드다.
+abstract class: 추상 클래스
+	멤버변수(필드), 생성자, 메소드(method)를 구성하지만, 선언만 한다.
+	접근 지정자 private를 사용할 수 없다.
+	만약 상속받은 자식 클래스도 부모 클래스에서 선언한 추상 메소드들을 설정하지 않았다면 추상 클래스가 되버린다.	
+	추상 메소드는 구현되지 않았기에 ()만 있고 {}가 없으면 추상 메소드다.모드를 만들땐 이런 형태가 보이면 자식 클래스로 찾아가서 확인해야 한다.mindustry wiki에서 가끔 default 자리가 비어 있는게 이런 형태.
+interface: 인터페이스
+	상수와 추상메소드를 구성. 메소드는 public abstract로, 상수는 public static final로 선언. 
+	당연 인터페이스도 추상메소드를 가지고 있기에, 상속받은 자식 클래스는 무조건 이를 모두 구현해야 한다. 모드에서 봐야 할 점은 interface 클래스를 상속받을 클래스들은 부모 interface가 가진 추상메소드들을 모두 정의한다는 것이다.
+	다른 클래스들과 달리 기본 접근 제어자가 무려 public다! 모드에서 사용할 때 제한이 없다는 뜻.
+	멤버변수(필드)를 선언할땐 public static final로 선언하는데, 생략해도 이게 기본으로 들어가진다.
+	6.0은 자바 13버전이고, default 접근 제어자 사용 가능 버전은 자바 8버전 이상이니 default를 사용할 수 있게 되버렸다. 
+	default interface는 자신이 선언하고 정의 또한 할 수 있다. 물론, 이전처럼 override로 재정의를 할 수 있다.
+
+extends: 
+	부모 클래스가 선언과 정의를 모두하며, 자식 클래스는 그 메소드와 변수를 그대로 사용 가능. 
+	다시말해, 자신 클래스는 부모 클래스의 기능을 사용함.
+	class와 abstract class를 상속하는데 사용됨.
+	일반적으로 extends는 클래스 한 개만 상속 가능.
+implements(interface 구현): 
+	부모는 선언만 하며, 자식이 Overriding(재정의)를 통해 정의함. 
+	extends와 달리 여러개 상속 가능.
+	class가 class를 상속할땐 extends를, interface가 interface를 상속할땐 implements를 사용한다. (사실 여기선 아니다)
+abstract: 
+	extends와 interface 혼합. 부모 클래스가 선언과 정의를 모두하지만, 일부 추상 메소드가 구현되어 있음.
+
+final: 딱 처음 정의되고, 다시 정의될 수 없음.
+
+
+접근 제어자 : public 목록 
+	public class BlockUnitUnit extends Unit implements BlockUnitc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: BlockUnitUnit
+		extends 상속: Unit
+		implements 상속: BlockUnitc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+
+
+	public class BuilderCommanderMechMinerUnit extends Unit implements Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Commanderc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: BuilderCommanderMechMinerUnit
+		extends 상속: Unit
+		implements 상속: Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Commanderc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+
+
+	public class BuilderLegsUnit extends Unit implements Statusc, Boundedc, Hitboxc, Legsc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: BuilderLegsUnit
+		extends 상속: Unit
+		implements 상속: Statusc, Boundedc, Hitboxc, Legsc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		
+	public class LegsUnit extends Unit implements Statusc, Boundedc, Hitboxc, Legsc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: LegsUnit
+		extends 상속: Unit
+		implements 상속: Statusc, Boundedc, Hitboxc, Legsc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc	
+		
+
+	public class BuilderMechUnit extends Unit implements Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: BuilderMechUnit
+		extends 상속: Unit
+		implements 상속: Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+
+
+	public class BuilderMinerPayloadUnit extends Unit implements Statusc, Boundedc, Hitboxc, Payloadc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: BuilderMinerPayloadUnit
+		extends 상속: Unit
+		implements 상속: Statusc, Boundedc, Hitboxc, Payloadc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+
+
+	public class BuilderMinerUnit extends Unit implements Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: BuilderMinerUnit
+		extends 상속: Unit
+		implements 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+
+
+	public class CommanderUnitWaterMove extends Unit implements Statusc, Boundedc, Hitboxc, Commanderc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, WaterMovec, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: CommanderUnitWaterMove
+		extends 상속: Unit
+		implements 상속: Statusc, Boundedc, Hitboxc, Commanderc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, WaterMovec, Drawc, Syncc, Weaponsc		
+		
+	
+	public class MechUnit extends Unit implements Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: MechUnit
+		extends 상속: Unit
+		implements 상속: Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		
+	
+	public class UnitEntity extends Unit implements Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: UnitEntity
+		extends 상속: Unit
+		implements 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc	
+		
+
+	public class Building implements Buildingc, Healthc, Posc, Teamc, Timerc, Entityc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Building
+		extends 상속: 
+		implements 상속: Buildingc, Healthc, Posc, Teamc, Timerc, Entityc
+		
+		
+	public class Bullet implements Pool.Poolable, Shielderc, Damagec, Hitboxc, Ownerc, Bulletc, Posc, Teamc, Velc, Timerc, Entityc, Timedc, Drawc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Bullet
+		extends 상속:
+		implements 상속: Pool.Poolable, Shielderc, Damagec, Hitboxc, Ownerc, Bulletc, Posc, Teamc, Velc, Timerc, Entityc, Timedc, Drawc
+		
+		
+	public class Call
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Call
+		extends 상속:
+		implements 상속:
+		
+
+	public class ContentRegions
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: ContentRegions
+		extends 상속: 
+		implements 상속:
+		
+
+	public class Decal implements Pool.Poolable, Decalc, Timedc, Posc, Rotc, Entityc, Drawc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Decal
+		extends 상속:
+		implements 상속: Pool.Poolable, Decalc, Timedc, Posc, Rotc, Entityc, Drawc
+		
+		
+	public class EffectState implements Pool.Poolable, Timedc, Posc, Rotc, EffectStatec, Childc, Entityc, Drawc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: EffectState
+		extends 상속: 
+		implements 상속: implements Pool.Poolable, Timedc, Posc, Rotc, EffectStatec, Childc, Entityc, Drawc
+
+	public class EntityMapping
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: EntityMapping
+		extends 상속:
+		implements 상속:
+		
+		
+	public class Fire implements Pool.Poolable, Timedc, Posc, Entityc, Syncc, Firec
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Fire
+		extends 상속: 
+		implements 상속: Pool.Poolable, Timedc, Posc, Entityc, Syncc, Firec
+		
+		
+	public class Groups
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Groups
+		extends 상속:
+		implements 상속:
+
+
+	public class Icon
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Groups
+		extends 상속:
+		implements 상속:
+
+
+	public class Iconc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Iconc
+		extends 상속:
+		implements 상속:
+		
+
+	public class LaunchCore implements Timedc, Posc, Entityc, Drawc, LaunchCorec
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: LaunchCore
+		extends 상속:
+		implements 상속: Timedc, Posc, Entityc, Drawc, LaunchCorec
+
+
+	public class LaunchPayload implements LaunchPayloadc, Timedc, Posc, Teamc, Entityc, Drawc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: LaunchPayload
+		extends 상속:
+		implements 상속: LaunchPayloadc, Timedc, Posc, Teamc, Entityc, Drawc
+		
+		
+	public class LogicIO
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: LogicIO
+		extends 상속: 
+		implements 상속:
+		
+
+	public class MethodHash
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: MethodHash
+		extends 상속: 
+		implements 상속: 
+		
+
+	public class MinerUnit extends Unit implements Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: MinerUnit
+		extends 상속: Unit
+		implements 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+		
+		
+	public class Musics
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Musics
+		extends 상속: 
+		implements 상속: 
+		
+
+	public class Player implements Posc, Timerc, Entityc, Playerc, Drawc, Syncc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Player
+		extends 상속:
+		implements 상속: Posc, Timerc, Entityc, Playerc, Drawc, Syncc
+		
+
+	public class Puddle implements Pool.Poolable, Posc, Puddlec, Entityc, Drawc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Puddle
+		extends 상속:
+		implements 상속: Pool.Poolable, Posc, Puddlec, Entityc, Drawc
+		
+
+	public class RemoteReadClient
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: RemoteReadClient
+		extends 상속: 
+		implements 상속: 
+		
+
+	public class RemoteReadServer
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: RemoteReadServer
+		extends 상속: 
+		implements 상속: 
+		
+		
+	public class Sounds
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Sounds
+		extends 상속: 
+		implements 상속: 
+		
+		
+	public class Tex
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Tex
+		extends 상속: 
+		implements 상속: 
+		
+
+	public class WeatherState implements Pool.Poolable, WeatherStatec, Posc, Entityc, Drawc
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: WeatherState
+		extends 상속:
+		implements 상속: Pool.Poolable, WeatherStatec, Posc, Entityc, Drawc
+
+	public abstract class Unit implements Itemsc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Shieldc, Entityc, Drawc, Syncc, Weaponsc, Unitc
+		접근 제어자: public
+		클래스 형식: abstract class
+		클래스명: class
+		extends 상속: Unit
+		implements 상속: Itemsc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Shieldc, Entityc, Drawc, Syncc, Weaponsc, Unitc
+		
+	
+	public final class Nulls
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: Nulls
+		extends 상속: 
+		implements 상속: 
+		
+	
+	public final class BufferItem
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: BufferItem
+		extends 상속: 
+		implements 상속: 
+		
+
+	public final class DisplayCmd
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: DisplayCmd
+		extends 상속: 
+		implements 상속: 
+		
+		
+	public final class PropCell
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: PropCell
+		extends 상속: 
+		implements 상속: 
+		
+		
+	public final class PathTile
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: PathTile
+		extends 상속: 
+		implements 상속: 
+		
+		
+	public final class TileOp
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: TileOp
+		extends 상속: 
+		implements 상속: 
+		
+		
+	public interface Timedc extends Scaled, Entityc
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: Timedc
+		extends 상속: Scaled, Entityc
+		implements 상속: 
+		
+		
+	public interface Timerc extends Entityc
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: Timerc
+		extends 상속: Entityc
+		implements 상속: 
+		
+
+	public interface Trailc extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: Trailc
+		extends 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		implements 상속: 
+		
+		
+	public interface Unitc extends Displayable, Senseable, Itemsc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Shieldc, Entityc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: Unitc
+		extends 상속: Displayable, Senseable, Itemsc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Shieldc, Entityc, Drawc, Syncc, Weaponsc
+		implements 상속: 
+		
+
+	public interface Velc extends Posc, Entityc
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: Velc
+		extends 상속: Posc, Entityc
+		implements 상속:
+	
+
+	public interface WaterMovec extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: WaterMovec
+		extends 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		implements 상속:
+		
+		
+	public interface Weaponsc extends Posc, Teamc, Velc, Rotc, Entityc
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: Weaponsc
+		extends 상속: Posc, Teamc, Velc, Rotc, Entityc
+		implements 상속: 
+		
+		
+	public interface WeatherStatec extends Posc, Entityc, Drawc
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: WeatherStatec
+		extends 상속: Posc, Entityc, Drawc
+		implements 상속: 
+		
+		
+		
+	접근 제어자 : default 목록
+
+	final class NullBlockUnit extends Unit implements BlockUnitc
+		접근 제어자: default
+		클래스 형식: class
+		클래스명: NullBlockUnit
+		extends 상속: Unit
+		implements 상속: BlockUnitc
+		
+
+	final class NullCommander extends Unit implements Commanderc
+		클래스명: NullCommander
+		extends 상속: Unit
+		implements 상속:
+		
+
+	final class NullBuilder extends Unit implements Builderc
+		클래스명: NullBuilder
+		extends 상속: Unit
+		implements 상속: Builderc		
+		
+
+	final class NullBounded implements Boundedc
+		접근 제어자: default
+		클래스 형식: class
+		클래스명: NullBounded
+		extends 상속:
+		implements 상속: Boundedc
+		
+		
+	final class NullBuilding extends Building implements Buildingc
+		클래스명: NullBuilding
+		extends 상속: Building
+		implements 상속: Builderc
+		
+		
+	final class NullBullet extends Bullet implements Bulletc
+		클래스명: NullBullet
+		extends 상속: Bullet
+		implements 상속: Bulletc
+		
+		
+	final class NullChild implements Childc
+		클래스명: NullChild
+		extends 상속: 
+		implements 상속: Childc
+		
+		
+	final class NullDamage implements Damagec
+		클래스명: NullDamage
+		extends 상속: 
+		implements 상속: Damagec
+		
+		
+	final class NullDecal extends Decal implements Decalc
+		클래스명: NullDecal
+		extends 상속: Decal
+		implements 상속: Decalc
+		
+
+	final class NullDraw implements Drawc
+		클래스명: NullDraw
+		extends 상속: 
+		implements 상속: Drawc
+		
+		
+	final class NullEffectState extends EffectState implements EffectStatec
+		클래스명: NullEffectState
+		extends 상속: EffectState
+		implements 상속: EffectStatec
+		
+		
+	final class NullElevationMove implements ElevationMovec
+		클래스명: NullElevationMove
+		extends 상속: 
+		implements 상속: ElevationMovec
+		
+		
+	final class NullEntity implements Entityc
+		클래스명: NullEntity
+		extends 상속: 
+		implements 상속: Entityc
+		
+		
+	final class NullFire extends Fire implements Firec
+		클래스명: NullFire
+		extends 상속: Fire
+		implements 상속: Firec
+		
+		
+	final class NullFlying implements Flyingc
+		클래스명: NullFlying
+		extends 상속: 
+		implements 상속: Flyingc
+		
+		
+	final class NullHealth implements Healthc
+		클래스명: NullHealth
+		extends 상속: 
+		implements 상속: Healthc
+		
+		
+	final class NullHitbox implements Hitboxc
+		클래스명: NullHitbox
+		extends 상속:
+		implements 상속: Hitboxc
+		
+		
+	final class NullItems implements Itemsc
+		클래스명: NullItems
+		extends 상속: 
+		implements 상속: Itemsc
+		
+		
+	final class NullLaunchCore implements LaunchCorec
+		클래스명: NullLaunchCore
+		extends 상속: 
+		implements 상속: LaunchCorec
+		
+		
+	final class NullLaunchPayload extends LaunchPayload implements LaunchPayloadc
+		클래스명: NullLaunchPayload
+		extends 상속: LaunchPayload
+		implements 상속: LaunchPayloadc
+		
+		
+	final class NullLegs extends Unit implements Legsc
+		클래스명: NullLegs
+		extends 상속: Unit
+		implements 상속: Legsc
+		
+		
+	final class NullMech extends Unit implements Mechc
+		클래스명: NullMech
+		extends 상속: Unit
+		implements 상속: Mechc
+		
+		
+	final class NullMiner extends Unit implements Minerc
+		클래스명: NullMiner
+		extends 상속: Unit
+		implements 상속: Minerc
+		
+		
+	final class NullOwner implements Ownerc
+		클래스명: NullOwner
+		extends 상속: 
+		implements 상속: Ownerc
+		
+		
+	final class NullPayload implements Payloadc
+		클래스명: NullPayload
+		extends 상속: 
+		implements 상속: Payloadc
+		
+		
+	final class NullPhysics implements Physicsc
+		클래스명: NullPhysics
+		extends 상속: 
+		implements 상속: Physicsc
+		
+		
+	final class NullPlayer extends Player implements Playerc
+		클래스명: NullPlayer
+		extends 상속: Player
+		implements 상속: Playerc
+		
+		
+	final class NullPos implements Posc
+		클래스명: NullPos
+		extends 상속: 
+		implements 상속: Posc
+		
+
+	final class NullPuddle extends Puddle implements Puddlec
+		클래스명 : NullPuddle
+		extends 상속: Puddle
+		implements 상속: Puddlec
+		
+		
+	final class NullRot implements Rotc
+		클래스명: NullRot
+		extends 상속: 
+		implements 상속: Rotc
+		
+		
+	final class NullShield implements Shieldc
+		클래스명: NullShield
+		extends 상속: 
+		implements 상속: Shieldc
+		
+		
+	final class NullShielder implements Shielderc
+		클래스명: NullShielder
+		extends 상속: 
+		implements 상속: Shieldc
+		
+		
+	final class NullStatus implements Statusc
+		클래스명: NullStatus
+		extends 상속: 
+		implements 상속: Statusc
+		
+
+	final class NullSync implements Syncc
+		클래스명: NullSync
+		extends 상속:
+		implements 상속:
+	final class NullTeam implements Teamc
+
+	final class NullTimed implements Timedc
+
+	final class NullTimer implements Timerc
+
+	final class NullTrail extends Unit implements Trailc
+
+	final class NullUnit extends Unit implements Unitc
+
+	final class NullVel implements Velc
+
+	final class NullWaterMove extends Unit implements WaterMovec
+
+	final class NullWeapons implements Weaponsc
+
+	final class NullWeatherState extends WeatherState implements WeatherStatec
