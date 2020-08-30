@@ -1,0 +1,9 @@
+타입 이름: TreeBlock
+포함 대상: Block
+
+일반 필드
+
+특이사항(기본값) 필드
+solid: boolean [true][지상 유닛이 지나갈 수 없는 여부]
+layer: {Layer} [power][
+expanded: boolean [true][화면 밖으로 나갈 때 8블록쯤까지 그려지는 여부]
