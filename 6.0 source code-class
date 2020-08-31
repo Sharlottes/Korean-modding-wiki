@@ -18,7 +18,8 @@ abstract class: 추상 클래스
 	추상 메소드는 구현되지 않았기에 ()만 있고 {}가 없으면 추상 메소드다.모드를 만들땐 이런 형태가 보이면 자식 클래스로 찾아가서 확인해야 한다.mindustry wiki에서 가끔 default 자리가 비어 있는게 이런 형태.
 interface: 인터페이스
 	상수와 추상메소드를 구성. 메소드는 public abstract로, 상수는 public static final로 선언. 
-	당연 인터페이스도 추상메소드를 가지고 있기에, 상속받은 자식 클래스는 무조건 이를 모두 구현해야 한다. 모드에서 봐야 할 점은 interface 클래스를 상속받을 클래스들은 부모 interface가 가진 추상메소드들을 모두 정의한다는 것이다.
+	당연 인터페이스도 추상메소드를 가지고 있기에, 상속받은 자식 클래스는 무조건 이를 모두 구현해야 한다. 
+모드에서 봐야 할 점은 interface 클래스를 상속받을 클래스들은 부모 interface가 가진 추상메소드들을 모두 정의한다는 것이다.
 	다른 클래스들과 달리 기본 접근 제어자가 무려 public다! 모드에서 사용할 때 제한이 없다는 뜻.
 	멤버변수(필드)를 선언할땐 public static final로 선언하는데, 생략해도 이게 기본으로 들어가진다.
 	6.0은 자바 13버전이고, default 접근 제어자 사용 가능 버전은 자바 8버전 이상이니 default를 사용할 수 있게 되버렸다. 
@@ -37,19 +38,30 @@ abstract:
 	extends와 interface 혼합. 부모 클래스가 선언과 정의를 모두하지만, 일부 추상 메소드가 구현되어 있음.
 
 final: 딱 처음 정의되고, 다시 정의될 수 없음.
-
+static: 메모리를 공유함.
 
 접근 제어자 : public 목록 
+
+
 	public class BlockUnitUnit extends Unit implements BlockUnitc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: BlockUnitUnit
 		extends 상속: Unit
 		implements 상속: BlockUnitc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
 
+		필드1
+		접근 제어자: public
+		필드 자료형: float
+		필드명: warpDsp
+
+                  
+
 
 	public class BuilderCommanderMechMinerUnit extends Unit implements Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Commanderc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
-		접근 제어자: public
+		변경 가능여부: O
+	    접근 제어자: public
 		클래스 형식: class
 		클래스명: BuilderCommanderMechMinerUnit
 		extends 상속: Unit
@@ -57,22 +69,17 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 
 
 	public class BuilderLegsUnit extends Unit implements Statusc, Boundedc, Hitboxc, Legsc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: BuilderLegsUnit
 		extends 상속: Unit
 		implements 상속: Statusc, Boundedc, Hitboxc, Legsc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
 		
-	public class LegsUnit extends Unit implements Statusc, Boundedc, Hitboxc, Legsc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
-		접근 제어자: public
-		클래스 형식: class
-		클래스명: LegsUnit
-		extends 상속: Unit
-		implements 상속: Statusc, Boundedc, Hitboxc, Legsc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc	
-		
 
 	public class BuilderMechUnit extends Unit implements Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
-		접근 제어자: public
+		변경 가능여부: O
+	    접근 제어자: public
 		클래스 형식: class
 		클래스명: BuilderMechUnit
 		extends 상속: Unit
@@ -80,6 +87,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 
 
 	public class BuilderMinerPayloadUnit extends Unit implements Statusc, Boundedc, Hitboxc, Payloadc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: BuilderMinerPayloadUnit
@@ -88,6 +96,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 
 
 	public class BuilderMinerUnit extends Unit implements Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+		변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: BuilderMinerUnit
@@ -95,31 +104,8 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		implements 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Builderc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
 
 
-	public class CommanderUnitWaterMove extends Unit implements Statusc, Boundedc, Hitboxc, Commanderc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, WaterMovec, Drawc, Syncc, Weaponsc
-		접근 제어자: public
-		클래스 형식: class
-		클래스명: CommanderUnitWaterMove
-		extends 상속: Unit
-		implements 상속: Statusc, Boundedc, Hitboxc, Commanderc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, WaterMovec, Drawc, Syncc, Weaponsc		
-		
-	
-	public class MechUnit extends Unit implements Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
-		접근 제어자: public
-		클래스 형식: class
-		클래스명: MechUnit
-		extends 상속: Unit
-		implements 상속: Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
-		
-	
-	public class UnitEntity extends Unit implements Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
-		접근 제어자: public
-		클래스 형식: class
-		클래스명: UnitEntity
-		extends 상속: Unit
-		implements 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc	
-		
-
 	public class Building implements Buildingc, Healthc, Posc, Teamc, Timerc, Entityc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Building
@@ -128,14 +114,16 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public class Bullet implements Pool.Poolable, Shielderc, Damagec, Hitboxc, Ownerc, Bulletc, Posc, Teamc, Velc, Timerc, Entityc, Timedc, Drawc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Bullet
 		extends 상속:
 		implements 상속: Pool.Poolable, Shielderc, Damagec, Hitboxc, Ownerc, Bulletc, Posc, Teamc, Velc, Timerc, Entityc, Timedc, Drawc
-		
-		
+	
+
 	public class Call
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Call
@@ -143,7 +131,17 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		implements 상속:
 		
 
+	public class CommanderUnitWaterMove extends Unit implements Statusc, Boundedc, Hitboxc, Commanderc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, WaterMovec, Drawc, Syncc, Weaponsc
+	    변경 가능여부: O
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: CommanderUnitWaterMove
+		extends 상속: Unit
+		implements 상속: Statusc, Boundedc, Hitboxc, Commanderc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, WaterMovec, Drawc, Syncc, Weaponsc		
+		
+
 	public class ContentRegions
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: ContentRegions
@@ -152,21 +150,25 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 
 	public class Decal implements Pool.Poolable, Decalc, Timedc, Posc, Rotc, Entityc, Drawc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Decal
 		extends 상속:
 		implements 상속: Pool.Poolable, Decalc, Timedc, Posc, Rotc, Entityc, Drawc
-		
+
 		
 	public class EffectState implements Pool.Poolable, Timedc, Posc, Rotc, EffectStatec, Childc, Entityc, Drawc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: EffectState
 		extends 상속: 
 		implements 상속: implements Pool.Poolable, Timedc, Posc, Rotc, EffectStatec, Childc, Entityc, Drawc
 
+
 	public class EntityMapping
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: EntityMapping
@@ -175,6 +177,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public class Fire implements Pool.Poolable, Timedc, Posc, Entityc, Syncc, Firec
+		변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Fire
@@ -183,6 +186,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public class Groups
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Groups
@@ -191,6 +195,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 
 
 	public class Icon
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Groups
@@ -199,6 +204,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 
 
 	public class Iconc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Iconc
@@ -207,6 +213,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 
 	public class LaunchCore implements Timedc, Posc, Entityc, Drawc, LaunchCorec
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: LaunchCore
@@ -215,14 +222,25 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 
 
 	public class LaunchPayload implements LaunchPayloadc, Timedc, Posc, Teamc, Entityc, Drawc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: LaunchPayload
 		extends 상속:
 		implements 상속: LaunchPayloadc, Timedc, Posc, Teamc, Entityc, Drawc
 		
-		
+
+	public class LegsUnit extends Unit implements Statusc, Boundedc, Hitboxc, Legsc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+	    변경 가능여부: O
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: LegsUnit
+		extends 상속: Unit
+		implements 상속: Statusc, Boundedc, Hitboxc, Legsc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc	
+	
+
 	public class LogicIO
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: LogicIO
@@ -230,7 +248,17 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		implements 상속:
 		
 
+	public class MechUnit extends Unit implements Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+	    변경 가능여부: O
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: MechUnit
+		extends 상속: Unit
+		implements 상속: Mechc, ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+
+
 	public class MethodHash
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: MethodHash
@@ -239,14 +267,16 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 
 	public class MinerUnit extends Unit implements Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: MinerUnit
 		extends 상속: Unit
 		implements 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Minerc, Drawc, Syncc, Weaponsc
-		
-		
+
+	
 	public class Musics
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Musics
@@ -255,6 +285,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 
 	public class Player implements Posc, Timerc, Entityc, Playerc, Drawc, Syncc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Player
@@ -263,6 +294,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 
 	public class Puddle implements Pool.Poolable, Posc, Puddlec, Entityc, Drawc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Puddle
@@ -271,6 +303,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 
 	public class RemoteReadClient
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: RemoteReadClient
@@ -279,6 +312,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 
 	public class RemoteReadServer
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: RemoteReadServer
@@ -287,6 +321,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public class Sounds
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Sounds
@@ -295,6 +330,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public class Tex
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Tex
@@ -302,22 +338,41 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		implements 상속: 
 		
 
-	public class WeatherState implements Pool.Poolable, WeatherStatec, Posc, Entityc, Drawc
-		접근 제어자: public
-		클래스 형식: class
-		클래스명: WeatherState
-		extends 상속:
-		implements 상속: Pool.Poolable, WeatherStatec, Posc, Entityc, Drawc
-
 	public abstract class Unit implements Itemsc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Shieldc, Entityc, Drawc, Syncc, Weaponsc, Unitc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: abstract class
 		클래스명: class
 		extends 상속: Unit
 		implements 상속: Itemsc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Shieldc, Entityc, Drawc, Syncc, Weaponsc, Unitc
 		
+
+	public class UnitEntity extends Unit implements Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+	    변경 가능여부: O
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: UnitEntity
+		extends 상속: Unit
+		implements 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc	
+
+
+	public class WeatherState implements Pool.Poolable, WeatherStatec, Posc, Entityc, Drawc
+	    변경 가능여부: O
+		접근 제어자: public
+		클래스 형식: class
+		클래스명: WeatherState
+		extends 상속:
+		implements 상속: Pool.Poolable, WeatherStatec, Posc, Entityc, Drawc
+
+
+경고! 
+이 선 밑으로는 final, default, interface 클래스 및 접근 지정자이기 때문에 모드 제작에 있어서 매우 제한적입니다!
+제작 우선순위는 이 선 위에 있는 public class 클래스가 먼저 해석됩니다!
+
+----------------------------------------------------------------------------------------------------------------------
 	
 	public final class Nulls
+	    변경 가능여부: X
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: Nulls
@@ -326,6 +381,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 	
 	public final class BufferItem
+	    변경 가능여부: X
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: BufferItem
@@ -334,6 +390,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 
 	public final class DisplayCmd
+	    변경 가능여부: X
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: DisplayCmd
@@ -342,6 +399,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public final class PropCell
+	    변경 가능여부: X
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: PropCell
@@ -350,6 +408,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public final class PathTile
+	    변경 가능여부: X
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: PathTile
@@ -358,15 +417,326 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public final class TileOp
+	    변경 가능여부: X
 		접근 제어자: public
 		클래스 형식: class
 		클래스명: TileOp
 		extends 상속: 
 		implements 상속: 
-		
-		
-	public interface Timedc extends Scaled, Entityc
+
+
+
+	
+	
+	public interface BlockUnitc extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+	    변경 가능여부: O
 		접근 제어자: public
+        클래스 형식: interface
+		클래스명: BlockUnitc
+		extends 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+        implements 상속:
+
+
+	public interface Builderc extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+        변경 가능여부: O
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: Builderc
+		extends 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		implements 상속:
+
+
+	public interface Boundedc extends Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Boundedc
+		extends 상속: Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+        implements 상속:
+
+
+	public interface Buildingc extends QuadTreeObjectl, Controllable, Healthc, Posc, Teamc, Timerc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Buildingc
+		extends 상속: QuadTreeObjectl, Controllable, Healthc, Posc, Teamc, Timerc, Entityc
+        implements 상속:
+
+
+	public interface Bulletc extends Shielderc, Damagec, Hitboxc, Ownerc, Timedc, Posc, Teamc, Velc, Timerc, Entityc, Drawc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Bulletc
+		extends 상속: Shielderc, Damagec, Hitboxc, Ownerc, Timedc, Posc, Teamc, Velc, Timerc, Entityc, Drawc
+        implements 상속:
+
+
+	public interface Childc extends Posc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Childc
+        extends 상속: Posc, Entityc
+        implements 상속:
+
+
+	public interface Commanderc extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Commanderc
+		extends 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+        implements 상속:
+
+
+	public interface Damagec extends Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Damagec
+        extends 상속: Entityc
+        implements 상속:
+
+
+    public interface Decalc extends Timedc, Posc, Rotc, Entityc, Drawc
+        변경 가능여부: O
+        접근 제어자: public
+		클래스 형식: interface
+		클래스명: Decalc
+		extends 상속: Timedc, Posc, Rotc, Entityc, Drawc
+		implements 상속:
+
+
+	public interface Drawc extends Posc, Entityc
+        변경 가능여부: O
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: Drawc
+		extends 상속: Posc, Entityc
+		implements 상속:
+
+
+	public interface EffectStatec extends Timedc, Posc, Rotc, Childc, Entityc, Drawc
+        변경 가능여부: O
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: EffectStatec
+		extends 상속: Timedc, Posc, Rotc, Childc, Entityc, Drawc
+		implements 상속:
+
+
+	public interface ElevationMovec extends Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+        변경 가능여부: O
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: ElevationMovec
+		extends 상속: Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+		implements 상속:
+
+
+	public interface Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Entityc
+        extends 상속: 
+        implements 상속:
+
+
+	public interface Firec extends Timedc, Posc, Entityc, Syncc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Firec
+        extends 상속: Timedc, Posc, Entityc, Syncc
+        implements 상속:
+
+
+	public interface Flyingc extends Hitboxc, Healthc, Posc, Velc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Flyingc
+        extends 상속: Hitboxc, Healthc, Posc, Velc, Entityc
+        implements 상속:
+
+
+	public interface Healthc extends Posc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Helathc
+        extends 상속: Posc, Entityc
+        implements 상속:
+
+
+	public interface Hitboxc extends QuadTreeObject, Posc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Hitboxc
+        extends 상속: QuadTreeObject, Posc, Entityc
+        implements 상속:
+
+
+	public interface Itemsc extends Posc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Itemsc
+        extends 상속: Posc, Entityc
+        implements 상속:
+
+
+	public interface LaunchCorec extends Timedc, Posc, Entityc, Drawc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: LaunchCorec
+        extends 상속:Timedc, Posc, Entityc, Drawc
+        implements 상속:
+
+
+	public interface LaunchPayloadc extends Timedc, Posc, Teamc, Entityc, Drawc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: LaunchPayloadc
+        extends 상속: Timedc, Posc, Teamc, Entityc, Drawc
+        implements 상속:
+
+
+	public interface Legsc extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Legsc
+		extends 상속: Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+        implements 상속:
+
+
+	public interface Mechc extends ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Mechc
+		extends 상속: ElevationMovec, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+        implements 상속:
+
+
+	public interface Ownerc extends Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Ownerc
+        extends 상속: Entityc
+        implements 상속:
+
+
+	public interface Payloadc extends Hitboxc, Posc, Rotc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Payloadc
+        extends 상속: Hitboxc, Posc, Rotc, Entityc
+        implements 상속:
+
+
+	public interface Physicsc extends Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Physicsc
+        extends 상속: Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+        implements 상속:
+
+        
+	public interface Playerc extends UnitController, Posc, Timerc, Entityc, Drawc, Syncc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Playerc
+        extends 상속: UnitController, Posc, Timerc, Entityc, Drawc, Syncc
+        implements 상속:
+
+
+	public interface Posc extends Position, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Posc
+        extends 상속: Pisition, Entityc
+        implements 상속:
+
+
+	public interface Rotc extends Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Rotc
+        extends 상속: Entityc
+        implements 상속:
+
+
+	public interface Puddlec extends Posc, Entityc, Drawc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Puddlec
+        extends 상속: Posc, Entityc, Drawc
+        implements 상속:
+
+
+	public interface Shieldc extends Healthc, Posc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Shieldc
+        extends 상속: Healthc, Posc, Entityc
+        implements 상속:
+
+
+	public interface Shielderc extends Damagec, Posc, Teamc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Shielderc
+        extends 상속: Damagec, Posc, Teamc, Entityc
+        implements 상속:
+
+
+	public interface Statusc extends Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Statusc
+        extends 상속: Hitboxc, Healthc, Posc, Flyingc, Velc, Entityc
+        implements 상속:
+
+
+	public interface Syncc extends Entityc
+        변경 가능여부: O
+        접근 제어자: public
+        클래스 형식: interface
+        클래스명: Syncc
+        extends 상속: Entityc
+        implements 상속:
+
+
+	public interface Teamc extends Posc, Entityc
+        변경 가능여부: O
+		접근 제어자: public
+		클래스 형식: interface
+		클래스명: Teamc
+		extends 상속: Posc, Entityc
+		implements 상속:
+
+
+	public interface Timedc extends Scaled, Entityc
+        변경 가능여부: O
+        접근 제어자: public
 		클래스 형식: interface
 		클래스명: Timedc
 		extends 상속: Scaled, Entityc
@@ -374,6 +744,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public interface Timerc extends Entityc
+		변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: interface
 		클래스명: Timerc
@@ -382,6 +753,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 
 	public interface Trailc extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: interface
 		클래스명: Trailc
@@ -390,6 +762,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public interface Unitc extends Displayable, Senseable, Itemsc, Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Shieldc, Entityc, Drawc, Syncc, Weaponsc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: interface
 		클래스명: Unitc
@@ -398,6 +771,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 
 	public interface Velc extends Posc, Entityc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: interface
 		클래스명: Velc
@@ -406,6 +780,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 	
 
 	public interface WaterMovec extends Statusc, Boundedc, Hitboxc, Healthc, Posc, Flyingc, Teamc, Velc, Physicsc, Rotc, Unitc, Shieldc, Itemsc, Entityc, Drawc, Syncc, Weaponsc
+		변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: interface
 		클래스명: WaterMovec
@@ -414,6 +789,7 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public interface Weaponsc extends Posc, Teamc, Velc, Rotc, Entityc
+	    변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: interface
 		클래스명: Weaponsc
@@ -422,236 +798,400 @@ final: 딱 처음 정의되고, 다시 정의될 수 없음.
 		
 		
 	public interface WeatherStatec extends Posc, Entityc, Drawc
+		변경 가능여부: O
 		접근 제어자: public
 		클래스 형식: interface
 		클래스명: WeatherStatec
 		extends 상속: Posc, Entityc, Drawc
 		implements 상속: 
-		
-		
-		
+
+
+
+
+
 	접근 제어자 : default 목록
 
 	final class NullBlockUnit extends Unit implements BlockUnitc
+	    변경 가능여부: X
 		접근 제어자: default
 		클래스 형식: class
 		클래스명: NullBlockUnit
 		extends 상속: Unit
 		implements 상속: BlockUnitc
-		
-
-	final class NullCommander extends Unit implements Commanderc
-		클래스명: NullCommander
-		extends 상속: Unit
-		implements 상속:
-		
-
-	final class NullBuilder extends Unit implements Builderc
-		클래스명: NullBuilder
-		extends 상속: Unit
-		implements 상속: Builderc		
-		
+			
 
 	final class NullBounded implements Boundedc
+	    변경 가능여부: X
 		접근 제어자: default
 		클래스 형식: class
 		클래스명: NullBounded
 		extends 상속:
 		implements 상속: Boundedc
-		
+
+
+	final class NullBuilder extends Unit implements Builderc
+	    변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class		
+        클래스명: NullBuilder
+		extends 상속: Unit
+		implements 상속: Builderc 
+	
 		
 	final class NullBuilding extends Building implements Buildingc
-		클래스명: NullBuilding
+	    변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
+        클래스명: NullBuilding
 		extends 상속: Building
-		implements 상속: Builderc
+		implements 상속: Buildingc
 		
 		
 	final class NullBullet extends Bullet implements Bulletc
-		클래스명: NullBullet
+	    변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class		
+        클래스명: NullBullet
 		extends 상속: Bullet
 		implements 상속: Bulletc
-		
-		
+
+
 	final class NullChild implements Childc
+	    변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullChild
 		extends 상속: 
 		implements 상속: Childc
+
+
+	final class NullCommander extends Unit implements Commanderc
+		변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
+        클래스명: NullCommander
+		extends 상속: Unit
+		implements 상속: Commanderc
 		
-		
+
 	final class NullDamage implements Damagec
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullDamage
 		extends 상속: 
 		implements 상속: Damagec
 		
-		
+
 	final class NullDecal extends Decal implements Decalc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullDecal
 		extends 상속: Decal
 		implements 상속: Decalc
 		
 
 	final class NullDraw implements Drawc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullDraw
 		extends 상속: 
 		implements 상속: Drawc
-		
-		
+
+
 	final class NullEffectState extends EffectState implements EffectStatec
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullEffectState
 		extends 상속: EffectState
 		implements 상속: EffectStatec
-		
+
 		
 	final class NullElevationMove implements ElevationMovec
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullElevationMove
 		extends 상속: 
 		implements 상속: ElevationMovec
 		
 		
 	final class NullEntity implements Entityc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullEntity
 		extends 상속: 
 		implements 상속: Entityc
 		
-		
+				
 	final class NullFire extends Fire implements Firec
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullFire
 		extends 상속: Fire
 		implements 상속: Firec
-		
-		
+
+
 	final class NullFlying implements Flyingc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullFlying
 		extends 상속: 
 		implements 상속: Flyingc
 		
 		
 	final class NullHealth implements Healthc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullHealth
 		extends 상속: 
 		implements 상속: Healthc
 		
 		
 	final class NullHitbox implements Hitboxc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullHitbox
 		extends 상속:
 		implements 상속: Hitboxc
 		
 		
 	final class NullItems implements Itemsc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullItems
 		extends 상속: 
 		implements 상속: Itemsc
 		
 		
 	final class NullLaunchCore implements LaunchCorec
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullLaunchCore
 		extends 상속: 
 		implements 상속: LaunchCorec
-		
-		
+
+
 	final class NullLaunchPayload extends LaunchPayload implements LaunchPayloadc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullLaunchPayload
 		extends 상속: LaunchPayload
 		implements 상속: LaunchPayloadc
-		
-		
+
+
 	final class NullLegs extends Unit implements Legsc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullLegs
 		extends 상속: Unit
 		implements 상속: Legsc
-		
-		
+
+
 	final class NullMech extends Unit implements Mechc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullMech
 		extends 상속: Unit
 		implements 상속: Mechc
-		
-		
+
+
 	final class NullMiner extends Unit implements Minerc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullMiner
 		extends 상속: Unit
 		implements 상속: Minerc
-		
-		
+
+
 	final class NullOwner implements Ownerc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullOwner
 		extends 상속: 
 		implements 상속: Ownerc
 		
 		
 	final class NullPayload implements Payloadc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullPayload
 		extends 상속: 
 		implements 상속: Payloadc
 		
 		
 	final class NullPhysics implements Physicsc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullPhysics
 		extends 상속: 
 		implements 상속: Physicsc
 		
 		
 	final class NullPlayer extends Player implements Playerc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullPlayer
 		extends 상속: Player
 		implements 상속: Playerc
-		
-		
+
+
 	final class NullPos implements Posc
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullPos
 		extends 상속: 
 		implements 상속: Posc
 		
 
 	final class NullPuddle extends Puddle implements Puddlec
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명 : NullPuddle
 		extends 상속: Puddle
 		implements 상속: Puddlec
-		
+
 		
 	final class NullRot implements Rotc
-		클래스명: NullRot
+        변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class		
+        클래스명: NullRot
 		extends 상속: 
 		implements 상속: Rotc
 		
 		
 	final class NullShield implements Shieldc
+		변경 가능여부: X
+		접근 제어자: default
+        클래스 형식: class
 		클래스명: NullShield
 		extends 상속: 
 		implements 상속: Shieldc
 		
 		
 	final class NullShielder implements Shielderc
+		변경 가능여부: X
+		접근 제어자: default
+		클래스 형식: class
 		클래스명: NullShielder
 		extends 상속: 
 		implements 상속: Shieldc
 		
 		
 	final class NullStatus implements Statusc
+		변경 가능여부: X
+		접근 제어자: default
+		클래스 형식: class
 		클래스명: NullStatus
 		extends 상속: 
 		implements 상속: Statusc
 		
 
 	final class NullSync implements Syncc
+		변경 가능여부: X
+		접근 제어자: default
+		클래스 형식: class		
 		클래스명: NullSync
 		extends 상속:
 		implements 상속:
+
+
 	final class NullTeam implements Teamc
+		변경 가능여부: X
+		접근 제어자: default
+		클래스 형식: class
+		클래스명: NullTeam
+		extends 상속: 
+		implements 상속: Teamc
+
 
 	final class NullTimed implements Timedc
+		변경 가능여부: X
+		접근 제어자: default
+		클래스 형식: class
+		클래스명: NullTimed
+		extends 상속: 
+		implements 상속: Timedc
+ 
 
 	final class NullTimer implements Timerc
+		변경 가능여부: X
+		접근 제어자: default
+		클래스 형식: class
+		클래스명: NullTimer
+		extends 상속:
+		implements 상속: Timerc
 
 	final class NullTrail extends Unit implements Trailc
+		변경 가능여부: X
+		접근 제어자: default
+		클래스 형식: class
+		클래스명: NullTrail
+		extends 상속: Unit
+		implements 상속: Trailc
+
 
 	final class NullUnit extends Unit implements Unitc
+		변경 가능여부: X
+		접근 제어자: default
+		클래스 형식: class
+		클래스명: NullUnit
+		extends 상속: Unit
+		implements 상속: Unitc
+
 
 	final class NullVel implements Velc
+		변경 가능여부: X
+		접근 제어자: default
+		클래스 형식: class
+		클래스명: NullVel
+		extends 상속:
+		implements 상속: Velc
+
 
 	final class NullWaterMove extends Unit implements WaterMovec
+		변경 가능여부: X
+		접근 제어자: default
+		클래스 형식: class
+		클래스명: NullWaterMove
+        extends 상속: Unit
+        implements 상속: WaterMovec
+
 
 	final class NullWeapons implements Weaponsc
+		접근 제어자: default
+        클래스 형식: class
+        클래스명: NullWeapons
+        extends 상속:
+        implements 상속: Weaponsc
+
 
 	final class NullWeatherState extends WeatherState implements WeatherStatec
+        접근 제어자: default
+        클래스 형식: class
+        클래스명: NullWeatherState
+        extends 상속: WeatherState
+        implements 상속: WeatherStatec
+
+        
