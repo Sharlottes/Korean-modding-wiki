@@ -1,0 +1,31 @@
+타입 이름: ItemBridge
+포함 대상: Block
+
+설명:
+    그 터널(다리) 컨베이어 맞습니다!
+
+일반 필드
+    range: int [기본값: ][
+    transportTime: float [기본값: 2][
+
+특이사항(기본값 필드)
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    hasPower: boolean [기본값: true][전력을 보유하는 여부]
+    layer: {Layer} [기본값: power][특별 레이어, js 에서 사용됨]
+    expanded: boolean [기본값: true][화면 밖으로 나갈 때 8블록쯤까지 그려지는 여부]
+    itemCapacity: int [기본값: 10][아이템 저장용량]
+    posConfig: boolean [기본값: true][
+    configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    unloadable: boolean [기본값: false][언로더가 작동되는 여부]
+    group: {BlockGroup} [기본값: transportation][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체할 수 있습니다]
+
+특이사항(스프라이트)
+    이름-end: raw.githubusercontent.com/Anuken/Mindustry/master/core/assets-raw/sprites/blocks/distribution/bridge-conveyor-end.png
+    이름-bridge: raw.githubusercontent.com/Anuken/Mindustry/master/core/assets-raw/sprites/blocks/distribution/bridge-conveyor-bridge.png
+    이름-arrow: raw.githubusercontent.com/Anuken/Mindustry/master/core/assets-raw/sprites/blocks/distribution/bridge-conveyor-arrow.png
+    각 주소보고 이해하시면 됩니다.
+    간략히 설명하자면 결국 터널 컨베이어 중간에 있는 부분일 뿐입니다.
+
+
