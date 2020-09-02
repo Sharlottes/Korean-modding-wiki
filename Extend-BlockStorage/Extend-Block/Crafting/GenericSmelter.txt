@@ -1,0 +1,17 @@
+타입 이름: GenericSmelter
+포함 대상: GenericCrafter
+
+설명:
+    앞에서 대부분의 공장들이 GenericCrafter 타입으로 이루어진다고 했다면, 공장이 돌아갈 때 중앙에 동글이가 생기는게 이 타입이다.
+    실리콘 제련소, 설금 제련소 등등이 GenericSmelter다.
+    GenericSmelter는 GenericCrafter를 포함하기 때문에 동글이 색만 설정하는게 끝이다.
+
+
+일반 필드
+    flameColor: {Color} [ffc999][중앙에 생기는 공돌이의 색이다]
+
+특이사항(기본값) 필드
+
+
+특이사항(스프라이트)
+    이름-top: 공돌이의 스프라이트다.
