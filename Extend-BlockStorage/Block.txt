@@ -24,7 +24,7 @@ configurable: boolean [기본값: ][블록을 누르고 구성하도록 선택�
 consumesTap: boolean [기본값: ][눌러졌을 때 touchDown 이벤트를 요구하는 여부]
 drawLiquidLight: boolean [기본값: true][이 블록에 액체가 있는 경우, 액체의 광채를 그리는 여부]
 posConfig: boolean [기본값: ][
-sync: booelan [기본값: ][원심분리기처럼 이 블록 속에 든 자원 등이 주기적으로 강제 동기화 되는 여부]
+sync: boolean [기본값: ][원심분리기처럼 이 블록 속에 든 자원 등이 주기적으로 강제 동기화 되는 여부]
 targetable: boolean [기본값: true][유닛들이 이 블록을 조준하는 여부]
 canOverdrive: boolean [기본값: true][과부하를 받는 여부]
 outlineColor: {Color} [기본값: 404049][블록 외곽선 색]
