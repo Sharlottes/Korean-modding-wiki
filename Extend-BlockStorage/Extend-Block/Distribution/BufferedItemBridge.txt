@@ -1,0 +1,12 @@
+타입 이름: BufferedItemBridge
+포함 대상: ExtendingItemBridge
+
+설명:
+
+
+일반 필드
+    speed: float [40][
+    bufferCapacity: int [50][
+
+특이사항(기본값 필드)
+
