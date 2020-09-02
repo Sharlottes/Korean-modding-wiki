@@ -2,11 +2,11 @@
 포함 대상: ExtendingItemBridge
 
 설명:
-
+    터널과 같이 임시저장을 하는 다리입니다.
 
 일반 필드
-    speed: float [40][
-    bufferCapacity: int [50][
+    speed: float [기본값: 40][운반속도]
+    bufferCapacity: int [기본값: 50][아이템 임시 수송량]
 
 특이사항(기본값 필드)
     hasItems: boolean [기본값: true][아이템을 보유하는 여부]
