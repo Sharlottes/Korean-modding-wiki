@@ -11,4 +11,4 @@
     solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
     destructible: boolean [기본값: true][체력을 보유하고, 파괴될 수 있는 여부]
     group: {BlockGroup} [기본값: walls][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체할 수 있습니다]
-    buildCost: float [기본값: 5][이 블록을 짓는 비용; 절대 직접 수정하지 마시오!]
+    buildCostMultiplier: float [기본값: 5][이 블록을 짓는 비용; 절대 직접 수정하지 마시오!]

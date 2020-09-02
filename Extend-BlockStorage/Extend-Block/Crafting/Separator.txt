@@ -8,11 +8,11 @@
 
 일반 필드
     results: [{ItemStack}] [][필수로 꼭 넣으셔야 합니다!]
-    craftTime: float [기본값: ][아이템을 제작하는데 걸리는 시간]
+    craftTime: float [기본값: ][아이템을 제작하는데 걸리는 시간. 60으로 나누면 초 단위]
     spinnerSpeed: float [3][Spinner 스프라이트가 돌아가는 속도]
 
 특이사항(기본값 필드)
-    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    update: boolean [기본값: true][TileEntity 를 가짐으로써 다른 엔티티와 상호작용하는 여부]
     solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
     hasItems: boolean [기본값: true][아이템을 보유하는 여부]
     hasLiquids: boolean [기본값: true][액체를 보유하는 여부]

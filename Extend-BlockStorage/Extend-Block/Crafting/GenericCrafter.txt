@@ -8,7 +8,7 @@
 일반 필드
     outputItem: {ItemStack} [기본값: ][아이템 출력 수치]
     outputLiquid: {LiquidStack} [기본값: ][액체 출력 수치]
-    craftTime: float [기본값: 80][아이템을 제작하는데 걸리는 시간]
+    craftTime: float [기본값: 80][아이템을 제작하는데 걸리는 시간. 60으로 나누면 초 단위]
     craftEffect: {Effect} [기본값: none][블록에서 아이템을 만들때 생기는 그래픽 효과, 잘 됨]
     updateEffect: {Effect} [기본값: none][블록에서 생기는 랜덤 그래픽 효과, 잘 되지 않음]
     updateEffectChance: float [기본값: 0.04][updateEffect 의 효과 생성 확률]

@@ -8,10 +8,10 @@
     baseColor: {Color} [feb380][활성화 시 생기는 그래픽 효과의 색]
     phaseColor: {Color} [ffd59e][가속 시 생기는 그래픽 효과의 색]
     reload: float [60][가속 주기. 60으로 나누면 초 단위]
-    range: float [80][가속 사거리. 8로 나누면 블록 단위]
-    speeedBoost: float [1.5][대상 블록의 속도에 곱함]
-    speedBoostPhase: float [0.75][speedBoost에 더함]
-    phaseRangeBoost: float [20][가속 시 range에 더함]
+    range: float [80][가속 사거리. 8로 나누면 타일 단위]
+    speedBoost: float [1.5][대상 블록의 속도에 곱함]
+    speedBoostPhase: float [0.75][speedBoost 에 더함]
+    phaseRangeBoost: float [20][가속 시 range 에 더함]
     useTime: float [400][메타 사용 주기. 60으로 나누면 초 단위]
 
 특이사항(스프라이트)
