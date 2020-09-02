@@ -11,7 +11,7 @@
     length: int [10][
     tendrills: int [6][
 
-특이사항(기본값)
+특이사항(기본값 필드)
     update: boolean [기본값: false][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
     destructible: boolean [기본값: true][체력을 보유하고, 파괴될 수 있는 여부]
     solid: boolean [기본값: false][지상 유닛이 지나갈 수 없는 여부]

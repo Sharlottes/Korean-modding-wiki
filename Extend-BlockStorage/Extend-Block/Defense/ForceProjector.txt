@@ -14,7 +14,7 @@
     cooldownBrokenBase: float [0.35][보호막 회복 연산에 사용됨, 아래에서 후술]
     basePowerDraw: float [0.2][???]
 
-특이사항(기본값) 필드
+특이사항(기본값 필드)
     update: boolean [기본값: true][TileEntity 를 가짐으로써 다른 엔티티와 상호작용하는 여부]
     solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
     hasItems: boolean [기본값: true][아이템을 보유하는 여부]

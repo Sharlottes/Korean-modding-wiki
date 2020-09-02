@@ -13,7 +13,7 @@
     updateEffect: {Effect} [기본값: none][블록에서 생기는 랜덤 그래픽 효과, 잘 되지 않음]
     updateEffectChance: float [기본값: 0.04][updateEffect 의 효과 생성 확률]
 
-특이사항(기본값) 필드
+특이사항(기본값 필드)
     update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
     solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
     hasItems: boolean [기본값: true][아이템을 보유하는 여부]
