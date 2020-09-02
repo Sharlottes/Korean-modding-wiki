@@ -5,14 +5,14 @@
     보호막 프로젝터를 생각해 보자.
 
 일반 필드
-    phaseUseTime: float [350][메타 사용 주기, 60으로 나누면 초 단위]
-    phaseRadiusBoost: float	[80][가속 시 radius에 더함]
-    radius: float [101.7][기본 범주, 8로 나누면 타일 단위. 꼭짓점 끝과의 거리를 기준으로 함]
-    breakage: float	[550][보호막 hp]
-    cooldownNormal: float [1.75][보호막 회복 연산에 사용됨, 아래에서 후술]
-    cooldownLiquid: float [1.5][보호막 회복 연산에 사용됨, 아래에서 후술]
-    cooldownBrokenBase: float [0.35][보호막 회복 연산에 사용됨, 아래에서 후술]
-    basePowerDraw: float [0.2][???]
+    phaseUseTime: float [기본값: 350][메타 사용 주기, 60으로 나누면 초 단위]
+    phaseRadiusBoost: float	[기본값: 80][가속 시 radius에 더함]
+    radius: float [기본값: 101.7][기본 범주, 8로 나누면 타일 단위. 꼭짓점 끝과의 거리를 기준으로 함]
+    breakage: float	[기본값: 550][보호막 hp]
+    cooldownNormal: float [기본값: 1.75][보호막 회복 연산에 사용됨, 아래에서 후술]
+    cooldownLiquid: float [기본값: 1.5][보호막 회복 연산에 사용됨, 아래에서 후술]
+    cooldownBrokenBase: float [기본값: 0.35][보호막 회복 연산에 사용됨, 아래에서 후술]
+    basePowerDraw: float [기본값: 0.2][???]
 
 특이사항(기본값 필드)
     update: boolean [기본값: true][TileEntity 를 가짐으로써 다른 엔티티와 상호작용하는 여부]

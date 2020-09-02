@@ -7,9 +7,9 @@
     "출력"에 뭘 넣든 상관없이 입력된 모든 아이템들을 출력하기 때문에 액체가 아닌 아이템을 입력으로 취할 수 없습니다.
 
 일반 필드
-    results: [{ItemStack}] [][필수로 꼭 넣으셔야 합니다!]
+    results: [{ItemStack}] [기본값: ][필수로 꼭 넣으셔야 합니다!]
     craftTime: float [기본값: ][아이템을 제작하는데 걸리는 시간. 60으로 나누면 초 단위]
-    spinnerSpeed: float [3][Spinner 스프라이트가 돌아가는 속도]
+    spinnerSpeed: float [기본값: 3][Spinner 스프라이트가 돌아가는 속도]
 
 특이사항(기본값 필드)
     update: boolean [기본값: true][TileEntity 를 가짐으로써 다른 엔티티와 상호작용하는 여부]

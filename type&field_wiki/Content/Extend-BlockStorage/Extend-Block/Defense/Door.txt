@@ -5,8 +5,8 @@
     유일하게 solidfies가 쓰이는 블록입니다!
 
 일반 필드
-    openfx: {Effect} [dooropen][문이 열릴때 생기는 그래픽 효과]
-    closefx: {Effect} [doorclose][문이 닫힐때 생기는 그래픽 효과]
+    openfx: {Effect} [기본값: dooropen][문이 열릴때 생기는 그래픽 효과]
+    closefx: {Effect} [기본값: doorclose][문이 닫힐때 생기는 그래픽 효과]
 
 특이사항(기본값 필드)
     solid: boolean [기본값: false][지상 유닛이 지나갈 수 없는 여부]

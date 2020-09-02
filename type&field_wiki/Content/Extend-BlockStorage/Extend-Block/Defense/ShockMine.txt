@@ -5,11 +5,11 @@
     지뢰입니다!
 
 일반 필드
-    cooldown: float [80][전격 주기, 60으로 나누면 초 단위]
-    tileDamage: float [5][자신이 받는 데미지]
-    damage: float [13][전격 데미지]
-    length: int [10][전격 길이. 타일 단위]
-    tendrills: int [6][전격 개수]
+    cooldown: float [기본값: 80][전격 주기, 60으로 나누면 초 단위]
+    tileDamage: float [기본값: 5][자신이 받는 데미지]
+    damage: float [기본값: 13][전격 데미지]
+    length: int [기본값: 10][전격 길이. 타일 단위]
+    tendrills: int [기본값: 6][전격 개수]
 
 특이사항(기본값 필드)
     update: boolean [기본값: false][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]

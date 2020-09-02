@@ -6,7 +6,7 @@
     실리콘 제련소, 설금 제련소 등등이 GenericSmelter 다.
 
 일반 필드
-    flameColor: {Color} [ffc999][중앙에 생기는 공돌이의 색]
+    flameColor: {Color} [기본값: ffc999][중앙에 생기는 공돌이의 색]
 
 특이사항(스프라이트)
     이름-top: 공돌이의 스프라이트
