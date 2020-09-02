@@ -1,0 +1,14 @@
+타입 이름: StaicWall
+포함 대상: Rock
+
+일반 필드
+
+
+특이사항(기본값) 필드
+breakable: boolean [기본값: false][우클릭으로 철거할 수 있는 여부]
+alwaysReplace: boolean [기본값: false][언제나 교체될 수 있는 여부]
+solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+variants: int [기본값: 2][타일 스프라이트 갯수를 결정, 스프라이트(블록 이름1...)를 만들어서 갯수를 늘릴 수 있습니다]
+
+특이사항(스프라이트)
+블록 이름-large: [블록의 2*2 변형 모델의 이미지 설정]

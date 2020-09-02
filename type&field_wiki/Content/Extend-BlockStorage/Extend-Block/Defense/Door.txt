@@ -1,0 +1,17 @@
+타입 이름: Door
+포함 대상: Wall
+
+설명:
+    유일하게 solidfies가 쓰이는 블록입니다!
+
+일반 필드
+    openfx: {Effect} [dooropen][문이 열릴때 생기는 그래픽 효과]
+    closefx: {Effect} [doorclose][문이 닫힐때 생기는 그래픽 효과]
+
+특이사항(기본값 필드)
+    solid: boolean [기본값: false][지상 유닛이 지나갈 수 없는 여부]
+    solidifes: boolean [기본값: true][지상유닛이 지나갈 수 있게 될 수 있는 여부, 오직 type: door 를 위한 필드]
+    consumesTap: boolean [기본값: true][눌러졌을 때 touchDown 이벤트를 요구하는 여부]
+
+특이사항(스프라이트)
+    이름-open: 열려진 상태의 모습

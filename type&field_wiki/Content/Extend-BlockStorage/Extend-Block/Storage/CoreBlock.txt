@@ -1,0 +1,15 @@
+CoreBlock
+
+Extends StorageBlock
+
+
+일반
+mech: {Mech} [starter]
+
+기본값
+solid: boolean [true]
+update: boolean [true]
+hasItems: boolean [true]
+activeSound: [respawning]
+activeSoundVolueme: [1]
+layer: [overlay]

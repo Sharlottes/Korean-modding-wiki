@@ -1,0 +1,10 @@
+StorageBlock
+
+Extends Block
+
+
+일반
+
+
+기본값
+hasItems: boolean [true]

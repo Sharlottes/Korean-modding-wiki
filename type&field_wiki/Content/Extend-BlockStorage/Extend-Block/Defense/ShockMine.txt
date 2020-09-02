@@ -1,0 +1,20 @@
+타입 이름: ShockMine
+포함 대상: Block
+
+설명:
+    지뢰입니다!
+
+일반 필드
+    cooldown: float [80][전격 주기, 60으로 나누면 초 단위]
+    tileDamage: float [5][자신이 받는 데미지]
+    damage: float [13][전격 데미지]
+    length: int [10][전격 길이. 타일 단위]
+    tendrills: int [6][전격 개수]
+
+특이사항(기본값 필드)
+    update: boolean [기본값: false][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    destructible: boolean [기본값: true][체력을 보유하고, 파괴될 수 있는 여부]
+    solid: boolean [기본값: false][지상 유닛이 지나갈 수 없는 여부]
+    targetable: boolean [기본값: false][유닛들이 이 블록을 조준하는 여부]
+    layer: {Layer} [기본값: overlay][특별 레이어, js 에서 사용됨]
+    rebuildable: boolean [기본값: false][건설 드론이 재건설할 수 있는 여부]

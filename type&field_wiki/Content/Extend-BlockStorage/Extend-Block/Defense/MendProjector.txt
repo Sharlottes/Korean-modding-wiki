@@ -1,0 +1,18 @@
+타입 이름: MendProjector
+포함 대상: Block
+
+설명:
+    타입 이름 자체가 너무 단순명확한 설명을 하고 있어서..
+
+일반 필드
+    baseColor: {Color} [84f491][활성화 시 생기는 그래픽 효과의 색]
+    phaseColor: {Color} [ffd59e][가속 시 생기는 그래픽 효과의 색]
+    reload: float [250][힐 주기. 60으로 나누면 초 단위]
+    range: float [60][힐 사거리. 8로 나누면 타일 단위]
+    healPercent: float [12][대상 hp 기준 healPercent% 만큼 회복]
+    phaseBoost: float [12][가속 시 healPercent 에 더함]
+    phaseRangeBoost: float [50][가속 시 range 에 더함]
+    useTime: float [400][메타 사용 주기. 60으로 나누면 초 단위]
+
+특이사항(스프라이트)
+    이름-top: 프로젝터가 활성화되면 반투명하게 생겼다 사라지는 부분
