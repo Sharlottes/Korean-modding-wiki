@@ -8,4 +8,4 @@ itemCapacity: int [기본값: 10][아이템 저장용량]
 liquidCapacity: float [기본값: 10][액체 저장용량]
 liquidPressure: float [기본값: 1][
 item: float [기본값: 10][
-consumes: {Consumers}[기본값: ][
+consumes: {Consumers} [기본값: ][
