@@ -6,6 +6,5 @@ consumesPower: boolean [기본값: true][전력을 소모하는 여부]
 outputsPower: boolean [기본값: false][전력을 출력하는 여부]
 itemCapacity: int [기본값: 10][아이템 저장용량]
 liquidCapacity: float [기본값: 10][액체 저장용량]
-liquidPressure: float [기본값: 1][
-item: float [기본값: 10][
+liquidPressure: float [기본값: 1][액체 압력]
 consumes: {Consumers} [기본값: ][
