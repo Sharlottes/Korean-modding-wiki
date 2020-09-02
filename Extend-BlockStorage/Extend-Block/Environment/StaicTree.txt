@@ -1,2 +1,0 @@
-타입 이름: StaicTree
-포함 대상: StaicWall

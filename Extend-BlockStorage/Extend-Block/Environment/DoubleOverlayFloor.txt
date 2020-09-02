@@ -1,2 +1,0 @@
-타입 이름: DoubleOverlayFloor
-포함 대상: OverlayFloor

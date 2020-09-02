@@ -1,5 +1,0 @@
-타입 이름: OverlayFloor
-포함 대상: Floor
-
-
-
