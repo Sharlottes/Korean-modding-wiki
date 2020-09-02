@@ -1,0 +1,12 @@
+타입 이름: DeflectorWall
+포함 대상: Wall
+
+설명:
+    낮은 데미지의 탄환들을 반사하는 벽입니다.
+
+일반 필드
+    hitTime: float [10][
+    maxDamageDeflect: float [10][반사할 수 있는 최댓값]
+
+특이사항(기본값) 필드
+

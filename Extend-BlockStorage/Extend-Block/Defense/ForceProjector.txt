@@ -1,0 +1,35 @@
+타입 이름: ForceProjector
+포함 대상: Block
+
+설명:
+    보호막 프로젝터를 생각해 보자.
+
+일반 필드
+    phaseUseTime: float [350][
+    phaseRadiusBoost: float	[80][
+    radius: float	[101.7][
+    breakage: float	[550][
+    cooldownNormal: float [1.75][
+    cooldownLiquid: float [1.5][
+    cooldownBrokenBase: float [0.35][
+    basePowerDraw: float [0.2][
+
+특이사항(기본값) 필드
+    update: boolean [기본값: ][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: ][지상 유닛이 지나갈 수 없는 여부]
+    hasItems: boolean [기본값: ][아이템을 보유하는 여부]
+    canOverdrive: boolean [기본값: true][과부하를 받는 여부]
+    hasLiquids: boolean [기본값: ][액체를 보유하는 여부]
+    hasPower: boolean [기본값: ][전력을 보유하는 여부]
+    consumes: {Consumers} [기본값: {cold-liquid}][
+
+특이사항(스프라이트)
+    이름-top: 보호막이 과부화되는걸 표시하는 부분
+
+특이사항(cold-liquid)
+    액체의
+        온도가 0.5 이하여야 합니다.
+        인화성이 0.1 이하여야 합니다.
+        booster가 true여야 합니다.
+        iptional가 true여야 합니다.
+        update가 flase여야 합니다.
