@@ -1,0 +1,17 @@
+타입 이름: MassDriver
+포함 대상: Block
+
+설명:
+    driverBolt 탄환을 이용하여 아이템들을 전송시킵니다.
+
+일반 필드
+    range: float [기본값: ][driverBolt 탄환의 최대 사거리로 인해 바꿀 수 없습니다]
+    rotateSpeed: float [기본값: 0.04][포신 회전 속도]
+    translation: float [기본값: 7][
+    minDistribute: int [기본값: 10][
+    knockback: float [기본값: 4][
+    reloadTime: float [기본값: 100][다시 발사하는 주기. 60으로 나누면 초 단위]
+    shootEffect: {Effect} [기본값: shootBig2][
+    smokeEffect: {Effect} [기본값: shootBigSmoke2][
+    recieveEffect: {Effect} [기본값: mineBig][
+    shake: float [기본값: 3][

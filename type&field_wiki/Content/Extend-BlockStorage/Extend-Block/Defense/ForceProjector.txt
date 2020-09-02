@@ -41,6 +41,6 @@
         보호막이 켜지고 액체가 들어갔을 때
             틱당 1.5*1.75*(1+(액체의 heatCapacity-0.4)*0.9) 회복
         보호막이 꺼졌을 때
-            틱당 0.35 회복
+            틱당 cooldownBrokenBase 만큼 회복
         보호막이 꺼지고 액체가 들어갔을 때
-            틱당 0.35*1.75*(1+(액체의 heatCapacity-0.4)*0.9) 회복
+            틱당 cooldownBrokenBase*1.75*(1+(액체의 heatCapacity-0.4)*0.9) 회복
