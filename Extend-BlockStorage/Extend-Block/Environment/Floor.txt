@@ -7,80 +7,40 @@ this는 그 블록 자신을 말합니다. 모드일 경우 꼭 모드명-블록
 
 hjson 또는 json으로 저장한 파일은 content-blocks-environment 경로로, 스프라이트는 sprites-blocks-environment 경로로 저장하시면 됩니다.
 
- 필드 목록
 
-variants: int [기본값: 3][타일 스프라이트 갯수를 결정, 스프라이트(블록 이름1...)를 만들어서 갯수를 늘릴 수 있습니다]
-edge: string [기본값: stone][타일간 경계(가장자리) 모양을 결정, 스프라이트(블록 이름-edge)를 만들어서 경계 모양을 바꿀 수 있습니다]
-speedMultiplier: float [기본값: 1][유닛이 타일 위를 걸어갈 때 이동속도에 곱함]
-dragMultiplier: float [기본값: 0][유닛이 타일 위를 걸어갈 때 마찰력에 곱함]
-damageTaken: float [기본값: 0][1틱당 받는 데미지]
-drownTime: float [기본값: 0][익사할때 걸리는 틱 수]
-walkEffect: {Effect} [기본값: ripple][유닛이 타일 위를 걸어갈 때 생기는 그래픽 효과]
-drownUpdateEffect: {Effect} [기본값: bubble][유닛이 타일에 익사되는 중에 생기는 그래픽 효과]
-status: {StatusEffect} [기본값: none][유닛이 타일 위를 걸어갈 때 생기는 상태이상 효과]
-statusDuration: float [기본값: 60][상태이상 지속 틱 수]
-liquidDrop: {Liquid} [기본값: ][펌프를 사용했을 때 나오는 액체]
-itemDrop: {Item} [기본값: ][드릴을 사용했을 때 나오는 아이템]
-isLiquid: boolean [기본값: ][타일이 익사시킬 수 있는 여부]
-playerUnmineable: boolean [기본값: false][플레이어에 의해 채광되지 않는 여부]
-blendGroup: {Block} [기본값: this][타일간 경계 모양을 결정하지 않는 블록을 결정]
-updateEffect: {Effect} [기본값: none][블록에서 생기는 랜덤 그래픽 효과, 잘 되지 않음]
+일반 필드
+    variants: int [기본값: 3][타일 스프라이트 갯수를 결정, 스프라이트(블록 이름1...)를 만들어서 갯수를 늘릴 수 있습니다]
+    edge: string [기본값: stone][타일간 경계(가장자리) 모양을 결정, 스프라이트(블록 이름-edge)를 만들어서 경계 모양을 바꿀 수 있습니다]
+    speedMultiplier: float [기본값: 1][유닛이 타일 위를 걸어갈 때 이동속도에 곱함]
+    dragMultiplier: float [기본값: 0][유닛이 타일 위를 걸어갈 때 마찰력에 곱함]
+    damageTaken: float [기본값: 0][1틱당 받는 데미지]
+    drownTime: float [기본값: 0][익사할때 걸리는 틱 수]
+    walkEffect: {Effect} [기본값: ripple][유닛이 타일 위를 걸어갈 때 생기는 그래픽 효과]
+    drownUpdateEffect: {Effect} [기본값: bubble][유닛이 타일에 익사되는 중에 생기는 그래픽 효과]
+    status: {StatusEffect} [기본값: none][유닛이 타일 위를 걸어갈 때 생기는 상태이상 효과]
+    statusDuration: float [기본값: 60][상태이상 지속 틱 수]
+    liquidDrop: {Liquid} [기본값: ][펌프를 사용했을 때 나오는 액체]
+    itemDrop: {Item} [기본값: ][드릴을 사용했을 때 나오는 아이템]
+    isLiquid: boolean [기본값: ][타일이 익사시킬 수 있는 여부]
+    playerUnmineable: boolean [기본값: false][플레이어에 의해 채광되지 않는 여부]
+    blendGroup: {Block} [기본값: this][타일간 경계 모양을 결정하지 않는 블록을 결정]
+    updateEffect: {Effect} [기본값: none][블록에서 생기는 랜덤 그래픽 효과, 잘 되지 않음]
+    attributes: {Attributes} [기본값: ][각 블록간의 효율성 상호작용, attributes: {array:[a, b, c, d]} 형식으로 작성하며
+            a는 뜨거운, b는 포자스러운, c는 수분, d는 기름진으로 해석된다.
+                열발전소: (깔고 있는 모든 타일의 a값 총합)*60 발전,
+                온실: (깐 모든 타일의 b값 합+1)*100% 가속.
+                물추출기/석유추출기: (기본 효율+깐 모든 타일의 c혹은d값 합)*100% 가속
+            일반적으로 0~1 실수값이 밸런스에 맞으며, 1를 초과해도 된다.]
+    oreDefault: boolean [기본값: false][이 광석이 기본적으로 맵에 생성되는 여부]
+    oreScale: float [기본값: 24][광석 생성 매개변수]
+    oreThreshold: float [기본값: 0.828][광석 생성 매개변수]
 
-attributes: {Attributes} [기본값: ][각 블록간의 효율성 상호작용, attributes: {array:[a, b, c, d]} 형식으로 작성하며
-        a는 뜨거운, b는 포자스러운, c는 수분, d는 기름진으로 해석된다.
-            열발전소: (깔고 있는 모든 타일의 a값 총합)*60 발전,
-            온실: (깐 모든 타일의 b값 합+1)*100% 가속.
-            물추출기/석유추출기: (기본 효율+깐 모든 타일의 c혹은d값 합)*100% 가속
-        일반적으로 0~1 실수값이 밸런스에 맞으며, 1를 초과해도 된다.]
+특이사항(기본값) 필드
 
-oreDefault: boolean [기본값: false][이 광석이 기본적으로 맵에 생성되는 여부]
-oreScale: float [기본값: 24][광석 생성 매개변수]
-oreThreshold: float [기본값: 0.828][광석 생성 매개변수]
 
-복사용(기본값)
-variants: 3
-edge: stone
-speedMultiplier: 1
-dragMultiplier: 0
-damageTaken: 0
-drownTime: 0
-walkEffect: ripple
-drownUpdateEffect: bubble
-status: none
-statusDuration: 60
-liquidDrop:
-itemDrop:
-isLiquid:
-playerUnmineable: false
-blendGroup: this
-updateEffect: none
-attributes: [0, 0, 0, 0]
-oreDefault: false
-oreScale: 24
-oreThreshold: 0.828
-
-복사용(공백)
-variants:
-edge: stone
-speedMultiplier:
-dragMultiplier:
-damageTaken:
-drownTime:
-walkEffect:
-drownUpdateEffect:
-status:
-statusDruation:
-liquidDrop:
-itemDrop:
-isLiquid:
-playerUnmineable:
-blendGroup:
-updateEffect:
-attributes:
-oreDefault:
-oreScale:
-oreThreshold:
-
+특이사항(스프라이트)
+    이름1..: 이름1, 이름2, 이름3 순서로 작성하며, variants값 만큼 만들면 된다.
+    이름-edge: edge에서 쓰일 부분.
 
 
 
