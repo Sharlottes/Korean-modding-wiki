@@ -8,9 +8,8 @@
 
 일반 필드
     results: [{ItemStack}] [][필수로 꼭 넣으셔야 합니다!]
-    craftTime: float [][제작 시간]
+    craftTime: float [기본값: ][아이템을 제작하는데 걸리는 시간]
     spinnerSpeed: float [3][Spinner 스프라이트가 돌아가는 속도]
-    color: {Color} [858585][???]
 
 특이사항(기본값) 필드
     update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
