@@ -1,0 +1,16 @@
+타입 이름: Sorter
+포함 대상: Block
+
+설명:
+    흔한 필터
+
+일반 필드
+    invert: boolean [기본값: ][옵션. false 는 필터, true는 반전필터]
+
+특이사항(기본값 필터)
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    instantTransfer: boolean [기본값: true][즉시 아이템 운반 여부]
+    group: {BlockGroup} [기본값: transportation][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체할 수 있습니다]
+    configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
+    unloadable: boolean [기본값: false][언로더가 작동되는 여부]
