@@ -53,11 +53,11 @@
     outlineIcon: boolean [기본값: false][블록 스프라이트에 포탑처럼 외곽선(테두리)가 더해지는 여부]
     hasShadow: boolean [기본값: true][밑에 그림자를 가질 여부]
     breakSound: {Sound} [기본값: boom][이 블록이 부숴질 때 생기는 소리]
-    albedo: float [기본값: 0][How reflective this block is.]
-    lightColor: {Color} [기본값: white][Environmental passive light color.]
+    albedo: float [기본값: 0][ 행성에서 해당 바닥이 얼마나 반짝거리는지. 현제 물만 0.5]
+    lightColor: {Color} [기본값: white][해당 바닥이 내는 빛의 색]
 
     emitLight: boolean [기본값: false][6.0/Environment 블록이 항시 빛을 방출할 여부, Environment 블록 외엔 해당되지 않음]
-    lightRadius: float [기본값: 60][Radius of the light emitted by this block]
+    lightRadius: float [기본값: 60][이 블록에서 방출될 빛의 반지름. 8로 나누면 타일 단위]
 
     activeSound: {Sound} [기본값: none][소리. 용도가 다다름]
     activeSoundVolume: float [기본값: 0.5][activeSound의 기본 볼륨을 곱함]
@@ -69,7 +69,7 @@
     category: {Category} [기본값: distribution][메뉴 배치되는 카테고리]
     buildCost: float [기본값: ][이 블록을 짓는 비용; 절대 직접 수정하지 마시오!]
     buildVisibility: {BuildVisibility} [기본값: hidden][블록이 보여지는 게임모드]
-    buildPlaceability: {BuildPlaceability} [기본값: always][Defines when this block can be placed.]
+    buildPlaceability: {BuildPlaceability} [기본값: always][언제 이 블록을 사용할 수 있는지 설정]
     buildCostMultiplier: float [기본값: 1][서바이벌에서 건설하는데 걸리는 시간의 배수]
     instantTransfer: boolean [기본값: false][즉시 아이템 운반 여부]
 
@@ -86,7 +86,7 @@
     outputsLiquid: boolean [기본값: false][액체를 출력하는 여부]
     consumesPower: boolean [기본값: true][전력을 소모하는 여부]
     outputsPower: boolean [기본값: false][전력을 출력하는 여부]
-    outputsPayload: boolean [기본값: false][
+    outputsPayload: boolean [기본값: false][대형 컨베이어로 무언가를 내보낼 수 있는 여부]
     outputFacing: boolean [기본값: true][
     acceptsItems: boolean [기본값: false][
 

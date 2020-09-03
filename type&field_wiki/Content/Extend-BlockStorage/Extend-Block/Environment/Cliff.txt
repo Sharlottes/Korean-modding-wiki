@@ -16,3 +16,4 @@
     cacheLayer: {CacheLayer} [기본값: walls][CacheLayer의 쉐이더를 표현해준다. wall는 모름]
     filesTile: boolean [기본값: false][블록 스프라이트가 정사각형이여서 블록을 채우는 여부]
     hasShadow: boolean [기본값: false][밑에 그림자를 가질 여부]
+S
