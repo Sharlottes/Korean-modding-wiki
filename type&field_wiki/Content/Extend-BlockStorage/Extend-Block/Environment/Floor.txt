@@ -1,18 +1,25 @@
+2020-08-09
+
+타입 이름: Floor
+포함 대상: Block
+
+설명:
 
 
 일반 필드
     variants: int [기본값: 3][타일 스프라이트 갯수를 결정, 스프라이트(블록 이름1...)를 만들어서 갯수를 늘릴 수 있습니다]
     edge: string [기본값: stone][타일간 경계(가장자리) 모양을 결정, 스프라이트(블록 이름-edge)를 만들어서 경계 모양을 바꿀 수 있습니다]
     speedMultiplier: float [기본값: 1][유닛이 타일 위를 걸어갈 때 이동속도에 곱함]
-    dragMultiplier: float [기본값: 0][유닛이 타일 위를 걸어갈 때 마찰력에 곱함]
+    dragMultiplier: float [기본값: 1][유닛이 타일 위를 걸어갈 때 마찰력에 곱함]
     damageTaken: float [기본값: 0][1틱당 받는 데미지]
     drownTime: float [기본값: 0][익사할때 걸리는 틱 수]
     walkEffect: {Effect} [기본값: ripple][유닛이 타일 위를 걸어갈 때 생기는 그래픽 효과]
     drownUpdateEffect: {Effect} [기본값: bubble][유닛이 타일에 익사되는 중에 생기는 그래픽 효과]
     status: {StatusEffect} [기본값: none][유닛이 타일 위를 걸어갈 때 생기는 상태이상 효과]
     statusDuration: float [기본값: 60][상태이상 지속 틱 수]
-    liquidDrop: {Liquid} [기본값: ][펌프를 사용했을 때 나오는 액체]
-    itemDrop: {Item} [기본값: ][드릴을 사용했을 때 나오는 아이템]
+    liquidDrop: {Liquid} [기본값: null][펌프를 사용했을 때 나오는 액체]
+    liquidMultiplier: float [기본값: 1][Multiplier for pumped liquids, used for deep water]
+    itemDrop: {Item} [기본값: null][드릴을 사용했을 때 나오는 아이템]
     isLiquid: boolean [기본값: ][타일이 익사시킬 수 있는 여부]
     playerUnmineable: boolean [기본값: false][플레이어에 의해 채광되지 않는 여부]
     blendGroup: {Block} [기본값: this][타일간 경계 모양을 결정하지 않는 블록을 결정]
@@ -26,9 +33,8 @@
     oreDefault: boolean [기본값: false][이 광석이 기본적으로 맵에 생성되는 여부]
     oreScale: float [기본값: 24][광석 생성 매개변수]
     oreThreshold: float [기본값: 0.828][광석 생성 매개변수]
-
-특이사항(기본값) 필드
-
+    wall: {Block} [기본값: air][Wall variant of this block. May be Blocks.air if not found.]
+    decoration: {Block} [기본값: air][Decoration block. Usually a rock. May be air.]
 
 특이사항(스프라이트)
     이름1..: 이름1, 이름2, 이름3 순서로 작성하며, variants값 만큼 만들면 된다.
