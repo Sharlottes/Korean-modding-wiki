@@ -8,7 +8,7 @@ size: 3
 hasItems: true
 hasPower: true
 craftTime: 40
-itemCapacity: 10
+itemCapacity: 20
 consumes: {
   power: 0.6
   items: {

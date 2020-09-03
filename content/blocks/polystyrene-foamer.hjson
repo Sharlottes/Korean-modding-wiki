@@ -9,8 +9,8 @@ hasLiquids: true
 hasItems: true
 hasPower: true
 craftTime: 90
-itemCapacity: 10
-liquidCapacity: 10
+itemCapacity: 20
+liquidCapacity: 20
 updateEffect: plasticExplosion
 consumes: {
   power: 1.8

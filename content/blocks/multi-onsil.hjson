@@ -8,8 +8,8 @@ size: 2
 hasItems: true
 hasPower: true
 craftTime: 80
-itemCapacity: 10
-liquidCapacity: 10
+itemCapacity: 20
+liquidCapacity: 100
 consumes: {
   power: 1.8
   liquid: {
