@@ -1,3 +1,5 @@
+2020-08-24
+
 타입 이름: Router
 포함 대상: Block
 
@@ -5,7 +7,7 @@
     router-chain
 
 일반 필드
-
+    speed: float [기본값: 8][
 
 특이사항(기본값 필드)
     solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
@@ -14,4 +16,5 @@
     itemCapacity: int [기본값: 1][아이템 저장용량]
     group: {BlockGroup} [기본값: transportation][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체할 수 있습니다]
     unloadable: boolean [기본값: false][언로더가 작동되는 여부]
+    noUpdateDisabled: boolean [기본값: true][if true, the block stops updating when disabled]
 
