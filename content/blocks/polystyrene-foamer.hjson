@@ -8,17 +8,9 @@ size: 2
 hasLiquids: true
 hasItems: true
 hasPower: true
-craftTime: 90
 itemCapacity: 20
 liquidCapacity: 20
-updateEffect: plasticExplosion
-consumes: {
-  power: 1.8
-  liquid: {
-    liquid: benzene
-    amount: 0.1
-  }
-}
+
 requirements: [
   copper/80
   lead/100
@@ -26,7 +18,20 @@ requirements: [
   titanium/80
 ]
 
-category: production
+consumes: {
+  power: 1.8
+  liquid: {
+    liquid: benzene
+    amount: 0.1
+  }
+}
+
+craftTime: 90
+craftEffect: plasticExplosion
+updateEffect: lightningCharge
+updaateEffectChance: 0.1
+
 idleSound: artillery
-idleSoundVolume: 0.5
-outputItem: styrene/3
+idleSoundVolume: 0.25
+
+category: crafting

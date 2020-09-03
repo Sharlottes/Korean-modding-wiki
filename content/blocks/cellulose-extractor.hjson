@@ -7,9 +7,15 @@ size: 2
 
 hasItems: true
 hasPower: true
-craftTime: 80
 itemCapacity: 10
-updateEffect: lightningCharge
+
+requirements: [
+  copper/25
+  lead/20
+  titanium/20
+  silicon/20
+]
+
 consumes: {
   power: 1.0
   items: {
@@ -18,14 +24,14 @@ consumes: {
     ]
   }
 }
-requirements: [
-  copper/25
-  lead/20
-  titanium/20
-  silicon/20
-]
-
-category: production
-idleSound: shotgun
-idleSoundVolume: 0.75
 outputItem: cellulose/1
+
+craftTime: 80
+craftEffect: lightning
+updateEffect: lightningCharge
+updaateEffectChance: 0.1
+
+idleSound: shotgun
+idleSoundVolume: 0.25
+
+category: crafting

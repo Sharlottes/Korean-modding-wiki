@@ -7,8 +7,14 @@ size: 3
 
 hasItems: true
 hasPower: true
-craftTime: 39.6
 itemCapacity: 20
+
+requirements: [
+  copper/125
+  graphite/80
+  titanium/40
+]
+
 consumes: {
   power: 0.45
   items: {
@@ -19,11 +25,12 @@ consumes: {
     ]
   }
 }
-requirements: [
-  copper/125
-  graphite/80
-  titanium/40
-]
-
-category: production
 outputItem: pyratite/2
+
+craftTime: 39.6
+craftEffect: melting
+
+outlineIcon: true
+outlineColor: ffaa5f
+
+category: crafting

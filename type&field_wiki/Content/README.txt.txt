@@ -31,3 +31,6 @@ hjson 또는 json으로 저장한 파일은 content-blocks-environment 경로로
 
 {StatusEffect} 목록
     none, burning, freezing, wet, melting, tarred, overdrive, shielded, boss, shocked, corroded
+
+{Category} 목록
+    turret, production, distribution, liquid, power, defense, crafting, units, effect, logic

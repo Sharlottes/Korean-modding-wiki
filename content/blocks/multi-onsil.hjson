@@ -1,5 +1,5 @@
 name: multi onsil
-description: s
+description: idk what is onsil. but onsil is onsil.
 type: GenericCrafter
 
 health: 350
@@ -7,9 +7,15 @@ size: 2
 
 hasItems: true
 hasPower: true
-craftTime: 80
 itemCapacity: 20
 liquidCapacity: 100
+
+requirements: [
+  lead/65
+  titanium/40
+  metaglass/50
+]
+
 consumes: {
   power: 1.8
   liquid: {
@@ -17,11 +23,12 @@ consumes: {
     amount: 0.6
   }
 }
-requirements: [
-  lead/65
-  titanium/40
-  metaglass/50
-]
-
-category: production
 outputItem: spore-pod/2
+
+craftTime: 80
+craftEffect: steam
+
+outlineIcon: true
+outlineColor: 9e78dc
+
+category: crafting

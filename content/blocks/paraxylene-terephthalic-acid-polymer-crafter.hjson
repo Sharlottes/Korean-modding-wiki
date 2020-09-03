@@ -8,17 +8,9 @@ size: 2
 hasLiquids: true
 hasItems: true
 hasPower: true
-craftTime: 90
 itemCapacity: 20
 liquidCapacity: 20
-updateEffect: teleportActivate
-consumes: {
-  power: 0.8
-  liquid: {
-    liquid: xylene
-    amount: 0.05
-  }
-}
+
 requirements: [
   copper/80
   lead/80
@@ -26,7 +18,21 @@ requirements: [
   silicon/50
 ]
 
-category: production
-idleSound: press
-idleSoundVolume: 0.5
+consumes: {
+  power: 0.8
+  liquid: {
+    liquid: xylene
+    amount: 0.05
+  }
+}
 outputItem: pet/3
+
+craftTime: 90
+craftEffect: teleportActivate
+updateEffect: lightningCharge
+updaateEffectChance: 0.1
+
+idleSound: press
+idleSoundVolume: 0.25
+
+category: crafting

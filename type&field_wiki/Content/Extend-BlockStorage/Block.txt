@@ -45,6 +45,8 @@
     drawLiquidLight: boolean [기본값: true][이 블록에 액체가 있는 경우, 액체의 광채를 그리는 여부]
     sync: boolean [기본값: ][원심분리기처럼 이 블록 속에 든 자원 등이 주기적으로 강제 동기화 되는 여부]
     conveyorPlacement: boolean [기본값: ][Whether this block uses conveyor-type placement mode]
+
+
     mapColor: {Color} [기본값: [0, 0, 0, 1][미니맵이나 맵 미리보기에서 보여지는 블록 색입니다. 절대로 직접 수동적으로 수정하지 마십시오!]
     hasColor: boolean [기본값: false][6.0/미니맵 색을 가지고 있는 여부]
     targetable: boolean [기본값: true][유닛들이 이 블록을 조준하는 여부]
