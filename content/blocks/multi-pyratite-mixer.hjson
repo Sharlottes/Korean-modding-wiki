@@ -1,0 +1,29 @@
+name: pyratite mixer
+description: the high level of pyratite mixer. you can make more blast more easier now!
+type: GenericCrafter
+
+health: 200
+size: 3
+
+hasItems: true
+hasPower: true
+craftTime: 80
+itemCapacity: 10
+updateEffect: lightningCharge
+consumes: {
+  power: 0.8
+  items: {
+    items: [
+      spore-pod/1
+    ]
+  }
+}
+requirements: [
+  copper/25
+  lead/20
+  titanium/25
+  silicon/10
+]
+
+category: production
+outputItem: pyratite/5

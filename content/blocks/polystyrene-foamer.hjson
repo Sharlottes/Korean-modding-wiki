@@ -1,0 +1,31 @@
+name: polystrene foamer
+description: making styrene!
+type: GenericCrafter
+
+health: 500
+size: 3
+
+hasLiquids: true
+hasItems: true
+hasPower: true
+craftTime: 90
+itemCapacity: 10
+liquidCapacity: 10
+updateEffect: plasticExplosion
+consumes: {
+  power: 1.8
+  liquids: {
+    benzene/6
+  }
+}
+requirements: [
+  copper/80
+  lead/100
+  graphite/40
+  titanium/80
+]
+
+category: production
+idleSound: artillery
+idleSoundVolume: 0.5
+outputItem: styrene/3
