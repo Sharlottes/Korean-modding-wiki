@@ -3,7 +3,7 @@ description: making styrene!
 type: GenericCrafter
 
 health: 500
-size: 3
+size: 2
 
 hasLiquids: true
 hasItems: true

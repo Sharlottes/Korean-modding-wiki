@@ -3,7 +3,7 @@ description: the high level of pyratite mixer. you can make more blast more easi
 type: GenericCrafter
 
 health: 350
-size: 3
+size: 2
 
 hasItems: true
 hasPower: true
