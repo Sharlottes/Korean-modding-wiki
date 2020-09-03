@@ -16,7 +16,7 @@ consumes: {
   power: 1.8
   liquid: {
     liquid: benzene
-    amount: 6
+    amount: 0.1
   }
 }
 requirements: [

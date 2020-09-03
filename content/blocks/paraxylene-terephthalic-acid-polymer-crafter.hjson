@@ -16,7 +16,7 @@ consumes: {
   power: 0.8
   liquid: {
     liquid: xylene
-    amount: 3
+    amount: 0.05
   }
 }
 requirements: [
