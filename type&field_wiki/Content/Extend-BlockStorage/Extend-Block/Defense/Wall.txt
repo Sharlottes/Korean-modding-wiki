@@ -1,3 +1,5 @@
+2020-08-24
+
 타입 이름: Wall
 포함 대상: Block
 
@@ -6,6 +8,14 @@
 
 일반 필드
     variants: int [기본값: 0][타일 스프라이트 갯수를 결정, 스프라이트(블록 이름1...)를 만들어서 갯수를 늘릴 수 있습니다. Wall은 잘 모르겠네요..]
+
+    lightningChance: float [기본값: 0.05][전격 생성 확률]
+    lightningDamage: float [기본값: 15][전격 데미지]
+    lightningLength: int [기본값: 17][전격 길이. 타일 단위]
+
+    chanceDeflect: float [기본값: 10][탄환 반사 확률]
+    flashWhite: boolean [기본값: ][
+    deflect: boolean [기본값: ][
 
 특이사항(기본값 필드)
     solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]

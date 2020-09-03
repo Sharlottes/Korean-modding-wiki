@@ -1,3 +1,5 @@
+2020-08-27
+
 타입 이름: ShockMine
 포함 대상: Block
 
@@ -16,5 +18,4 @@
     destructible: boolean [기본값: true][체력을 보유하고, 파괴될 수 있는 여부]
     solid: boolean [기본값: false][지상 유닛이 지나갈 수 없는 여부]
     targetable: boolean [기본값: false][유닛들이 이 블록을 조준하는 여부]
-    layer: {Layer} [기본값: overlay][특별 레이어, js 에서 사용됨]
     rebuildable: boolean [기본값: false][건설 드론이 재건설할 수 있는 여부]

@@ -1,3 +1,5 @@
+2020-07-30
+
 타입 이름: OverdriveProjector
 포함 대상: Block
 
@@ -13,6 +15,15 @@
     speedBoostPhase: float [기본값: 0.75][speedBoost 에 더함]
     phaseRangeBoost: float [기본값: 20][가속 시 range 에 더함]
     useTime: float [기본값: 400][메타 사용 주기. 60으로 나누면 초 단위]
+    hasBoost: boolean [기본값: true][가속템 보유 여부]
+
+특이사항(기본값 필드)
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    hasPower: boolean [기본값: true][전력을 보유하는 여부]
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    canOverdrive: boolean [기본값: false][과부하를 받는 여부]
+
 
 특이사항(스프라이트)
     이름-top: 프로젝터가 활성화되면 반투명하게 생겼다 사라지는 부분
