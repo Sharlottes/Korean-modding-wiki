@@ -1,7 +1,6 @@
 name: Calcium Phosphate
 description: yes, the P!
-type: material
-color: dcd16b
+color: ffe8aa
 explosiveness: 0
 flammability: 0
 radioactivity: 0

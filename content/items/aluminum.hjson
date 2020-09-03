@@ -1,7 +1,6 @@
 name: Aluminum
 description: you can make reinforced PET by this.
-type: material
-color: dcd16b
+color: 969696
 explosiveness: 0
 flammability: 0
 radioactivity: 0

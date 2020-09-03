@@ -1,7 +1,6 @@
 name: hematite
 description: i am iron man.
-type: material
-color: dcd16b
+color: e3d3ae
 explosiveness: 0
 flammability: 0
 radioactivity: 0
