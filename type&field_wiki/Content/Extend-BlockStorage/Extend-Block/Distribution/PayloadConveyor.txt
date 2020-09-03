@@ -1,0 +1,22 @@
+2020-08-28
+
+타입 이름: PayloadConveyor
+포함 대상: Block
+
+설명:
+
+
+일반 필드
+    moveTime: float [기본값: 60][
+    interp: {Interp} [기본값: pow5][
+
+특이사항(기본값 필드)
+    size: int [기본값: 3][한 변의 크기, 1이면 1x1, 2는 2x2..]
+    rotate: boolean [기본값: true][컨베이어처럼 방향이 있는 여부]
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    outputsPayload: boolean [기본값: true][
+    noUpdateDisabled: boolean [기본값: true][if true, the block stops updating when disabled]
+
+특이사항(스프라이트)
+    이름-top:
+    이름-edge:
