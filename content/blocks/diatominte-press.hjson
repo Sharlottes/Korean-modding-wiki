@@ -1,10 +1,12 @@
 name: diatominte presser
 description: press spore to get diatominte.
+type: GenericCrafter
 
 size: 2
-hasPower: true
 hasItems: true
+hasPower: true
 craftTime: 150
+itemCapacity: 20
 updateEffect: lightningCharge
 consumes: {
   power: 0.5
@@ -20,7 +22,8 @@ requirements: [
   iron/40
   aluminum/50
 ]
-category: productions
+
+category: production
 idleSound: respawning
 idleSoundVolume: 0.75
 outputItem: diatominte/1

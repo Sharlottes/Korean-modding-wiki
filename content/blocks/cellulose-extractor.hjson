@@ -1,6 +1,7 @@
 name: cellulose extractor
 description: extract celluloses from spore pods.
 type: GenericSmelter
+
 size: 2
 hasItems: true
 hasPower: true
@@ -21,6 +22,8 @@ requirements: [
   lead/150
   titanium/90
 ]
+
+category: production
 idleSoundVolume: 0.75
 idleSound: shotgun
 outputItem: cellulose/1

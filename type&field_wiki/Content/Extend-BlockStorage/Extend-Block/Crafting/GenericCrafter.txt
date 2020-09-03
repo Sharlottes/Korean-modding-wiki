@@ -12,12 +12,12 @@
     craftEffect: {Effect} [기본값: none][블록에서 아이템을 만들때 생기는 그래픽 효과, 잘 됨]
     updateEffect: {Effect} [기본값: none][블록에서 생기는 랜덤 그래픽 효과, 잘 되지 않음]
     updateEffectChance: float [기본값: 0.04][updateEffect 의 효과 생성 확률]
+    drawBlock: {DrawBlock} [기본값: ][
 
 특이사항(기본값 필드)
     update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
     solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
     hasItems: boolean [기본값: true][아이템을 보유하는 여부]
-    health: int [기본값: 60][체력, 체력 기본값 -1는 40인 셈]
     idleSound: {Sound} [기본값: machine][해당 블록의 화이트노이즈/배경음/ASMR. 예: 공장의 웅웅거리는 소리]
     idleSoundVolume: float [기본값: 0.03][idleSound의 기본 볼륨을 곱함]
-    sync: booelan [기본값: ][원심분리기처럼 이 블록 속에 든 자원 등이 주기적으로 강제 동기화 되는 여부]
+    sync: boolean [기본값: true][원심분리기처럼 이 블록 속에 든 자원 등이 주기적으로 강제 동기화 되는 여부]
