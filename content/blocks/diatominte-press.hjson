@@ -20,7 +20,7 @@ requirements: [
   iron/40
   aluminum/50
 ]
-category: crafting
+
 idleSound: respawning
 idleSoundVolume: 0.75
 outputItem: diatominte/1
