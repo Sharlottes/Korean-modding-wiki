@@ -15,7 +15,8 @@ updateEffect: plasticExplosion
 consumes: {
   power: 1.8
   liquids: {
-    benzene/6
+    liquid: benzene
+    amount: 6
   }
 }
 requirements: [

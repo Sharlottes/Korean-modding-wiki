@@ -14,8 +14,9 @@ liquidCapacity: 10
 updateEffect: teleportActivate
 consumes: {
   power: 0.8
-  items: {
-    xylene/3
+  liquids: {
+    liquid: xylene
+    amount: 3
   }
 }
 requirements: [

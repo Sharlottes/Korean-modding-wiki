@@ -2,28 +2,27 @@ name: multi blast mixer
 description: the high level of blast mixer. you can make more blast now!
 type: GenericCrafter
 
-health: 200
+health: 380
 size: 3
 
 hasItems: true
 hasPower: true
-craftTime: 80
+craftTime: 40
 itemCapacity: 10
-updateEffect: lightningCharge
 consumes: {
-  power: 0.8
+  power: 0.6
   items: {
     items: [
-      spore-pod/1
+      pyratite/2
+      spore-pod/3
     ]
   }
 }
 requirements: [
-  copper/25
-  lead/20
-  titanium/25
-  silicon/10
+  lead/130
+  titanium/40
+  thorium/25
 ]
 
 category: production
-outputItem: blast-compound/5
+outputItem: blast-compound/2
