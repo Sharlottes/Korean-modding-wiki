@@ -1,0 +1,8 @@
+타입 이름: OverflowGate
+포함 대상: Block
+
+설명: 오버플로, 언더플로 게이트로 쓰이는 타입입니다.
+
+일반 필드
+    speed: float [기본값: 1][
+    invert: boolean [기본값: flase][운반 우선 방향 전환 여부. flase는 오버플로, true는 언더플로 게이트로 만듭니다.]
