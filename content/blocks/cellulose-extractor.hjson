@@ -21,7 +21,6 @@ requirements: [
   lead/150
   titanium/90
 ]
-category: crafting
 idleSoundVolume: 0.75
-idleSound: 0.75
+idleSound: shotgun
 outputItem: cellulose/1
