@@ -2,25 +2,27 @@ name: diatominte presser
 description: press spore to get diatominte.
 type: GenericCrafter
 
+health: 200
 size: 2
+
 hasItems: true
 hasPower: true
-craftTime: 150
-itemCapacity: 20
+craftTime: 80
+itemCapacity: 10
 updateEffect: lightningCharge
 consumes: {
-  power: 0.5
+  power: 0.8
   items: {
     items: [
-        spore-pod/3
+      spore-pod/1
     ]
   }
 }
 requirements: [
-  silicon/50
-  titanium/100
-  iron/40
-  aluminum/50
+  copper/25
+  lead/20
+  titanium/25
+  silicon/10
 ]
 
 category: production

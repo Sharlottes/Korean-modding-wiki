@@ -2,28 +2,30 @@ name: cellulose extractor
 description: extract celluloses from spore pods.
 type: GenericSmelter
 
+health: 200
 size: 2
+
 hasItems: true
 hasPower: true
-craftTime: 30
-itemCapacity: 20
+craftTime: 80
+itemCapacity: 10
 updateEffect: lightningCharge
 consumes: {
-  power: 2.5
+  power: 1.0
   items: {
     items: [
-      spore-pod/5
+      spore-pod/1
     ]
   }
 }
 requirements: [
-  silicon/120
-  graphite/50
-  lead/150
-  titanium/90
+  copper/25
+  lead/20
+  titanium/20
+  silicon/20
 ]
 
 category: production
-idleSoundVolume: 0.75
 idleSound: shotgun
+idleSoundVolume: 0.75
 outputItem: cellulose/1

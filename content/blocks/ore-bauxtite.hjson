@@ -1,20 +1,3 @@
 type: OreBlock
 name: bauxtite ore
-variants: 3
-edge: stone
-speedMultiplier: 1
-dragMultiplier: 0
-damageTaken: 0
-drownTime: 0
-walkEffect: ripple
-drownUpdateEffect: bubble
-status: none
-statusDuration: 60
 itemDrop: aluminum-org
-playerUnmineable: false
-blendGroup: ww2-ore-bauxtite
-updateEffect: none
-attributes: {array:[0, 0, 0, 0]}
-oreDefault: true
-oreScale: 24
-oreThreshold: 0.828
