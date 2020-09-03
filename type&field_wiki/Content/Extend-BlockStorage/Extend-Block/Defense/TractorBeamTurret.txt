@@ -1,0 +1,29 @@
+2020-08-08
+
+타입 이름: PointDefenseTurret
+포함 대상: Block
+
+설명:
+
+일반 필드
+    retargetTime: float [기본값: 5][
+
+    range: float [기본값: 80][
+    rotateSpeed: float [기본값: 10][
+    shootCone: float [기본값: 6][
+    laserWidth: float [기본값: 0.6][
+    force: float [기본값: 0.3][
+    scaledForce: float [기본값: 0][
+    damage: float [기본값: 0][
+    targetAir: boolean [기본값: true][
+    targetGround: boolean [기본값: false][
+
+특이사항(기본값 필드)
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    outlineIcon: boolean [기본값: true][블록 스프라이트에 포탑처럼 외곽선(테두리)가 더해지는 여부]
+
+특이사항(스프라이트)
+    이름-size:
+    이름-laser:
+    이름-laser-end:
