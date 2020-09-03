@@ -1,3 +1,5 @@
+2020-08-24
+
 타입 이름: Conveyor
 포함 대상: Block
 
@@ -6,17 +8,21 @@
 
 일반 필드
     speed: float [기본값: 0][
+    displayedSpeed: float [기본값: 0][
 
 특이사항(기본값 필드)
     rotate: boolean [기본값: true][컨베이어처럼 방향이 있는 여부]
     update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
-    layer: {Layer} [기본값: overlay][특별 레이어, js 에서 사용됨]
     group: {BlockGroup} [기본값: transportation][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체할 수 있습니다]
     hasItems: boolean [기본값: true][아이템을 보유하는 여부]
     itemCapacity: int [기본값: 4][아이템 저장용량]
+    conveyorPlacement: boolean [기본값: true][Whether this block uses conveyor-type placement mode]
+
     idleSound: {Sound} [기본값: conveyor][해당 블록의 화이트노이즈/배경음/ASMR. 예: 공장의 웅웅거리는 소리]
     idleSoundVolume: float [기본값: 0.004][idleSound의 기본 볼륨을 곱함]
     unloadable: boolean [기본값: false][언로더가 작동되는 여부]
+    noUpdateDisabled: boolean [기본값: false][if true, the block stops updating when disabled]
+
 
 특이사항(스프라이트)
     이름-0..4, 0..3(솔직히 이거 설명하기 너무 복잡하니 링크 걸어둠)

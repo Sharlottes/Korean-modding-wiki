@@ -10,8 +10,23 @@
     translation: float [기본값: 7][
     minDistribute: int [기본값: 10][탄환 발사 아이템 최솟값]
     knockback: float [기본값: 4][탄환 도착 시 도착 매스 드라이버의 포신 넉백]
+    bulletSpeed: float [기본값: 5.5][
+    bulletLifetime: float [기본값: 200][
     reloadTime: float [기본값: 100][다시 발사하는 주기. 60으로 나누면 초 단위]
     shootEffect: {Effect} [기본값: shootBig2][탄환 발사 시 그래픽 효과]
     smokeEffect: {Effect} [기본값: shootBigSmoke2][탄환 발사 시 그래픽 효과]
-    recieveEffect: {Effect} [기본값: mineBig][탄환 도착 시 그래픽 효과]
+    receiveEffect: {Effect} [기본값: mineBig][탄환 도착 시 그래픽 효과]
     shake: float [기본값: 3][탄환 도착 시 화면 흔들림]
+
+특이사항(기본값 필드)
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    hasPower: boolean [기본값: true][전력을 보유하는 여부]
+    outlineIcon: boolean [기본값: true][블록 스프라이트에 포탑처럼 외곽선(테두리)가 더해지는 여부]
+    sync: boolean [기본값: true][원심분리기처럼 이 블록 속에 든 자원 등이 주기적으로 강제 동기화 되는 여부]
+
+특이사항(스프라이트)
+    이름-base:
+

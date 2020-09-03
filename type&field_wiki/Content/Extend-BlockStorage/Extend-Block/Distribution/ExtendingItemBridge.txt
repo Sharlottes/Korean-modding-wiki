@@ -1,3 +1,5 @@
+2020-08-12
+
 타입 이름: ExtendingItemBridge
 포함 대상: ItemBridge
 
