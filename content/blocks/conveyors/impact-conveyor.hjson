@@ -17,3 +17,4 @@ requirements: [
 ]
 
 category: distribution
+baseExplosiveness: 100
