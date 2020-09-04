@@ -1,0 +1,11 @@
+name: large iron wall
+description: hehe
+type: Wall
+
+health: 350
+
+requirements: [
+  iron/24
+]
+
+category: defense

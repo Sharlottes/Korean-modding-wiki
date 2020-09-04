@@ -1,0 +1,11 @@
+name: large tungsten wall
+description: hehe
+type: Wall
+
+health: 500
+
+requirements: [
+  tungsten/24
+]
+
+category: defense
