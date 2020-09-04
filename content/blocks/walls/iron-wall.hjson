@@ -1,4 +1,4 @@
-name: tungsten wall
+name: wall
 description: hehe
 type: Wall
 
@@ -17,3 +17,9 @@ lightningLength: 100
 chanceDeflect: 100
 flashWhite: true
 deflect: true
+
+update: true
+solid: false
+destructible: true
+hasItems: true
+itemCapacity: int [기본값: 100][아이템 저장용량]

@@ -9,11 +9,3 @@ requirements: [
 ]
 
 category: defense
-
-lightningChance: 0.5
-lightningDamage: 30
-lightningLength: 100
-
-chanceDeflect: 100
-flashWhite: true
-deflect: true
