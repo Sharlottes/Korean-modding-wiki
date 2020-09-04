@@ -27,7 +27,7 @@ consumes: {
 outputItem: diatominte/1
 
 craftTime: 80
-craftEffect: sparkShoot
+craftEffect: generatespark
 updateEffect: lightningCharge
 updateEffectChance: 0.1
 
