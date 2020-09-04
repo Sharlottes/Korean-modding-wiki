@@ -30,7 +30,7 @@
     health: int [기본값: -1][체력, 체력 기본값 -1는 40인 셈]
     baseExplosiveness: float [기본값: 0][블록 폭발성 기본값]
     floating: boolean [기본값: false][물의 가장자리 위에 지을 수 있는 여부]
-    size: int [기본값: 1][한 변의 크기, 1이면 1x1, 2는 2x2..]
+    size: int [기본값: 1][한 변의 크기, 넓이는 1이면 1x1, 2는 2x2..]
     offset: float [기본값: 0][multiblock offset]
     expanded: boolean [기본값: false][화면 밖으로 나갈 때 8블록쯤까지 그려지는 여부]
     timers: int [기본값: 0][new Interval에 할당되는 정숫값, JaveScript 전용]

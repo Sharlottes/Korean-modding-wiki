@@ -1,0 +1,20 @@
+2020-08-12
+
+타입 이름: BlockForge
+포함 대상: PayloadAcceptor
+
+설명:
+    이게 뭘까요..?
+
+일반 필드
+    buildSpeed: float [기본값: 0.4][
+
+특이사항(기본값 필드)
+    size: int [기본값: 3][한 변의 크기, 넓이는 1이면 1x1, 2는 2x2..]
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    outputsPayload: boolean [기본값: true][대형 컨베이어로 무언가를 내보낼 수 있는 여부]
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
+    hasPower: boolean [기본값: true][전력을 보유하는 여부]
+    rotate: boolean [기본값: ][컨베이어처럼 방향이 있는 여부]
+
