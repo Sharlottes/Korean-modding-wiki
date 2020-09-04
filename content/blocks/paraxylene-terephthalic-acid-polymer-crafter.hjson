@@ -30,7 +30,7 @@ outputItem: pet/3
 craftTime: 90
 craftEffect: teleportActivate
 updateEffect: lightningCharge
-updaateEffectChance: 0.1
+updateEffectChance: 0.1
 
 idleSound: press
 idleSoundVolume: 0.25
