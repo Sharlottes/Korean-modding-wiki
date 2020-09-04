@@ -7,6 +7,9 @@ health: 300
 hasItems: true
 itemCapacity: 7
 
+speed: 0.1
+displayedSpeed: 13
+
 requirements: [
   copper/3
   iron/1
