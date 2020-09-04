@@ -25,6 +25,7 @@ consumes: {
     amount: 0.1
   }
 }
+outputItem: styrene/3
 
 craftTime: 90
 craftEffect: plasticExplosion

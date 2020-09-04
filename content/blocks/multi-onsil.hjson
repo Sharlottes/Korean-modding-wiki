@@ -28,7 +28,4 @@ outputItem: spore-pod/2
 craftTime: 80
 craftEffect: steam
 
-outlineIcon: true
-outlineColor: 9e78dc
-
 category: crafting

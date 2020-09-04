@@ -27,9 +27,6 @@ consumes: {
 outputItem: blast-compound/2
 
 craftTime: 40
-craftEffect: missileTrail
-
-outlineIcon: true
-outlineColor: ff795e
+craftEffect: blastExplosion
 
 category: crafting

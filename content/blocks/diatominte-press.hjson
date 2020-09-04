@@ -27,9 +27,9 @@ consumes: {
 outputItem: diatominte/1
 
 craftTime: 80
-craftEffect: lightning
+craftEffect: sparkShoot
 updateEffect: lightningCharge
-updaateEffectChance: 0.1
+updateEffectChance: 0.1
 
 idleSound: press
 idleSoundVolume: 0.25

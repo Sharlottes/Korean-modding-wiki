@@ -30,7 +30,4 @@ outputItem: pyratite/2
 craftTime: 39.6
 craftEffect: melting
 
-outlineIcon: true
-outlineColor: ffaa5f
-
 category: crafting
