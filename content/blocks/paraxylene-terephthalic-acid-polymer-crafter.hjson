@@ -28,7 +28,7 @@ consumes: {
 outputItem: pet/3
 
 craftTime: 90
-craftEffect: teleportActivate
+craftEffect: hitLancer
 updateEffect: lightningCharge
 updateEffectChance: 0.1
 

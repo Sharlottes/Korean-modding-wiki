@@ -28,7 +28,7 @@ consumes: {
 outputItem: styrene/3
 
 craftTime: 90
-craftEffect: plasticExplosion
+craftEffect: plasticExplosionFlak
 updateEffect: lightningCharge
 updateEffectChance: 0.1
 
