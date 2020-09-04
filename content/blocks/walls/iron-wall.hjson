@@ -22,4 +22,4 @@ update: true
 solid: false
 destructible: true
 hasItems: true
-itemCapacity: int [기본값: 100][아이템 저장용량]
+itemCapacity: 100
