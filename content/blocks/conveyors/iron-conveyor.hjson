@@ -2,7 +2,7 @@ name: iron conveyor
 description: conveyor which iron man made.
 type: Conveyor
 
-health: 300
+health: 200
 
 hasItems: true
 itemCapacity: 7

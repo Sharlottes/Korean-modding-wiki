@@ -1,0 +1,22 @@
+name: floating conveyor
+description: lol
+type: Conveyor
+
+health: 250
+
+hasItems: true
+itemCapacity: 8
+
+speed: 0.125
+displayedSpeed: 14
+
+requirements: [
+  copper/3
+  graphite/2
+  pet/2
+]
+
+category: distribution
+
+requiresWater: true
+placeableLiquid: true

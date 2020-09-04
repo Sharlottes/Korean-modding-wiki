@@ -1,0 +1,19 @@
+name: impact conveyor
+description: explosion!
+type: Conveyor
+
+health: 100
+
+hasItems: true
+itemCapacity: 10
+
+speed: 0.09
+displayedSpeed: 12
+
+requirements: [
+  copper/2
+  iron/1
+  blast-compound/1
+]
+
+category: distribution
