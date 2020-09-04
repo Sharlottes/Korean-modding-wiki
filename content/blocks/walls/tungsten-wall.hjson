@@ -1,0 +1,19 @@
+name: tungsten wall
+description: hehe
+type: Wall
+
+health: 500
+
+requirements: [
+  tungsten/6
+]
+
+category: defense
+
+lightningChance: 0.5
+lightningDamage: 30
+lightningLength: 100
+
+chanceDeflect: 100
+flashWhite: true
+deflect: true
