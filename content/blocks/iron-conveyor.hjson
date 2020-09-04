@@ -1,0 +1,15 @@
+name: iron conveyor
+description: conveyor which iron man made.
+type: Conveyor
+
+health: 300
+
+hasItems: true
+itemCapacity: 7
+
+requirements: [
+  copper/3
+  iron/1
+]
+
+category: distribution

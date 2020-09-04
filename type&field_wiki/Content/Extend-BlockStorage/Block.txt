@@ -9,7 +9,7 @@
     lastConfig: {Object} [기본값: ][the last configuration value applied to this block.]
     saveConfig: boolean [기본값: false][whether to save the last config and apply it to newly placed blocks]
     update: boolean [기본값: ][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
-    destructible: boolean [기본값: ][체력을 보유하고, 파괴될 수 있는 여부]
+    destructible: boolean [기본값: ][체력을 보유하고, 파괴될 수 있는 여부]c
     unloadable: boolean [기본값: true][언로더가 작동되는 여부]
     solid: boolean [기본값: ][지상 유닛이 지나갈 수 없는 여부]
     solidifes: boolean [기본값: ][지상유닛이 지나갈 수 있게 될 수 있는 여부, 오직 type: door를 위한 필드]
