@@ -5,15 +5,15 @@ type: Conveyor
 health: 250
 
 hasItems: true
-itemCapacity: 8
+itemCapacity: 4
 
-speed: 0.125
-displayedSpeed: 14
+speed: 0.06
+displayedSpeed: 8
 
 requirements: [
   copper/3
   graphite/2
-  pet/2
+  pet/1
 ]
 
 category: distribution

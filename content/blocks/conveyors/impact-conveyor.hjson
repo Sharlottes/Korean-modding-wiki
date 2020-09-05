@@ -5,9 +5,9 @@ type: Conveyor
 health: 100
 
 hasItems: true
-itemCapacity: 10
+itemCapacity: 8
 
-speed: 0.09
+speed: 0.085
 displayedSpeed: 12
 
 requirements: [
