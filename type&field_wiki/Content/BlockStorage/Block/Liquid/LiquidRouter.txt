@@ -1,0 +1,13 @@
+2020-08-27
+
+타입 이름: LiquidRouter
+포함 대상: LiquidBlock
+
+설명:
+    액체 분배기.
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    noUpdateDisabled: boolean [기본값: true][if true, the block stops updating when disabled]

@@ -10,7 +10,7 @@
 
 
 특이사항(기본값 필드)
-    leakResistance:
+    leakResistance: float [기본값: 10][
 
 특이사항(스프라이트)
     이름-cap:

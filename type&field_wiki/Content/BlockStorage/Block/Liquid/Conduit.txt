@@ -7,3 +7,15 @@
     파이프!
 
 일반 필드
+    leakResistance: float [기본값: 1.5][
+
+특이사항(기본값 필드)
+    rotate: boolean [기본값: ][컨베이어처럼 방향이 있는 여부]
+    solid: boolean [기본값: ][지상 유닛이 지나갈 수 없는 여부]
+    floating: boolean [기본값: false][물의 가장자리 위에 지을 수 있는 여부]
+    conveyorPlacement: boolean [기본값: ][Whether this block uses conveyor-type placement mode]
+    noUpdateDisabled: boolean [기본값: false][if true, the block stops updating when disabled]
+
+특이사항(스프라이트)
+    이름-top: 윗부분
+    이름-bottom: 아랫부분

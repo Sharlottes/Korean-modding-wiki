@@ -1,0 +1,16 @@
+2020-08-12
+
+타입 이름: LiquidExtendingBridge
+포함 대상: ExtendingItemBridge
+
+설명:
+    액체 터널.
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    hasItems: boolean [기본값: false][아이템을 보유하는 여부]
+    hasLiquids: boolean [기본값: true][액체를 보유하는 여부]
+    outputsLiquid: boolean [기본값: true][액체를 출력하는 여부]
+    group: {BlockGroup} [기본값: liquids][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체 가능]

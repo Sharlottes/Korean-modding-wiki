@@ -31,7 +31,7 @@
     baseExplosiveness: float [기본값: 0][블록 폭발성 기본값]
     floating: boolean [기본값: false][물의 가장자리 위에 지을 수 있는 여부]
     size: int [기본값: 1][한 변의 크기, 넓이는 1이면 1x1, 2는 2x2..]
-    offset: float [기본값: 0][multiblock offset]
+    offset: float [기본값: 0][multiblock offset, 건들지 마시오]
     expanded: boolean [기본값: false][화면 밖으로 나갈 때 8블록쯤까지 그려지는 여부]
     timers: int [기본값: 0][new Interval에 할당되는 정숫값, JaveScript 전용]
     cacheLayer: {CacheLayer} [기본값: normal][CacheLayer의 쉐이더를 표현해준다. wall는 모름]
@@ -75,9 +75,9 @@
     instantTransfer: boolean [기본값: false][즉시 아이템 운반 여부]
 
     코드 미발견 필드(생존유무 불확실)
-    alwaysUnlocked: boolean [기본값: false][캠페인에 따로 연구를 안해도 해금되어있는지 여부]
-    layer: {Layer} [기본값: null][특별 레이어, js 에서 사용됨]
-    layer2: {Layer} [기본값: null][특별 레이어, js 에서 사용됨]
+        alwaysUnlocked: boolean [기본값: false][캠페인에 따로 연구를 안해도 해금되어있는지 여부]
+        layer: {Layer} [기본값: null][특별 레이어, js 에서 사용됨]
+        layer2: {Layer} [기본값: null][특별 레이어, js 에서 사용됨]
 
 특이사항(기본값 필드)
     hasItems: boolean [기본값: ][아이템을 보유하는 여부]
