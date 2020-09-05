@@ -4,14 +4,14 @@
 포함 대상: Block
 
 설명:
-
+    얼어죽은 나무같은 나무 블록입니다.
 
 일반 필드
-    shadowOffset: float [기본값: -4][
+    shadowOffset: float [기본값: -4][나무와 그림자와의 높이. 양수로 갈수록 거리가 좁아진다]
 
 특이사항(기본값) 필드
     solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
     expanded: boolean [기본값: true][화면 밖으로 나갈 때 8블록쯤까지 그려지는 여부]
 
 특이사항(스프라이트)
-    이름-shadow:
+    이름-shadow: 나무에 생기는 그림자 스프라이트.

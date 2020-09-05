@@ -8,7 +8,7 @@
 
 일반 필드
     speed: float [기본값: 0][
-    displayedSpeed: float [기본값: 0][
+    displayedSpeed: float [기본값: 0][인게임 설명에서 보여지는 속도]
 
 특이사항(기본값 필드)
     rotate: boolean [기본값: true][컨베이어처럼 방향이 있는 여부]

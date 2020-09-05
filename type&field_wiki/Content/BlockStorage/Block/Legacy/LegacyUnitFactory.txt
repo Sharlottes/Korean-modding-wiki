@@ -1,0 +1,16 @@
+2020-08-12
+
+타입 이름: LegacyUnitFactory
+포함 대상: LegacyBlock
+
+설명:
+    월드 로드시 이 클래스(타입)들은 모두 제거됩니다.
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    hasPower: boolean [기본값: true][전력을 보유하는 여부]
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    solid: boolean [기본값: false][지상 유닛이 지나갈 수 없는 여부]

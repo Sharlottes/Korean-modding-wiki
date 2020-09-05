@@ -14,4 +14,8 @@
     outputFacing: boolean [기본값: false][
 
 특이사항(스프라이트)
-    이름-over:
+    이름-over: 가장자리 부분
+    이름-top: 운반할때 빛나는 화살표
+    이름-edge: 옆면, 가장자리의 모양
+    이름-icon: ui에서 보여질 아이콘
+    이름: 바닥

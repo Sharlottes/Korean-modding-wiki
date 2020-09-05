@@ -1,0 +1,20 @@
+2020-08-12
+
+타입 이름: BlockLoader
+포함 대상: PayloadAcceptor
+
+설명:
+    바닐라에서 안쓰이거나, 언제든지 삭제될 수 있습니다.
+
+일반 필드
+    loadTime: float [기본값: 2][
+    itemsLoaded: int [기본값: 5][
+    liquidsLoaded: float [기본값: 5][
+
+특이사항(기본값 필드)
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    itemCapacity: int [기본값: 25][아이템 저장용량]
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    outputsPayload: boolean [기본값: true][대형 컨베이어로 무언가를 내보낼 수 있는 여부]
+    size: int [기본값: 3][한 변의 크기, 넓이는 1이면 1x1, 2는 2x2..]
+    rotate: boolean [기본값: true][컨베이어처럼 방향이 있는 여부]

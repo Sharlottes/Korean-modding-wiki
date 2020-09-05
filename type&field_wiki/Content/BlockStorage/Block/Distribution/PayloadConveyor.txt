@@ -7,7 +7,7 @@
 
 
 일반 필드
-    moveTime: float [기본값: 60][
+    moveTime: float [기본값: 60][운반 주기]
     interp: {Interp} [기본값: pow5][
 
 특이사항(기본값 필드)
@@ -18,5 +18,7 @@
     noUpdateDisabled: boolean [기본값: true][if true, the block stops updating when disabled]
 
 특이사항(스프라이트)
-    이름-top:
-    이름-edge:
+    이름-top: 운반할때 빛나는 화살표
+    이름-edge: 옆면, 가장자리의 모양
+    이름-icon: ui에서 보여질 아이콘
+    이름: 바닥
