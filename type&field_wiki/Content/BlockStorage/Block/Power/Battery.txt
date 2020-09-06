@@ -1,0 +1,18 @@
+2020-08-12
+
+타입 이름: Battery
+포함 대상: PowerDistributor
+
+설명:
+
+
+일반 필드
+    emptyLightColor: {Color} [기본값: f8c266][
+    fullLightColor: {Color} [기본값: fb9567][
+
+특이사항(기본값 필드)
+    outputsPower: boolean [기본값: true][전력을 출력하는 여부]
+    consumesPower: boolean [기본값: true][전력을 소모하는 여부]
+
+특이사항(스프라이트)
+    이름-top: 윗부분

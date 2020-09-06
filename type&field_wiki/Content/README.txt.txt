@@ -4,9 +4,13 @@ boolean : true/false
 this는 그 블록 자신을 말합니다. 모드일 경우 꼭 모드명-블록명 으로 작성하셔야 됩니다.
 중괄호{}로 감싸진 유형은 밑에 작성된 단어를 선택해야 하며, {}를 무조건 제외하고 작성하셔야 됩니다.
 
-hjson 또는 json으로 저장한 파일은 content-blocks-environment 경로로, 스프라이트는 sprites-blocks-environment 경로로 저장하시면 됩니다.
+js, json, hjson 파일의 경로는 content/blocks 안에서 자유롭게 하셔도 됩니다.
+스프라이트 파일의 경로는 https://github.com/Anuken/Mindustry/tree/master/core/assets-raw/sprites/ 경로를 참고해주세요. (꼭 이 파일 경로대로 안해도 되지만, 랙이 줄어듭니다]
 
 {}목록은 txt파일로 다시 문서화할 계획입니다.
+"특이사항(스프라이트)" 를 너무 믿지 말아주세요. 저도 몰라요. 그냥 인게임 스프라이트와 대조하는게 더 좋습니다.
+아뉴크는 여전히 업데이트를 하기 때문에, 위키는 1달 주기로 업뎃됩니다.(솔직히 이거 다 볼거 아니잖아요)
+
 
 {Effect} 목록
     none, placeBlock, breakBlock, smoke, spawn, tapBlock, select,

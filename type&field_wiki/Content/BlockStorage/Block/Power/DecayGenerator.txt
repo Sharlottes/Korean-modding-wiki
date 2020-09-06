@@ -1,0 +1,14 @@
+2020-07-27
+
+타입 이름: DecayGenerator
+포함 대상: ItemLiquidGenerator
+
+설명:
+
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    hasLiquids: boolean [기본값: false][액체를 보유하는 여부]
