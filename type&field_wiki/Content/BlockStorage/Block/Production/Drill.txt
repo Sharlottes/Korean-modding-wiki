@@ -1,0 +1,33 @@
+2020-08-20
+
+타입 이름: Drill
+포함 대상: Block
+
+설명:
+    드리릴ㄹ릴ㄹ리리리리릴릴릴릴
+
+일반 필드
+    tier: int [기본값: ][이 드릴이 채광할 수 있는 최대 등급]
+    drillTime: float [기본값: ][이 드릴이 한 광물을 캐는 기본 틱당 시간]
+    liquidBoostIntensity: float [기본값: 1.6][액체 가속을 받았을 때 몇배나 가속되는지]
+    warmupSpeed: float [기본값: 0.02][드릴이 속도를 올릴 때 속도]
+
+    drawMineItem: boolean [기본값: false][드릴이 채광할 때 아이템을 그리는 여부]
+    drillEffect: {Effect} [기본값: mine][아이템이 생산되었을 때 생기는 색있는 그래픽 효과]
+    rotateSpeed: float [기본값: 2][rotate가 돌아가는 속도]
+    updateEffect: {Effect} [기본값: pulverizeSmall][채광할 때 랜덤으로 생기는 그래픽 효과]
+    updateEffectChance: float [기본값: 0.02][updateEffect의 확률]
+
+    drawRim: boolean [기본값: false][
+    heatColor: {Color} [기본값: ff5512][
+
+특이사항(기본값 필드)
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    group: {BlockGroup} [기본값: drills][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체 가능]
+    hasLiquids: boolean [기본값: true][액체를 보유하는 여부]
+    itemCapacity: int [기본값: 5][아이템 저장용량]
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    idleSound: {Sound} [기본값: drill][해당 블록의 화이트노이즈/배경음/ASMR. 예: 공장의 웅웅거리는 소리]
+    idleSoundVolume: float [기본값: 0.003][idleSound의 기본 볼륨을 곱함]
+

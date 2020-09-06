@@ -1,0 +1,22 @@
+2020-08-12
+
+타입 이름: Cultivator
+포함 대상: GenericCrafter
+
+설명:
+    온실
+
+일반 필드
+    plantColor: {Color} [기본값: 5541b1][
+    plantColorLight: {Color} [기본값: 7457ce][
+    bottomColor: {Color} [기본값: 474747][
+    random: {Rand} [기본값: 0][
+    recurrence: float [기본값: 6][
+    attribute: {Attribute} [기본값: spores][
+
+특이사항(기본값)
+    craftEffect: {Effect} [기본값: none][블록에서 아이템을 만들때 생기는 그래픽 효과, 잘 됨]
+
+특이사항(스프라이트)
+    이름-middle:
+    이름-top:

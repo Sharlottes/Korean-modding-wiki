@@ -6,7 +6,6 @@
 설명:
 
 
-
 일반 필드
     powerProduction: float [기본값: ][1틱당 전력 생산량 1=효율100%]
     generationType: {BlockStat} [기본값: basePowerGeneration][

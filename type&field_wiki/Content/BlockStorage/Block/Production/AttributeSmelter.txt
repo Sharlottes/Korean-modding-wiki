@@ -1,0 +1,12 @@
+2020-08-22
+
+타입 이름: AttributeSmelter
+포함 대상: GenericSmelter
+
+설명:
+    실리콘 도가니
+
+일반 필드
+    baseEfficiency: float [기본값: 1][기본 효율성. 전에도 말했다시피, 1이 100%다.]
+    boostScale: float [기본값: 1][
+    maxHeatBoost: float [기본값: 1][

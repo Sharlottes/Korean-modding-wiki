@@ -1,0 +1,18 @@
+2020-08-12
+
+타입 이름: Fracker
+포함 대상: SoildPump
+
+설명:
+
+
+일반 필드
+    itemUseTime: float [기본값: 100][
+
+특이사항(기본값 필드)
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+
+특이사항(스프라이트)
+    이름-liquid:
+    이름-rotator:
+    이름-top:
