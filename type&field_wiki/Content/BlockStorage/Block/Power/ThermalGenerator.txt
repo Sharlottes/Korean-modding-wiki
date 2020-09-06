@@ -1,0 +1,11 @@
+2020-08-12
+
+타입 이름: ThermalGenerator
+포함 대상: PowerGenerator
+
+설명:
+    열발전기
+
+일반 필드
+    generateEffect: {Effect} [기본값: none][발전할 때 생기는 그래픽 효과]
+    attribute: {Attribute} [기본값: heat][상호작용 배열에서 영향을 받을 배열값]

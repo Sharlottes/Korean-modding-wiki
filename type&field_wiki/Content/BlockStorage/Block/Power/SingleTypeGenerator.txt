@@ -1,0 +1,13 @@
+2019-12-25
+
+타입 이름: SingleTypeGenerator
+포함 대상: ItemLiquidGenerator
+
+설명:
+
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    default: boolean [기본값: true][

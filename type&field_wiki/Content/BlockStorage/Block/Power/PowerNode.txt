@@ -1,0 +1,23 @@
+2020-08-24
+
+타입 이름: PowerNode
+포함 대상: PowerBlock
+
+설명:
+     전력 노드!
+
+일반 필드
+    laserRange: float [기본값: 6][연결 범위]
+    maxNodes: int [기본값: 3][최대 연결 수]
+
+특이사항(기본값 필드)
+    expanded: boolean [기본값: true][화면 밖으로 나갈 때 8블록쯤까지 그려지는 여부]
+    configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
+    consumesPower: boolean [기본값: false][전력을 소모하는 여부]
+    outputsPower: boolean [기본값: false][전력을 출력하는 여부]
+
+특이사항(스프라이트)
+    이름-laser:
+    이름-laser-end:
+
+

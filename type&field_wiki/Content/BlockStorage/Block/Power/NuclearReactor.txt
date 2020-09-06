@@ -4,7 +4,7 @@
 포함 대상: PowerGenerator
 
 설명:
-    아이템, 액체를 모두 다 입력으로 사용할 수 있지만, 액체가 더 우선됩니다.
+
 
 일반 필드
     lightColor: {Color} [기본값: 7f19ea][

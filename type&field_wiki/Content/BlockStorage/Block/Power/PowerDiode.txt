@@ -1,0 +1,21 @@
+2020-08-27
+
+타입 이름: PowerDiode
+포함 대상: Block
+
+설명:
+
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    rotate: boolean [기본값: true][컨베이어처럼 방향이 있는 여부]
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    insulated: boolean [기본값: true][whether this block has insulating properties.]
+    group: {BlockGroup} [기본값: power][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체 가능]
+    noUpdateDisabled: boolean [기본값: true][if true, the block stops updating when disabled]
+
+특이사항(스프라이트)
+    이름-arrow: 다이오드에 있는 화살표.

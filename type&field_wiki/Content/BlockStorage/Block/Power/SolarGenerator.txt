@@ -1,0 +1,9 @@
+2020-09-04
+
+타입 이름: SolarGenerator
+포함 대상: PowerGenerator
+
+설명:
+    태양-만세
+
+일반 필드
