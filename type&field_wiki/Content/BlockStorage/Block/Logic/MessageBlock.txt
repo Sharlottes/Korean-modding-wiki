@@ -1,0 +1,16 @@
+2020-09-02
+
+타입 이름: MessageBlock
+포함 대상: Block
+
+설명:
+
+
+일반 필드
+    maxTextLength: int [기본값: 220][
+    maxNewlines: int [기본값: 24][
+
+특이사항(기본값 필드)
+    configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    destructible: boolean [기본값: true][체력을 보유하고, 파괴될 수 있는 여부]

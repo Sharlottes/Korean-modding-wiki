@@ -1,0 +1,19 @@
+2020-08-21
+
+타입 이름: SwitchBlock
+포함 대상: Block
+
+설명:
+
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    drawDisabled: boolean [기본값: false][whether to draw disabled status]
+    autoResetEnabled: boolean [기본값: false][whether to automatically reset enabled status after a logic block has not interacted for a while]
+
+특이사항(스프라이트)
+    이름-on: 켜졌을 때의 모습
