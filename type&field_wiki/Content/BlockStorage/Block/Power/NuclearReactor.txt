@@ -1,0 +1,30 @@
+2020-08-12
+
+타입 이름: NuclearReactor
+포함 대상: PowerGenerator
+
+설명:
+    아이템, 액체를 모두 다 입력으로 사용할 수 있지만, 액체가 더 우선됩니다.
+
+일반 필드
+    lightColor: {Color} [기본값: 7f19ea][
+    coolColor: {Color} [기본값: 1, 1, 1, 0][
+    hotColor: {Color} [기본값: ff9575a3][과열될 때의 색]
+    itemDuration: float [기본값: 120][단일 아이템을 사용할 때 전력을 생산하는 틱당 시간]
+    heating: float [기본값: 0.01][fullness*프레임당 과열수치]
+    smokeThreshold: float [기본값: 0.3][연기를 피우기 시작하는 불록의 임계값]
+    explosionRadius: int [기본값: 40][폭발 범주]
+    explosionDamage: int [기본값: 1350][폭발 데미지]
+    flashThreshold: float [기본값: 0.46][빛이 깜박이기 시작하는 블록의 열 임계값]
+    coolantPower: float [기본값: 0.5][
+
+특이사항(기본값 필드)
+    itemCapacity: int [기본값: 30][아이템 저장용량]
+    liquidCapacity: float [기본값: 30][액체 저장용량]
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    hasLiquids: boolean [기본값: true][액체를 보유하는 여부]
+    rebuildable: boolean [기본값: false][건설 드론이 재건설할 수 있는 여부]
+
+특이사항(스프라이트)
+    이름-top: 윗부분
+    이름-lights:

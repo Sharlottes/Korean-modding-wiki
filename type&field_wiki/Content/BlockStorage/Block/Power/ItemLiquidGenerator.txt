@@ -1,0 +1,22 @@
+2020-08-21
+
+타입 이름: ItemLiquidGenerator
+포함 대상: PowerGenerator
+
+설명:
+    아이템, 액체를 모두 다 입력으로 사용할 수 있지만, 액체가 더 우선됩니다.
+
+일반 필드
+    minItemEfficiency: float [기본값: 0.2][쓰이는 최소 아이템량]
+    itemDuration: float [기본값: 70][단일 아이템을 사용할 때 전력을 생산하는 틱당 시간]
+    minLiquidEfficiency: float [기본값: 0.2][1프레임당 쓰이는 최소 액체량]
+    maxLiquidEfficiency: float [기본값: 0.4][1프레임당 쓰이는 최대 액체량]
+    generateEffect: {Effect} [기본값: generatespark][발전할 때 생기는 그래픽 효과]
+    explodeEffect: {Effect} [기본값: generatespark][발전기가 터졌을 때 생기는 그래픽 효과]
+    heatColor: {Color} [기본값: ff9b59][열 색깔]
+    randomlyExplode: boolean [기본값: true][
+    defaults: boolean [기본값: false][
+
+특이사항(스프라이트)
+    이름-top: 윗부분
+    이름-liquid: 액체 표시부분

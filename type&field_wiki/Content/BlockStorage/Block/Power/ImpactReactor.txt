@@ -8,11 +8,11 @@
 
 일반 필드
     warmupSpeed: float [기본값: 0.001][
-    itemDuration: float [기본값: 60][
-    explosionRadius: int [기본값: 50][
-    explosionDamage: int [기본값: 2000][
-    plasma1: {Color} [기본값: ffd06b][
-    plasma2: {Color} [기본값: ff361b][
+    itemDuration: float [기본값: 60][단일 아이템을 사용할 때 전력을 생산하는 틱당 시간]
+    explosionRadius: int [기본값: 50][폭발 범주]
+    explosionDamage: int [기본값: 2000][폭발 데미지]
+    plasma1: {Color} [기본값: ffd06b][플라즈마 이펙트 색1]
+    plasma2: {Color} [기본값: ff361b][플라즈마 이펙트 색2]
 
 특이사항(기본값 필드)
     hasItems: boolean [기본값: true][아이템을 보유하는 여부]

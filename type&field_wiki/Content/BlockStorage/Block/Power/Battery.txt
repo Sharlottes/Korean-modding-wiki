@@ -7,8 +7,8 @@
 
 
 일반 필드
-    emptyLightColor: {Color} [기본값: f8c266][
-    fullLightColor: {Color} [기본값: fb9567][
+    emptyLightColor: {Color} [기본값: f8c266][전력이 없을때의 색, 전기가 내려갈수록 점점 이 색으로 바뀐다]
+    fullLightColor: {Color} [기본값: fb9567][전력이 꽉 찼을 때의 색, 전기가 올라갈수록 점점 이 색으로 바뀐다]
 
 특이사항(기본값 필드)
     outputsPower: boolean [기본값: true][전력을 출력하는 여부]

@@ -7,7 +7,7 @@
 
 
 일반 필드
-    memoryCapacity: int [기본값: 1][
+    memoryCapacity: int [기본값: 1][매모리 저장량]
 
 특이사항(기본값 필드)
     destructible: boolean [기본값: true][체력을 보유하고, 파괴될 수 있는 여부]c

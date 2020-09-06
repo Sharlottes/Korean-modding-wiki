@@ -7,8 +7,8 @@
 
 
 일반 필드
-    maxTextLength: int [기본값: 220][
-    maxNewlines: int [기본값: 24][
+    maxTextLength: int [기본값: 220][1줄당 텍스쳐 최대 길이]
+    maxNewlines: int [기본값: 24][블록 내 줄 최대 갯수]
 
 특이사항(기본값 필드)
     configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
