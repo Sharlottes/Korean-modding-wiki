@@ -7,7 +7,7 @@
 
 
 일반 필드
-    warmupSpeed: float [기본값: 0.001][
+    warmupSpeed: float [기본값: 0.001][융합로가 속도를 올릴 때 속도]
     itemDuration: float [기본값: 60][단일 아이템을 사용할 때 전력을 생산하는 틱당 시간]
     explosionRadius: int [기본값: 50][폭발 범주]
     explosionDamage: int [기본값: 2000][폭발 데미지]

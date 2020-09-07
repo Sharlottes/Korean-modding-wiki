@@ -12,7 +12,7 @@
     bottomColor: {Color} [기본값: 474747][
     random: {Rand} [기본값: 0][
     recurrence: float [기본값: 6][
-    attribute: {Attribute} [기본값: spores][
+    attribute: {Attribute} [기본값: spores][상호작용 대상 배열]
 
 특이사항(기본값)
     craftEffect: {Effect} [기본값: none][블록에서 아이템을 만들때 생기는 그래픽 효과, 잘 됨]

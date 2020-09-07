@@ -1,0 +1,19 @@
+2020-08-21
+
+타입 이름: PayloadAcceptor
+포함 대상: Block
+
+설명:
+
+
+일반 필드
+    payloadSpeed: float [기본값: 0.5][
+
+특이사항(기본값 필드)
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    sync: boolean [기본값: true][원심분리기처럼 이 블록 속에 든 자원 등이 주기적으로 강제 동기화 되는 여부]
+
+특이사항(스프라이트)
+    이름-top:
+    이름-out:
+    이름-in:

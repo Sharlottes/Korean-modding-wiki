@@ -1,0 +1,21 @@
+2020-08-20
+
+타입 이름: SoildPump
+포함 대상: Pump
+
+설명:
+    무려 고체 타일에게서 액체를 뽑는 이상한 펌프
+
+일반 필드
+    result: {Liquid} [기본값: water][출력 액체]
+    updateEffect: {Effect} [기본값: none][블록에서 생기는 랜덤 그래픽 효과, 잘 되지 않음]
+    updateEffectChance: float [기본값: 0.04][updateEffect 의 효과 생성 확률]
+    rotateSpeed: float [기본값: 1][rotate가 돌아가는 속도]
+    baseEfficiency: float [기본값: 1][기본 효율성. 전에도 말했다시피, 1이 100%다.]
+    attribute: {Attribute} [기본값: ][상호작용 대상 배열]
+
+특이사항(기본값 필드)
+    hasPower: boolean [기본값: ][전력을 보유하는 여부]
+
+특이사항(스프라이트)
+    이름-rotator:

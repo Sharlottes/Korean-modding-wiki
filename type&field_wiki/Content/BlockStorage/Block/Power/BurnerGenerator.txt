@@ -7,7 +7,7 @@
     인화성을 발전 효율로 쓰는 발전기.
 
 일반 필드
-    turbineSpeed: float [기본값: 2][
+    turbineSpeed: float [기본값: 2][turbine 부분이 돌아가는 속도]
 
 특이사항(스프라이트)
     이름-turbine:

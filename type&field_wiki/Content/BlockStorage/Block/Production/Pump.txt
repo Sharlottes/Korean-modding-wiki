@@ -1,0 +1,14 @@
+2020-08-20
+
+타입 이름: Pump
+포함 대상: LiquidBlock
+
+설명:
+    -그- 펌프
+
+일반 필드
+    pumpAmount: float [기본값: 0.2][틱당 펌프가 펌프질 하는 속도]
+
+특이사항(기본값 필드)
+    group: {BlockGroup} [기본값: liquids][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체 가능]
+    floating: boolean [기본값: true][물의 가장자리 위에 지을 수 있는 여부]
