@@ -1,0 +1,22 @@
+2020-08-21
+
+타입 이름: Reconstructor
+포함 대상: UnitBlock
+
+설명:
+
+
+일반 필드
+    constructTime: 120
+    upgrades: {UnitType} [기본값: ][경고! n차 배열입니다. 아래의 문법을 참고해주세요]
+    capacities: int [기본값: ][1차배열이지만, 재정의되기 때문에 사용 불가]
+
+특이사항(upgread 작성 문법)
+    "upgrades": [
+      [
+        "unitType1", "unitType2"
+      ],
+      [
+        "unitTypeA", "unitTypeB"
+      ]
+    ]

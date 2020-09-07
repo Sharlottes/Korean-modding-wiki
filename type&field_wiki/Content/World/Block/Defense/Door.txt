@@ -1,14 +1,16 @@
-2020-08-19
+2020-09-05
 
 타입 이름: Door
 포함 대상: Wall
+타입 종류: 클래스
 
 설명:
-    유일하게 solidfies가 쓰이는 블록입니다!
+    유일하게 solidfies 가 쓰이는 블록입니다!
 
 일반 필드
     openfx: {Effect} [기본값: dooropen][문이 열릴때 생기는 그래픽 효과]
     closefx: {Effect} [기본값: doorclose][문이 닫힐때 생기는 그래픽 효과]
+    doorSound: {Sound} [기본값: door][문을 열고닫을때 소리]
 
 특이사항(기본값 필드)
     solid: boolean [기본값: false][지상 유닛이 지나갈 수 없는 여부]

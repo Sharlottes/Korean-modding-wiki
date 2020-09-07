@@ -1,7 +1,8 @@
-2020-08-04
+2020-09-07
 
 타입 이름: PointDefenseTurret
 포함 대상: Block
+타입 종류: 클래스
 
 설명:
 
@@ -9,7 +10,7 @@
 일반 필드
     retargetTime: float [기본값: 5][
 
-    color: {Color} [기본값: ][
+    color: {Color} [기본값: ffffff][
     beamEffect: {Effect} [기본값: ][
     hitEffect: {Effect} [기본값: ][
     shootEffect: {Effect} [기본값: ][

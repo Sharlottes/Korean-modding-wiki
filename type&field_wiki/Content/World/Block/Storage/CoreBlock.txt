@@ -1,6 +1,6 @@
 2020-09-06
 
-타입 이름: CorBlock
+타입 이름: CoreBlock
 포함 대상: StorageBlock
 
 설명:

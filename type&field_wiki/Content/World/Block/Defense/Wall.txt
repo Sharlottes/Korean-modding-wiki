@@ -1,7 +1,8 @@
-2020-08-24
+2020-09-05
 
 타입 이름: Wall
 포함 대상: Block
+타입 종류: 클래스
 
 설명:
     벽입니다!
@@ -12,9 +13,11 @@
     lightningChance: float [기본값: 0.05][전격 생성 확률]
     lightningDamage: float [기본값: 15][전격 데미지]
     lightningLength: int [기본값: 17][전격 길이. 타일 단위]
+    lightningColor: {Color} [기본값: ][
 
     chanceDeflect: float [기본값: 10][탄환 반사 확률]
     flashWhite: boolean [기본값: ][
+    flashColor: {Color} [기본값: ][
     deflect: boolean [기본값: ][
 
 특이사항(기본값 필드)

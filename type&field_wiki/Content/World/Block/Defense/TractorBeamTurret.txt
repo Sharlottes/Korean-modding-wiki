@@ -1,9 +1,11 @@
-2020-08-08
+2020-09-07
 
-타입 이름: PointDefenseTurret
+타입 이름: TractorBeamTurret
 포함 대상: Block
+타입 종류: 클래스
 
 설명:
+
 
 일반 필드
     retargetTime: float [기본값: 5][
@@ -17,6 +19,7 @@
     damage: float [기본값: 0][
     targetAir: boolean [기본값: true][
     targetGround: boolean [기본값: false][
+    laserColor: {Color} [기본값: ffffff][
 
 특이사항(기본값 필드)
     update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]

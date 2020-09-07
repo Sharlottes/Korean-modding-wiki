@@ -1,0 +1,13 @@
+2020-08-17
+
+타입 이름: ControlCenter
+포함 대상: Block
+
+설명:
+
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]

@@ -1,0 +1,16 @@
+2020-08-12
+
+타입 이름: UnitBlock
+포함 대상: PayloadAcceptor
+
+설명:
+
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    outputsPayload: boolean [기본값: true][대형 컨베이어로 무언가를 내보낼 수 있는 여부]
+    rotate: boolean [기본값: true][컨베이어처럼 방향이 있는 여부]
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]

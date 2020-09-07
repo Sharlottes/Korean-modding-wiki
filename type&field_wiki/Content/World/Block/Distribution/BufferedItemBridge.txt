@@ -2,6 +2,7 @@
 
 타입 이름: BufferedItemBridge
 포함 대상: ExtendingItemBridge
+타입 종류: 클래스
 
 설명:
     터널과 같이 임시저장을 하는 다리입니다.
