@@ -1,7 +1,26 @@
-ItemStack는 문자열 또는 객체가 될 수 있으며, 블록의 아이텡믜 종류와 수량을 설정하는데 사용된다.
+2020-07-31
 
-문자열: 아이템/수량
+타입 이름: ItemStack
+포함 대상: X
+타입 종류: 클래스
 
-객체
-item: 아이템
-amount: 수량
+설명:
+    문자열: 아이템/수량
+    객체:
+        item: 아이템
+        amount: 수량
+
+
+예시:
+    consumes: {
+      items: {
+        items: [
+          spore-pod/1
+          copper/5
+        ]
+        item: spore-pod
+        amount: 5
+        item: copper
+        amount: 1
+      }
+    }

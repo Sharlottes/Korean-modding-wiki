@@ -2,6 +2,7 @@
 
 타입 이름: Item
 포함 대상: UnlockableContent
+타입 종류: 클래스
 
 설명:
 
@@ -12,4 +13,4 @@
     radioactivity: float [기본값: ][이 아이템이 얼마나 방사능적인지. 0은 아무것도 아니고, 1은 체르노빌]
     hardness: int [기본값: 0][이 아이템의 드릴 경도]
     cost: float [기본값: 1][1 cost 당 1/60초만큼 건설속도가 걸린다. 특정 변수로 인해 1 cost 당 5/60초로 바뀌기도 함]
-    color: {color} [기본값: black][색깔!]
+    color: {color} [기본값: black][단 한번만 지정 가능]
