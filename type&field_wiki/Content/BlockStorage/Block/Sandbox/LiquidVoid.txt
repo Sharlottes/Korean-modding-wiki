@@ -1,0 +1,15 @@
+2020-08-27
+
+타입 이름: LiquidVoid
+포함 대상: Block
+
+설명:
+    무한 액체 소멸기
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    hasLiquids: boolean [기본값: true][액체를 보유하는 여부]
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]

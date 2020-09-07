@@ -1,0 +1,20 @@
+2020-09-02(!)
+
+타입 이름: LiquidSource
+포함 대상: Block
+
+설명:
+    무한 액체 소스
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    hasLiquids: boolean [기본값: true][액체를 보유하는 여부]
+    liquidCapacity: float [기본값: 100][액체 저장용량]
+    configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
+    outputsLiquid: boolean [기본값: true][액체를 출력하는 여부]
+    saveConfig: boolean [기본값: true][whether to save the last config and apply it to newly placed blocks]
+    noUpdateDisabled: boolean [기본값: true][if true, the block stops updating when disabled]

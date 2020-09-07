@@ -1,0 +1,19 @@
+2020-09-02
+
+타입 이름: ItemSource
+포함 대상: Block
+
+설명:
+    무한 아이템 소스
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    group: {BlockGroup} [기본값: transportation][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체 가능]
+    configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
+    saveConfig: boolean [기본값: true][whether to save the last config and apply it to newly placed blocks]
+    noUpdateDisabled: boolean [기본값: true][if true, the block stops updating when disabled]

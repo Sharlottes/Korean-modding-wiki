@@ -1,15 +1,24 @@
-CoreBlock
+2020-09-06
 
-Extends StorageBlock
+타입 이름: CorBlock
+포함 대상: StorageBlock
+
+설명:
 
 
-일반
-mech: {Mech} [starter]
+일반 필드
+    unitType: {UnitType} [기본값: alpha][
+    launchRange: int [기본값: 1][
+    ammoAmount: int [기본값: 5][
+    resupplyRate: float [기본값: 110][
+    resupplyRange: float [기본값: 60][
+    resupplyItem: {Item} [기본값: copper][
 
-기본값
-solid: boolean [true]
-update: boolean [true]
-hasItems: boolean [true]
-activeSound: [respawning]
-activeSoundVolueme: [1]
-layer: [overlay]
+특이사항(기본값 필드)
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    priority: {TargetPriority} [기본값: core][적들이 이 블록에 어그로 끌리는 정도]
+    unitCapModifier: int [기본값: 10][The block flags must contain unitModifier in order for this to work.]
+    activeSound: {Sound} [기본값: respawning][소리. 용도가 다다름]
+    activeSoundVolume: float [기본값: 1][activeSound의 기본 볼륨을 곱함]

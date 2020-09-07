@@ -1,0 +1,17 @@
+2020-08-27
+
+타입 이름: PowerSource
+포함 대상: PowerNode
+
+설명:
+    무한 전력 생성기
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    maxNodes: int [기본값: 100][최대 연결 수]
+    outputsPower: boolean [기본값: true][전력을 출력하는 여부]
+    consumesPower: boolean [기본값: false][전력을 소모하는 여부]
+
+
