@@ -1,5 +1,3 @@
-name: impact conveyor
-description: explosion!
 type: Conveyor
 
 health: 100

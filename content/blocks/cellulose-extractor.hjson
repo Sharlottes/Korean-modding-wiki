@@ -1,5 +1,3 @@
-name: cellulose extractor
-description: extract celluloses from spore pods.
 type: GenericSmelter
 
 health: 200

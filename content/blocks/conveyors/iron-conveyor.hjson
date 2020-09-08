@@ -1,5 +1,3 @@
-name: iron conveyor
-description: conveyor which iron man made.
 type: Conveyor
 
 health: 200

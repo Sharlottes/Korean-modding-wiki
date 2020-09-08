@@ -1,5 +1,3 @@
-name: floating conveyor
-description: lol
 type: Conveyor
 
 health: 250
