@@ -1,0 +1,122 @@
+설명:
+    바닐라 아이템의 기본 정보들을 보여줍니다.
+    다른 아이템에는 없는데 유독 이 아이템들에만 있는 변수들은 World 또는 Type의 문서들을 참고해주세요.
+
+구리
+    name: copper
+    color: d99d73
+    hardness: 1
+    cost: 0.5
+    alwaysUnlocked: true
+
+납
+    name: lead
+    color: 8c7fa9
+    hardness: 1
+    cost: 0.7
+    alwaysUnlocked: true
+
+강화유리
+    name: metaglass
+    color: ebeef5
+    cost: 1.5
+
+흑연
+    name: graphite
+    color: b2c6d2
+    cost: 1
+
+모래
+    name: sand
+    color: f7cba4
+    alwaysUnlocked: true
+
+석탄
+    name: coal
+    color: 272727
+    explosiveness: 0.2
+    flammability: 1
+    hardness: 2
+
+티타늄
+    name: titanium
+    color: 8da1e3
+    hardness: 3
+    cost: 1
+
+토륨
+    name: thorium
+    color: f9a3c7
+    explosiveness: 0.2
+    hardness: 4
+    radioactivity: 1
+    cost: 1.1
+
+조각
+    name: scrap
+    color: 777777
+
+실리콘
+    name: silicon
+    color: 53565c
+    cost: 0.8
+
+플라스터늄
+    name: plastanium
+    color: cbd97f
+    flammability: 0.1
+    explosiveness: 0.2
+    cost: 1.3
+
+메타
+    name: phase-fabric
+    color: f4ba6e
+    cost: 1.3
+    radioactivity: 0.6
+
+서지 합금
+    name: surge-alloy
+    color: f3e979
+
+포자 포드
+    name: spore-pod
+    color: 7457ce
+    flammability: 1.15
+
+폭발물
+    name: blast-compound
+    color: ff795e
+    flammability: 0.4
+    explosiveness: 1.2
+
+파이라타이트
+    name: pyratite
+    color: ffaa5f
+    flammability: 1.4
+    explosiveness: 0.4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

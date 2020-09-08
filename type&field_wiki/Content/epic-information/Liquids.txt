@@ -1,0 +1,37 @@
+설명:
+    바닐라 액체의 기본 정보들을 보여줍니다.
+    다른 액체에는 없는데 유독 이 액체들에만 있는 변수들은 World 또는 Type의 문서들을 참고해주세요.
+    밑의 effect: {StatusEffects} wet는 StatusEffects라는 파일의 wet를 참고하시면 된다고 생각해주세요.
+
+물
+    name: water
+    color: 596ab8
+    heatCapacity: 0.4
+    effect: {StatusEffects} wet
+    alwaysUnlocked: true
+
+광재
+    name: slag
+    color: ffa166
+    temperature: 1
+    viscosity: 0.8
+    effect: {StatusEffects} melting
+    lightColor: f0511d(a=0.4)
+
+석유
+    name: oil
+    color: 313131
+    viscosity: 0.7
+    flammability: 1.2
+    explosiveness: 1.2
+    heatCapacity: 0.7
+    barColor: 6b675f
+    effect: {StatusEffects} tarred
+
+냉각수
+    name: cryofluid
+    color: 6ecdec
+    heatCapacity: 0.9
+    temperature: 0.25
+    effect: {StatusEffects} freezing
+    lightColor: 0097f5(a=0.2)

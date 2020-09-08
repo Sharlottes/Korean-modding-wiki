@@ -7,8 +7,8 @@ health: 100
 hasItems: true
 itemCapacity: 8
 
-speed: 0.085
-displayedSpeed: 12
+speed: 0.08
+displayedSpeed: 11
 
 requirements: [
   copper/2
@@ -17,4 +17,5 @@ requirements: [
 ]
 
 category: distribution
+
 baseExplosiveness: 0.5
