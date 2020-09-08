@@ -1,6 +1,6 @@
 type: Wall
 
-health: 500
+health: 2400
 
 requirements: [
   tungsten/24

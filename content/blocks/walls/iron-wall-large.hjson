@@ -1,6 +1,6 @@
 type: Wall
 
-health: 350
+health: 1400
 
 requirements: [
   iron/24
