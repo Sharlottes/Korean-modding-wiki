@@ -15,19 +15,7 @@ js, json, hjson 파일의 경로는 content/blocks 안에서 자유롭게 하셔
 임시로 모아둔 문서
 
 {Effect} 목록
-    none, placeBlock, breakBlock, smoke, spawn, tapBlock, select,
-    vtolHover, unitDrop, unitPickup, unitLand, pickup, healWave, heal, landShock, reactorsmoke, nuclearsmoke, nuclearcloud,
-    redgeneratespark, generatespark, fuelburn, plasticburn, pulverize, pulverizeRed, pulverizeRedder, pulverizeSmall, pulverizeMedium,
-    producesmoke, smeltsmoke, formsmoke, blastsmoke, lava, doorclose, dooropen, dooropenlarge, doorcloselarge, purify, purifyoil, purifystone, generate,
-    mine, mineBig, mineHuge, smelt, teleportActivate, teleport, teleportOut, ripple, bubble, launch,
-    healBlock, healBlockFull, healWaveMend, overdriveWave, overdriveBlockFull, shieldBreak, hitBulletSmall, hitFuse,
-    hitBulletBig, hitFlameSmall, hitLiquid, hitLaser, hitLancer, hitMeltdown, despawn, flakExplosion, blastExplosion,
-    plasticExplosion, artilleryTrail, incendTrail, missileTrail, absorb, flakExplosionBig, plasticExplosionFlak, burning, fire,
-    fireSmoke, steam, fireballsmoke, ballfire, freezing, melting, wet, oily, overdriven, dropItem, shockwave,
-    bigShockwave, nuclearShockwave, explosion, blockExplosion, blockExplosionSmoke, shootSmall, shootHeal, shootSmallSmoke, shootBig, shootBig2, shootBigSmoke,
-    shootBigSmoke2, shootSmallFlame, shootPyraFlame, shootLiquid, shellEjectSmall, shellEjectMedium,
-    shellEjectBig, lancerLaserShoot, lancerLaserShootSmoke, lancerLaserCharge, lancerLaserChargeBegin, lightningCharge, lightningShoot,
-    unitSpawn, spawnShockwave, magmasmoke, impactShockwave, impactcloud, impactsmoke, dynamicExplosion, padlaunch, commandSend, coreLand
+    absorb, artilleryTrail, ballfire, bigShockwave, blastExplosion, blastsmoke, blockExplosion, blockExplosionSmoke, breakBlock, bubble, burning, cloudsmoke, commandSend, coreLand, despawn, doorclose, doorcloselarge, dooropen, dooropenlarge, dropItem, dynamicExplosion, explosion, fallSmoke, fire, fireSmoke, fireballsmoke, flakExplosion, flakExplosionBig, formsmoke, freezing, fuelburn, generate, generatespark, heal, healBlock, healBlockFull, healWave, healWaveMend, hitBulletBig, hitBulletSmall, hitFlameSmall, hitFuse, hitLancer, hitLaser, hitLiquid, hitMeltdown, hitYellowLaser, impactShockwave, impactcloud, impactsmoke, incendTrail, itemTransfer, lancerLaserCharge, lancerLaserChargeBegin, lancerLaserShoot, lancerLaserShootSmoke, landShock, launch, launchPod, lava, lightning, lightningCharge, lightningShoot, magmasmoke, massiveExplosion, melting, mine, mineBig, mineHuge, missileTrail, muddy, none, nuclearShockwave, nuclearcloud, nuclearsmoke, oily, overclocked, overdriveBlockFull, overdriveWave, overdriven, padlaunch, pickup, placeBlock, plasticExplosion, plasticExplosionFlak, plasticburn, pointBeam, pointHit, producesmoke, pulverize, pulverizeMedium, pulverizeRed, pulverizeRedder, pulverizeSmall, purify, purifyoil, purifystone, railHit, railShoot, railTrail, reactorsmoke, redgeneratespark, ripple, rocketSmoke, rocketSmokeLarge, sapExplosion, sapped, select, shellEjectBig, shellEjectMedium, shellEjectSmall, shieldApply, shieldBreak, shieldWave, shockwave, shootBig, shootBig2, shootBigSmoke, shootBigSmoke2, shootHeal, shootHealYellow, shootLiquid, shootPyraFlame, shootSmall, shootSmallFlame, shootSmallSmoke, smelt, smeltsmoke, smoke, sparkShoot, spawn, spawnShockwave, sporeSlowed, steam, tapBlock, teleport, teleportActivate, teleportOut, unitCapKill, unitControl, unitDespawn, unitDrop, unitLand, unitLandSmall, unitPickup, unitShieldBreak, unitSpawn, unitSpirit, unitWreck, upgradeCore, vtolHover, wet
 
 {Item} 목록
     copper, lead, silicon, graphite, thorium, titanium, sand, coal, phase-fabric, surge-alloy, blast-compound, pyratite, spore-pod, metaglass, plastanium
@@ -36,7 +24,7 @@ js, json, hjson 파일의 경로는 content/blocks 안에서 자유롭게 하셔
     water, slag, oil, cryofluid
 
 {StatusEffect} 목록
-    none, burning, freezing, wet, melting, tarred, overdrive, shielded, boss, shocked, corroded
+    none, burning, freezing, wet, muddy, melting, sapped, tarred, overdrive, overclock, shielded, shocked, blasted, corroded, boss, sporeSlowed
 
 {Category} 목록
     turret, production, distribution, liquid, power, defense, crafting, units, effect, logic
