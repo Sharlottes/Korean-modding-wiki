@@ -4,29 +4,29 @@
 포함 대상: UnlockableContent
 
 일반 필드
-    displayFlow: boolean [기본값: ture][whether to display flow rate]
-    inEditor: boolean [기본값: true][whether this block is visible in the editor]
-    lastConfig: {Object} [기본값: ][the last configuration value applied to this block.]
-    saveConfig: boolean [기본값: false][whether to save the last config and apply it to newly placed blocks]
-    update: boolean [기본값: ][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
-    destructible: boolean [기본값: ][체력을 보유하고, 파괴될 수 있는 여부]c
+    displayFlow: boolean [기본값: true][자원/액체의 초당 통과량 표시 여부]
+    inEditor: boolean [기본값: true][맵 에디터에서 이 블록이 무조건 보이는지 여부]
+    lastConfig: {Object} [기본값: ][블록의 마지막 설정 상태. 필터 등의 블록은 마지막으로 설정한 자원을 이 변수에 저장하고, 다음 설치시 이 정보가 사용됨(예: 필터에서 마지막으로 토륨 선택 -> lastConfig = Items.thorium -> 다음 필터 설치시 토륨필터로 설치됨). 이 필드를 지정시, 아무 전과도 없는 블록이 처음으로 설치될 때 그 설정값을 지정함. JS없이 JSON으로만 되는지는 불분명]
+    saveConfig: boolean [기본값: false][블록의 마지막 설정 상태를 다음 블록 설치시에 사용하는지 여부(lastConfig 참고)]
+    update: boolean [기본값: ][Building을 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    destructible: boolean [기본값: ][체력을 보유하고, 파괴될 수 있는 여부]
     unloadable: boolean [기본값: true][언로더가 작동되는 여부]
     solid: boolean [기본값: ][지상 유닛이 지나갈 수 없는 여부]
     solidifes: boolean [기본값: ][지상유닛이 지나갈 수 있게 될 수 있는 여부, 오직 type: door를 위한 필드]
     rotate: boolean [기본값: ][컨베이어처럼 방향이 있는 여부]
-    saveData: boolean [기본값: ][for static blocks only: if true, tile data() is saved in world data.]
+    saveData: boolean [기본값: ][update = false인 블록 한정, 이 블록의 특정한 저장 정보의 존재 여부(Cliff에만 사용됨)]
     breakable: boolean [기본값: ][우클릭으로 철거할 수 있는 여부]
     rebuildable: boolean [기본값: true][건설 드론이 재건설할 수 있는 여부]
     requiresWater: boolean [기본값: false][whether this water can only be placed on water]
     placeableLiquid: boolean [기본값: false][whether this water can be placed on any liquids, anywhere]
     placeableOn: boolean [기본값: true][다른 건물들을 위에 지을 수 있는 여부]
-    insulated: boolean [기본값: false][whether this block has insulating properties.]
-    squareSprite: boolean [기본값: true][whether the sprite is a full square.]
-    absorbLasers: boolean [기본값: false][whether this block absorbs laser attacks.]
-    enableDrawStatus: boolean [기본값: true][if false, the status is never drawn]
-    drawDisabled: boolean [기본값: true][whether to draw disabled status]
-    autoResetEnabled: boolean [기본값: true][whether to automatically reset enabled status after a logic block has not interacted for a while]
-    noUpdateDisabled: boolean [기본값: false][if true, the block stops updating when disabled]
+    insulated: boolean [기본값: false][전격 공격과 전력 노드 자동연결 차단 여부]
+    squareSprite: boolean [기본값: true][검은 그림자가 생기는지 여부. 삭제되기 전 cliffs가 이게 false였음]
+    absorbLasers: boolean [기본값: false][레이저 공격 차단 여부]
+    enableDrawStatus: boolean [기본값: true][마름모 아이콘으로 블록의 작동 여부를 보여주는지의 여부]
+    drawDisabled: boolean [기본값: true][프로세서에 의해 꺼지면 X 아이콘을 띄우는지 여부]
+    autoResetEnabled: boolean [기본값: true][프로세서에 의해 꺼지거나 켜진 뒤 일정 시간이 지나면 원상태로 복귀하는지 여부]
+    noUpdateDisabled: boolean [기본값: false][true면 프로세서에 의해 꺼질 시 Building의 updateTile()이 실행되지 않음]
     health: int [기본값: -1][체력, 체력 기본값 -1는 40인 셈]
     baseExplosiveness: float [기본값: 0][블록 폭발성 기본값]
     floating: boolean [기본값: false][물의 가장자리 위에 지을 수 있는 여부]
@@ -44,7 +44,7 @@
     consumesTap: boolean [기본값: ][눌러졌을 때 touchDown 이벤트를 요구하는 여부]
     drawLiquidLight: boolean [기본값: true][이 블록에 액체가 있는 경우, 액체의 광채를 그리는 여부]
     sync: boolean [기본값: ][원심분리기처럼 이 블록 속에 든 자원 등이 주기적으로 강제 동기화 되는 여부]
-    conveyorPlacement: boolean [기본값: ][Whether this block uses conveyor-type placement mode]
+    conveyorPlacement: boolean [기본값: ][컨베이어식 설치 모드 여부]
 
 
     mapColor: {Color} [기본값: [0, 0, 0, 1][미니맵이나 맵 미리보기에서 보여지는 블록 색입니다. 절대로 직접 수동적으로 수정하지 마십시오!]
@@ -73,11 +73,11 @@
     buildPlaceability: {BuildPlaceability} [기본값: always][언제 이 블록을 사용할 수 있는지 설정]
     buildCostMultiplier: float [기본값: 1][서바이벌에서 건설하는데 걸리는 시간의 배수]
     instantTransfer: boolean [기본값: false][즉시 아이템 운반 여부]
+    
+    quickRotate: boolean [기본값: true][R+스크롤로 설치된 블록을 회전할 수 있는지의 여부. rotate가 true여만 작동]
 
     코드 미발견 필드(생존유무 불확실)
         alwaysUnlocked: boolean [기본값: false][캠페인에 따로 연구를 안해도 해금되어있는지 여부]
-        layer: {Layer} [기본값: null][특별 레이어, js 에서 사용됨]
-        layer2: {Layer} [기본값: null][특별 레이어, js 에서 사용됨]
 
 특이사항(기본값 필드)
     hasItems: boolean [기본값: ][아이템을 보유하는 여부]
