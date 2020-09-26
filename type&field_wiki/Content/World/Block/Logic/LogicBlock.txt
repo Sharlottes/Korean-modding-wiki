@@ -1,4 +1,4 @@
-2020-09-04
+2020-09-23
 
 타입 이름: LogicBlock
 포함 대상: Block
@@ -9,10 +9,9 @@
 일반 필드
     maxInstructionScale: int [기본값: 5][
     instructionPerTick: int [기본값: 1][
-    range: float [기본값: 80][
+    range: float [기본값: 80][블록 선택 범위]
 
 특이사항(기본값 필드)
     update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
     solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
     configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
-    sync: boolean [기본값: true][원심분리기처럼 이 블록 속에 든 자원 등이 주기적으로 강제 동기화 되는 여부]
