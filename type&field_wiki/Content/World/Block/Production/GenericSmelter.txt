@@ -2,6 +2,7 @@
 
 타입 이름: GenericSmelter
 포함 대상: GenericCrafter
+타입 종류: 클래스
 
 설명:
     앞에서 대부분의 공장들이 GenericCrafter 타입으로 이루어진다고 했다면, 공장이 돌아갈 때 중앙에 동글이가 생기는게 이 타입이다.

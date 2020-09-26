@@ -2,6 +2,7 @@
 
 타입 이름: PowerVoid
 포함 대상: PowerBlock
+타입 종류: 클래스
 
 설명:
     무한 전력 소멸기

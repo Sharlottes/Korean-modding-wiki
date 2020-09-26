@@ -2,6 +2,7 @@
 
 타입 이름: UnitPayload
 포함 대상: Payload
+타입 종류: 클래스
 
 설명:
 

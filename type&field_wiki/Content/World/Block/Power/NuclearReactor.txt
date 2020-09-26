@@ -2,6 +2,7 @@
 
 타입 이름: NuclearReactor
 포함 대상: PowerGenerator
+타입 종류: 클래스
 
 설명:
     토륨 원자로

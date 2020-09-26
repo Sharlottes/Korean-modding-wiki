@@ -1,10 +1,11 @@
 2020-08-12
 
-타입 이름: UnitBlock
+타입 이름: UnitFactory
 포함 대상: PayloadAcceptor
+타입 종류: 클래스
 
 설명:
-
+    유닛 생산 블록
 
 일반 필드
     capacities: int [기본값: ][1차배열이지만, 재정의되기 때문에 사용 불가]

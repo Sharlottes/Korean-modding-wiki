@@ -2,9 +2,10 @@
 
 타입 이름: LiquidBridge
 포함 대상: ItemBridge
+타입 종류: 클래스
 
 설명:
-    액체 터널.
+    액체 터널
 
 일반 필드
 

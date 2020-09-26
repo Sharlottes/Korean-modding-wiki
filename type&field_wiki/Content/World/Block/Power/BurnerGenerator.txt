@@ -2,6 +2,7 @@
 
 타입 이름: BurnerGenerator
 포함 대상: ItemLiquidGenerator
+타입 종류: 클래스
 
 설명:
     인화성을 발전 효율로 쓰는 발전기

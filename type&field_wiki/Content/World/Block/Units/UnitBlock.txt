@@ -2,9 +2,10 @@
 
 타입 이름: UnitBlock
 포함 대상: PayloadAcceptor
+타입 종류: 클래스
 
 설명:
-
+    유닛 관련 블록들
 
 일반 필드
 

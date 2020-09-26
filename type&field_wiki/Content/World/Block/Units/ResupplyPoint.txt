@@ -2,9 +2,10 @@
 
 타입 이름: ResupplyPoint
 포함 대상: Block
+타입 종류: 클래스
 
 설명:
-
+    탄약 보급소
 
 일반 필드
     ammoAmount: int [기본값: 10][

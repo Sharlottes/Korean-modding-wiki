@@ -2,6 +2,7 @@
 
 타입 이름: ArmoredConduit
 포함 대상: Conduit
+타입 종류: 클래스
 
 설명:
     장갑 파이프!
