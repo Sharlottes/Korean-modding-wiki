@@ -1,4 +1,4 @@
-2020-08-27
+2020-09-11
 
 타입 이름: Conduit
 포함 대상: LiquidBlock
@@ -7,7 +7,8 @@
     파이프!
 
 일반 필드
-    leakResistance: float [기본값: 1.5][
+    botColor: {Color} [기본값: 565656][바닥 색]
+    leakResistance: float [기본값: 1.5][액체 누출 속도 저항]
 
 특이사항(기본값 필드)
     rotate: boolean [기본값: ][컨베이어처럼 방향이 있는 여부]

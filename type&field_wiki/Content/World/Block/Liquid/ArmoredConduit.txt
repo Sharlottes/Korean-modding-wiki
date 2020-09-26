@@ -1,4 +1,4 @@
-2020-08-24
+2020-09-19
 
 타입 이름: ArmoredConduit
 포함 대상: Conduit
@@ -10,7 +10,7 @@
 
 
 특이사항(기본값 필드)
-    leakResistance: float [기본값: 10][
+    leakResistance: float [기본값: 10][액체 누출 속도 저항]
 
 특이사항(스프라이트)
     이름-cap:

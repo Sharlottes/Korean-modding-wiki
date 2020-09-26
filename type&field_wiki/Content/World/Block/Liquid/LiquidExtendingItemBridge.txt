@@ -1,10 +1,10 @@
-2020-08-12
+2020-09-11
 
 타입 이름: LiquidExtendingBridge
 포함 대상: ExtendingItemBridge
 
 설명:
-    액체 터널.
+    액체 터널
 
 일반 필드
 
