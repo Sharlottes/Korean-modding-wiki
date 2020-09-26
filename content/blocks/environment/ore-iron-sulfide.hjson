@@ -1,4 +1,0 @@
-type: OreBlock
-itemDrop: iron-sulfide-org
-oreDefault: true
-variants: 3

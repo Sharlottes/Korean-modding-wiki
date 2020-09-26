@@ -1,4 +1,0 @@
-type: OreBlock
-itemDrop: calcium-phosphate
-oreDefault: true
-variants: 3

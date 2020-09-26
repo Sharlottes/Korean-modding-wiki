@@ -1,9 +1,0 @@
-type: Wall
-
-health: 600
-
-requirements: [
-  tungsten/6
-]
-
-category: defense
