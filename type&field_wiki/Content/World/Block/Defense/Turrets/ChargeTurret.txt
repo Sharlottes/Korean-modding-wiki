@@ -1,0 +1,15 @@
+2020-08-12
+
+타입 이름: ChargeTurret
+포함 대상: PowerTurret
+타입 종류: 클래스
+
+설명:
+    랜서 포탑
+
+일반 필드
+    chargeTime: float [기본값: 30][충전 시간]
+    chargeEffects: int [기본값: 5][
+    chargeMaxDelay: float [기본값: 10][
+    chargeEffect: {Effect} [기본값: none][충전 그래픽 이펙트]
+    chargeBeginEffect: {Effect} [기본값: none][충전 시작 그래픽 이펙트]

@@ -1,0 +1,22 @@
+2020-09-14
+
+타입 이름: ItemTurret
+포함 대상: Turret
+타입 종류: 클래스
+
+설명:
+    일반 아이템 포탑
+
+일반 필드
+    maxAmmo: int [기본값: 30][탄약 최대 보유량]
+    ammoTypes: {ObjectMap} [기본값: ][탄환 소모 종류]
+
+특이사항(기본값 필드)
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+
+특이사항(ammoTypes 문법)
+    "ammoTypes": {
+        "itemA": "bulletA",
+        "itemB": "bulletB",
+        "itemC": "bulletC",
+    }
