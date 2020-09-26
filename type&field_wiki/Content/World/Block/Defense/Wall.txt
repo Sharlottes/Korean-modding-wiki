@@ -1,4 +1,4 @@
-2020-09-05
+2020-09-26
 
 타입 이름: Wall
 포함 대상: Block
@@ -13,12 +13,14 @@
     lightningChance: float [기본값: 0.05][전격 생성 확률]
     lightningDamage: float [기본값: 15][전격 데미지]
     lightningLength: int [기본값: 17][전격 길이. 타일 단위]
-    lightningColor: {Color} [기본값: ][
+    lightningColor: {Color} [기본값: ][전격 색]
+    lightningSound: {Sound} [기본값: spark][
 
     chanceDeflect: float [기본값: 10][탄환 반사 확률]
-    flashWhite: boolean [기본값: ][
-    flashColor: {Color} [기본값: ][
-    deflect: boolean [기본값: ][
+    flashHit: boolean [기본값: ][피격 시 반짝이는 여부]
+    flashColor: {Color} [기본값: white][반짝일 때 색]
+    deflect: boolean [기본값: ][반사 여부]
+    deflectSound: {Sound} [기본값: none][반사 소리]
 
 특이사항(기본값 필드)
     solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]

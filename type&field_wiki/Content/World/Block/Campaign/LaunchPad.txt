@@ -1,0 +1,24 @@
+2020-09-23
+
+타입 이름: LaunchPad
+포함 대상: Block
+타입 종류: 클래스
+
+설명:
+    캠페인에 쓰이는 출격 패드.
+
+일반 필드
+    launchTime: float [기본값: ][아이템을 출격하는 주기]
+    lightColor: {Color} [기본값: eab678][
+
+특이사항(기본값 필드)
+    hasItems: boolean [기본값: true][아이템을 보유하는 여부]
+    solid: boolean [기본값: false][지상 유닛이 지나갈 수 없는 여부]
+    update: boolean [기본값: true][Building을 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    configurable: boolean [기본값: true][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
+
+
+
+특이사항(스프라이트)
+    이름-light:
+    launchpod: 출격할때 출격 패드에서 생성되는 출격 포드

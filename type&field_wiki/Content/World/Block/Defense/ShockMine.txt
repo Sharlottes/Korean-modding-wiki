@@ -1,4 +1,4 @@
-2020-09-07
+2020-09-06
 
 타입 이름: ShockMine
 포함 대상: Block
@@ -13,6 +13,7 @@
     damage: float [기본값: 13][전격 데미지]
     length: int [기본값: 10][전격 길이. 타일 단위]
     tendrills: int [기본값: 6][전격 개수]
+    lightningColor: {Color} [기본값: lancerLaser][전격 색]
 
 특이사항(기본값 필드)
     update: boolean [기본값: false][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]

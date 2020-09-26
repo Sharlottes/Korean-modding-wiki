@@ -14,6 +14,7 @@
     solid: boolean [기본값: ][지상 유닛이 지나갈 수 없는 여부]
     solidifes: boolean [기본값: ][지상유닛이 지나갈 수 있게 될 수 있는 여부, 오직 type: door를 위한 필드]
     rotate: boolean [기본값: ][컨베이어처럼 방향이 있는 여부]
+
     saveData: boolean [기본값: ][update = false인 블록 한정, 이 블록의 특정한 저장 정보의 존재 여부(Cliff에만 사용됨)]
     breakable: boolean [기본값: ][우클릭으로 철거할 수 있는 여부]
     rebuildable: boolean [기본값: true][건설 드론이 재건설할 수 있는 여부]
@@ -24,6 +25,7 @@
     squareSprite: boolean [기본값: true][검은 그림자가 생기는지 여부. 삭제되기 전 cliffs가 이게 false였음]
     absorbLasers: boolean [기본값: false][레이저 공격 차단 여부]
     enableDrawStatus: boolean [기본값: true][마름모 아이콘으로 블록의 작동 여부를 보여주는지의 여부]
+
     drawDisabled: boolean [기본값: true][프로세서에 의해 꺼지면 X 아이콘을 띄우는지 여부]
     autoResetEnabled: boolean [기본값: true][프로세서에 의해 꺼지거나 켜진 뒤 일정 시간이 지나면 원상태로 복귀하는지 여부]
     noUpdateDisabled: boolean [기본값: false][true면 프로세서에 의해 꺼질 시 Building의 updateTile()이 실행되지 않음]
@@ -34,19 +36,19 @@
     offset: float [기본값: 0][multiblock offset, 건들지 마시오]
     expanded: boolean [기본값: false][화면 밖으로 나갈 때 8블록쯤까지 그려지는 여부]
     timers: int [기본값: 0][new Interval에 할당되는 정숫값, JaveScript 전용]
+
     cacheLayer: {CacheLayer} [기본값: normal][CacheLayer의 쉐이더를 표현해준다. wall는 모름]
     filesTile: boolean [기본값: true][블록 스프라이트가 정사각형이여서 블록을 채우는 여부]
     alwaysReplace: boolean [기본값: false][언제나 교체될 수 있는 여부]
     group: {BlockGroup} [기본값: none][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체 가능]
     priority: {TargetPriority} [기본값: base][적들이 이 블록에 어그로 끌리는 정도]
-    unitCapModifier: int [기본값: 0][The block flags must contain unitModifier in order for this to work.]
+    unitCapModifier: int [기본값: 0][How much this block affects the unit cap by. The block flags must contain unitModifier in order for this to work.]
     configurable: boolean [기본값: ][클릭하면 인벤대신 노란색테두리가 뜨면서 뭔갈 선택할 수 있는 여부]
     consumesTap: boolean [기본값: ][눌러졌을 때 touchDown 이벤트를 요구하는 여부]
     drawLiquidLight: boolean [기본값: true][이 블록에 액체가 있는 경우, 액체의 광채를 그리는 여부]
     sync: boolean [기본값: ][원심분리기처럼 이 블록 속에 든 자원 등이 주기적으로 강제 동기화 되는 여부]
+
     conveyorPlacement: boolean [기본값: ][컨베이어식 설치 모드 여부]
-
-
     mapColor: {Color} [기본값: [0, 0, 0, 1][미니맵이나 맵 미리보기에서 보여지는 블록 색입니다. 절대로 직접 수동적으로 수정하지 마십시오!]
     hasColor: boolean [기본값: false][6.0/미니맵 색을 가지고 있는 여부]
     targetable: boolean [기본값: true][유닛들이 이 블록을 조준하는 여부]
@@ -56,13 +58,14 @@
     hasShadow: boolean [기본값: true][밑에 그림자를 가질 여부]
     breakSound: {Sound} [기본값: boom][이 블록이 부숴질 때 생기는 소리]
     albedo: float [기본값: 0][행성에서 해당 바닥이 얼마나 반짝거리는지. 현제 물만 0.5]
-    lightColor: {Color} [기본값: white][해당 바닥이 내는 빛의 색]
 
+    lightColor: {Color} [기본값: white][해당 바닥이 내는 빛의 색]
     emitLight: boolean [기본값: false][6.0/Environment 블록이 항시 빛을 방출할 여부, Environment 블록 외엔 해당되지 않음]
     lightRadius: float [기본값: 60][이 블록에서 방출될 빛의 반지름. 8로 나누면 타일 단위]
 
     activeSound: {Sound} [기본값: none][소리. 용도가 다다름]
     activeSoundVolume: float [기본값: 0.5][activeSound의 기본 볼륨을 곱함]
+
     idleSound: {Sound} [기본값: none][해당 블록의 화이트노이즈/배경음/ASMR. 예: 공장의 웅웅거리는 소리]
     idleSoundVolume: float [기본값: 0.5][idleSound의 기본 볼륨을 곱함]
 
@@ -73,7 +76,6 @@
     buildPlaceability: {BuildPlaceability} [기본값: always][언제 이 블록을 사용할 수 있는지 설정]
     buildCostMultiplier: float [기본값: 1][서바이벌에서 건설하는데 걸리는 시간의 배수]
     instantTransfer: boolean [기본값: false][즉시 아이템 운반 여부]
-    
     quickRotate: boolean [기본값: true][R+스크롤로 설치된 블록을 회전할 수 있는지의 여부. rotate가 true여만 작동]
 
     코드 미발견 필드(생존유무 불확실)
