@@ -1,4 +1,4 @@
-2020-09-06
+2020-09-10
 
 타입 이름: CoreBlock
 포함 대상: StorageBlock
@@ -7,7 +7,7 @@
 
 
 일반 필드
-    unitType: {UnitType} [기본값: alpha][
+    unitType: {UnitType} [기본값: alpha][스폰되는 유닛 종류]
     launchRange: int [기본값: 1][
     ammoAmount: int [기본값: 5][
     resupplyRate: float [기본값: 110][
