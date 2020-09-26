@@ -19,8 +19,8 @@
     updateEffect: {Effect} [기본값: pulverizeSmall][채광할 때 랜덤으로 생기는 그래픽 효과]
     updateEffectChance: float [기본값: 0.02][updateEffect의 확률]
 
-    drawRim: boolean [기본값: false][
-    heatColor: {Color} [기본값: ff5512][
+    drawRim: boolean [기본값: false][rim 부분 존재 여부]
+    heatColor: {Color} [기본값: ff5512][rim 부분의 색]
 
 특이사항(기본값 필드)
     update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
@@ -32,3 +32,7 @@
     idleSound: {Sound} [기본값: drill][해당 블록의 화이트노이즈/배경음/ASMR. 예: 공장의 웅웅거리는 소리]
     idleSoundVolume: float [기본값: 0.003][idleSound의 기본 볼륨을 곱함]
 
+특이사항(스프라이트)
+    이름-rim: 활성화 시 색이 떳다 사라지는 부분
+    이름-rotator: 드릴 날개
+    이름-top: 드릴 고정대?
