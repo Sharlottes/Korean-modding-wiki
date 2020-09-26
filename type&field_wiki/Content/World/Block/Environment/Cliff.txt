@@ -1,13 +1,13 @@
-2020-07-29
+2020-09-16
 
 타입 이름: Cliff
 포함 대상: Block
 
 설명:
-
+    절벽
 
 일반 필드
-
+    size: float [기본값: 11][
 
 특이사항(기본값 필드)
     breakable: boolean [기본값: false][우클릭으로 철거할 수 있는 여부, alwaysReplace와 동일해야 함]

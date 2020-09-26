@@ -1,4 +1,4 @@
-2020-05-03
+2020-09-10
 
 타입 이름: StaicWall
 포함 대상: Rock
@@ -17,4 +17,4 @@
     cacheLayer: {CacheLayer} [기본값: walls][CacheLayer의 쉐이더를 표현해준다. wall는 모름]
 
 특이사항(스프라이트)
-    블록 이름-large: [블록의 2*2 변형 모델의 이미지 설정]
+    블록 이름-large: [블록의 2*2 변형 모델의 이미지]
