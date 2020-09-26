@@ -1,4 +1,4 @@
-2020-08-24
+2020-09-25
 
 타입 이름: MassDriver
 포함 대상: Block
@@ -9,15 +9,16 @@
 일반 필드
     range: float [기본값: ][driverBolt 탄환의 최대 사거리로 인해 바꿀 수 없습니다]
     rotateSpeed: float [기본값: 0.04][포신 회전 속도]
-    translation: float [기본값: 7][
+    translation: float [기본값: 7][아이템 발사 주기]
     minDistribute: int [기본값: 10][탄환 발사 아이템 최솟값]
     knockback: float [기본값: 4][탄환 도착 시 도착 매스 드라이버의 포신 넉백]
-    bulletSpeed: float [기본값: 5.5][
-    bulletLifetime: float [기본값: 200][
+    bulletSpeed: float [기본값: 5.5][탄속]
+    bulletLifetime: float [기본값: 200][탄환 지속시간]
     reloadTime: float [기본값: 100][다시 발사하는 주기. 60으로 나누면 초 단위]
     shootEffect: {Effect} [기본값: shootBig2][탄환 발사 시 그래픽 효과]
     smokeEffect: {Effect} [기본값: shootBigSmoke2][탄환 발사 시 그래픽 효과]
     receiveEffect: {Effect} [기본값: mineBig][탄환 도착 시 그래픽 효과]
+    shootSound: {Sound} [기본값: shootBig][탄환 발사 소리]
     shake: float [기본값: 3][탄환 도착 시 화면 흔들림]
 
 특이사항(기본값 필드)
@@ -31,5 +32,5 @@
 
 특이사항(스프라이트)
     이름-base: 포신의 바닥
-    이름: 포신
+
 

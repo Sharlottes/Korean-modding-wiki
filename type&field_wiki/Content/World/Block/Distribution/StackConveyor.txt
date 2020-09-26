@@ -1,4 +1,4 @@
-2020-08-12
+2020-09-16
 
 타입 이름: StackConveyor
 포함 대상: Block
@@ -8,9 +8,11 @@
 
 
 일반 필드
-    speed: float [기본값: 0][
+    speed: float [기본값: 0][운반속도, 단위나 연산과정 모름]
     splitOut: boolean [기본값: true][
     recharge: float [기본값: 2][
+    loadEffect: {Effect} [기본값: plasticburn][아이템을 받을 때 그래픽 이펙트]
+    unloadEffect: {Effect} [기본ㄱ밧: plasticburn][아이템을 내릴 때 그래픽 이펙트]
 
 특이사항(기본값 필드)
     rotate: boolean [기본값: true][컨베이어처럼 방향이 있는 여부]
