@@ -22,12 +22,28 @@
 
 특이사항(plans 문법)
     plans: [
-      {
-        unit: unitType1
-        requirements: [
-          copper/1
-          hiamond/2
-        ],
-        time: 100
-      }
+        {
+            unit: dagger,
+            requirements: [
+                copper/1,
+                silicon/2
+            ],
+            time: 100
+        },
+        {
+            unit: titan,
+            requirements: [
+                copper/1,
+                silicon/5
+            ],
+            time: 160
+        },
+        {
+            unit: boat,
+            requirements: [
+                copper/50,
+                silicon/25
+            ],
+            time: 180
+        }
     ]

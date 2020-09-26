@@ -1,15 +1,16 @@
-2020-08-20
+2020-09-25
 
 타입 이름: RepairPoint
 포함 대상: Block
 
 설명:
-
+    정비소
 
 일반 필드
     repairRadius: float [기본값: 50][수리광선 범위]
     repairSpeed: float [기본값: 0.3][수리 속도]
     powerUse: float [기본값: ][전력 사용량]
+    laserColor: {Color} [기본값: e9ffd7][수리광선 색]
 
 특이사항(기본값 필드)
     update: boolean [기본값: true][TileEntity를 가짐으로써 다른 엔티티와 상호작용하는 여부]
@@ -17,3 +18,7 @@
     hasPower: boolean [기본값: true][전력을 보유하는 여부]
     outlineIcon: boolean [기본값: true][블록 스프라이트에 포탑처럼 외곽선(테두리)가 더해지는 여부]
 
+특이사항(스프라이트)
+    이름-base: 정비소 포신 바닥
+    laser: 수리광선 중간
+    laser-end: 수리광선 끝부분

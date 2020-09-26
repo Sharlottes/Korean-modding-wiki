@@ -1,15 +1,15 @@
-2020-08-25
+2020-09-24
 
 타입 이름: CommandCenter
 포함 대상: Block
 
 설명:
-
+    지휘소
 
 일반 필드
-    topColor: {Color} [기본값: eab678][
+    topColor: {Color} [기본값: null][
     bottomColor: {Color} [기본값: 5e5e5e][
-    effect: {Effect} [기본값: commandSend][
+    effect: {Effect} [기본값: commandSend][지휘소에서 명령을 보내면 생기는 그래픽 이펙트]
 
 특이사항(기본값 필드)
     destructible: boolean [기본값: true][체력을 보유하고, 파괴될 수 있는 여부]c

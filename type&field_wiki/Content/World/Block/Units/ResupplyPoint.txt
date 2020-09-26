@@ -1,4 +1,4 @@
-2020-08-12
+2020-09-24
 
 타입 이름: ResupplyPoint
 포함 대상: Block
@@ -8,9 +8,9 @@
 
 일반 필드
     ammoAmount: int [기본값: 10][
-    resupplyRate: float [기본값: 5][
-    range: float [기본값: 60][
-    ammoColor: {Color} [기본값: d99d73][
+    resupplyRate: float [기본값: 5][탄약 보급 주기]
+    range: float [기본값: 60][탄약 보급 사거리]
+    ammoColor: {Color} [기본값: d99d73][탄약 보급 색]
 
 특이사항(기본값 필드)
     solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
