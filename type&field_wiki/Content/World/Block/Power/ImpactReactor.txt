@@ -4,7 +4,7 @@
 포함 대상: PowerGenerator
 
 설명:
-
+    핵융합로
 
 일반 필드
     warmupSpeed: float [기본값: 0.001][융합로가 속도를 올릴 때 속도]

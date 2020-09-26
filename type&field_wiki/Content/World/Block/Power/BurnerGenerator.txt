@@ -4,7 +4,7 @@
 포함 대상: ItemLiquidGenerator
 
 설명:
-    인화성을 발전 효율로 쓰는 발전기.
+    인화성을 발전 효율로 쓰는 발전기
 
 일반 필드
     turbineSpeed: float [기본값: 2][turbine 부분이 돌아가는 속도]

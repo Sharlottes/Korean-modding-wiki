@@ -1,10 +1,10 @@
-2020-08-12
+2020-09-07
 
 타입 이름: NuclearReactor
 포함 대상: PowerGenerator
 
 설명:
-
+    토륨 원자로
 
 일반 필드
     lightColor: {Color} [기본값: 7f19ea][
