@@ -1,0 +1,15 @@
+2020-08-01
+
+타입 이름: SectorPreset
+포함 대상: UnlockableContent
+타입 종류: 클래스
+
+설명:
+
+
+일반 필드
+    generator: {FileMapGenerator} [기본값: ][
+    planet: {Planet} [기본값: ][
+    sector: {Sector} [기본값: ][
+
+    captureWave: int [기본값: 0][

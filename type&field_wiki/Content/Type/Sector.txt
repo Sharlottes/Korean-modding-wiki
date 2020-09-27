@@ -1,0 +1,15 @@
+2020-09-25
+
+타입 이름: Sector
+포함 대상: X
+타입 종류: 클래스
+
+설명:
+    행성의 작은 부분
+
+일반 필드
+    save: {SaveSlot} [기본값: ][
+    preset: {SectorPreset} [기본값: ][
+
+    baseCoverage: float [기본값: ][주변 기지에 근거한 난이도를 나타냄]
+    generateEnemyBase: boolean [기본값: ][

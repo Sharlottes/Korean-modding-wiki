@@ -1,0 +1,19 @@
+2020-09-25
+
+타입 이름: StatusEffect
+포함 대상: MappableContent
+타입 종류: 클래스
+
+설명:
+    각종 상태이상
+
+일반 필드
+    damageMultiplier: float [기본값: 1][데미지 배수]
+    armorMultiplier: float [기본값: 1][방어력 배수]
+    speedMultiplier: float [기본값: 1][이동속도 배수]
+    reloadMultiplier: float [기본값: 1][재장전 배수]
+    damage: float [기본값: ][틱당 데미지. 음수는 힐]
+    effectChance: float [기본값: 0.15][그래픽 효과가 생길 확률]
+    permanent: boolean [기본값: ][효과가 결코 사라지지 않을 여부]
+    color: {Color} [기본값: white][효과의 틴트 색]
+    effect: {Effect} [기본값: none][영향을 받는 단위 위에서 랜덤하게 발생하는 그래픽 효과]

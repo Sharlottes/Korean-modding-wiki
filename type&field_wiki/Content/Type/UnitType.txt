@@ -1,0 +1,98 @@
+2020-09-25
+
+타입 이름: UnitType
+포함 대상: UnlockableContent
+타입 종류: 클래스
+
+설명:
+    유닛 변수
+
+일반 필드
+    flying: boolean [기본값: ][고도 1에 있을 여부]
+    speed: float [기본값: 1.10][이동속도]
+    boostMultiplier: float [기본값: 1][
+    rotateSpeed: float [기본값: 5][무기 회전속도]
+    baseRotateSpeed: float [기본값: 5][몸체 회전속도]
+    drag: float [기본값: 0.3][마찰력]
+    accel: float [기본값: 0.5][
+    landShake: float [기본값: 0][
+    rippleScale: float [기본값: 1][
+    fallSpeed: float [기본값: 0.018][
+    health: float [기본값: 200][체력]
+    range: float [기본값: -1][감지 사거리]
+    armor: float [기본값: 0][방어력]
+    crashDamageMultiplier: float [기본값: 1][
+    targetAir: boolean [기본값: true][공중 감지 여부]
+    targetGround: boolean [기본값: true][지상 감지 여부]
+    faceTarget: boolean [기본값: true][
+    rotateShooting: boolean [기본값: true][
+    isCounted: boolean [기본값: true][
+    lowAltitude: boolean [기본값: false][
+    canBoost: boolean [기본값: flase][
+    destructibleWreck: boolean [기본값: true][
+    groundLayer: float [기본값: 60][지상 레이어값]
+    payloadCapacity: float [기본값: 8][매스 이동 크기]
+    commandLimit: int [기본값: 24][지휘유닛 제한 수]
+    visualElevation: float [기본값: -1][시각적 고도값]
+    allowLegStep: boolean [기본값: false][
+    hovering: boolean [기본값: false][
+    omniMovement: boolean [기본값: true][
+    fallEffect: {Effect} [기본값: fallSmoke][공중에서 낙하할 때 그래픽 이펙트]
+    fallThrusterEffect: {Effect} [기본값: fallSmoke][
+    abilities: {Ability} [기본값: ][값-쌍 1차 배열. README 참고]
+
+    legCount: int [기본값: 4][다리 수]
+    legGroupSize: int [기본값: 2][다리 크기]
+    legLength: float [기본값: 10][다리 길이]
+    legSpeed: float [기본값: 0.1][다리 속도]
+    legTrns: float [기본값: 1][
+    legBaseOffeset: float [기본값: 0][
+    legMoveSpace: float [기본값: 1][다리 이동속도]
+    legPairOffset: float [기본값: 0][
+    legLengthSc1: float [기본값: 1][
+    maxStretch: float [기본값: 1.75][
+    legSplashDamage: float [기본값: 0][다리 광역 데미지]
+    legSplashRange: float [기본값: 5][다리 광역 데미지 범위]
+    flipBackLegs: boolean [기본값: true][
+
+    mechSideSway: float [기본값: 0.54][
+    mechFrontSway: float [기본값: 0.1][
+    mechStride: float [기본값: -1][
+    mechStepShake: float [기본값: -1][
+    mechStepParticles: boolean [기본값: false][
+    mechLegColor: {Color} [기본값: 6e7080][다리 색]
+
+    itemCapacity: int [기본값: -1][아이템 수송량]
+    ammoCapacity: int [기본값: -1][탄약 수송량]
+    ammoType: {AmmoType} [기본값: copper][탄약 종류]
+    mineTier: int [기본값: -1][채광 티어]
+    buildSpeed: float [기본값: 1][건설 속도]
+    mineSpeed: float [기본값: 1][채광 속도]
+
+    clipSize: float [기본값: -1][
+    canDrown: boolean [기본값: true][익사할 여부]
+    engineOffset: float [기본값: 5][엔진 오프셋 위치]
+    engineSize: float [기본값: 2.5][엔진 크기]
+    strafePenalty: float [기본값: 0.5][
+    hitSize: float [기본값: 6][
+    itemOffsetY: float [기본값: 3][
+    lightRadius: float [기본값: 60][빛 반지름]
+    lightOpacity: float [기본값: 0.6][
+    lightColor: {Color} [기본값: fbd367][빛 색]
+    drawCell: boolean [기본값: true][
+    drawItems: boolean [기본값: true][
+    drawShields: boolean [기본값: true][방어막을 그래픽에 그릴 여부]
+    trailLength: int [기본값: 3][
+    trailX: float [기본값: 4][
+    trailY: float [기본값: -3][
+    trailSc1: float [기본값: 1][
+    canHeal boolean [기본값: false][블록을 수리할 수 있는 여부]
+    singleTarget: boolean [기본값: false][
+
+    immunitites: {StatusEffect} [기본값: ][
+    deathSound: {Sound} [기본값: bang][사망 소리]
+
+    weapons: {Weapon} [기본값: ][값-쌍 1차 배열. README 참고]
+
+특이사항(텍스쳐 부위)
+    baseRegion, legRegion, region, shadowRegion, cellRegion, occlusionRegion, jointRegion, footRegion, legBaseRegion, baseJointRegion, outlineRegion
