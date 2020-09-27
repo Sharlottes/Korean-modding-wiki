@@ -8,5 +8,17 @@
     멜트다운 포탑
 
 일반 필드
-    firingMoveFract: float [기본값: 0.25][
-    shootDuration: float [기본값: 100][
+    firingMoveFract: float [기본값: 0.25][발사하면서 이동하는 속도]
+    shootDuration: float [기본값: 100][레이저가 나오는 시간]
+
+특이사항(기본값 필드)
+    canOverdrive: boolean [기본값: false][과부하를 받는 여부]
+    coolantMultiplier: float [기본값: 1][냉각 배수]
+
+특이사항(냉각 연산)
+    reload - (만약 현 액체 보유량이 액체 최대 소모량 보다 작으면 현 액체량만큼) * 액체의 heatCapacity * coolantMultiplier
+
+특이사항(냉각수 조건)
+    액체가..
+        flammability 가 0.1보다 미만
+        temperature 가 0.5보다 이하

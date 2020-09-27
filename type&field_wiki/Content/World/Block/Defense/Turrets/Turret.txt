@@ -1,0 +1,53 @@
+2020-09-23
+
+타입 이름: Turret
+포함 대상: Block
+타입 종류: 클래스
+
+설명:
+    포탑
+
+일반 필드
+    targetInterval: int [기본값: 20][타겟 탐색 간격]
+
+    heatColor: {Color} [기본값: ab3400][heat부분(과열) 색]
+    shootEffect: {Effect} [기본값: none][발사 시 그래픽 이펙트]
+    smokeEffect: {Effect} [기본값: none[냉각 시 그래픽 이펙트]
+    ammoUseEffect: {Effect} [기본값: none[탄환 사출 그래픽 이펙트]
+    shootSound: {Sound} [기본값: shoot][발사 시 소리]
+
+    ammoPerShot: int [기본값: 1][발사 당 소모 탄약 수]
+    ammoEjectBack: float [기본값: 1][탄환 사출 그래픽 이펙트가 중앙에서 얼마나 뒤로 나오는지]
+    range: float [기본값: 50][최대 감지 사거리]
+    reloadTime: float [기본값: 10][재장전 시간, 60/reloadTime*shots = 발/초 값]
+    inaccuracy: float [기본값: 0][오차 최대각]
+    velocityInaccuracy: float [기본값: 0][오차 최대속도]
+    shots: int [기본값: 1][1번 발사할 때 나가는 탄환 수, 60/reloadTime*shots = 발/초 값]
+    spread: float [기본값: 4][탄환이 퍼지는 정도]
+    recoilAmount: float [기본값: 1][포신 반동]
+    restitution: float [기본값: 0.02][포신 반동 회복속도]
+    cooldown: float [기본값: 0.02][heat 부분의 과열이 끝나는 시간]
+    rotateSpeed: float [기본값: 5][1틱당 회전각]
+    shootCone: float [기본값: 8][발사 제한 각]
+    shootShake: float [기본값: 0][발사 시 화면 흔들기 정도]
+    xRand: float [기본값: 0][탄환 발사 위치와 포신의 중앙과의 오차 최대 거리]
+    minRange: float [기본값: 0][최소 감지 사거리, 현재 포병류에서만 쓰임]
+    burstSpacing: float [기본값: 0][점사 시 탄과 탄 사이의 거리]
+    alternate: boolean [기본값: false][포신이 2개 이상이면, 번갈아서 발사할 여부]
+    targetAir: boolean [기본값: true][공중을 감지할 여부]
+    targetGround: boolean [기본값: true][지상, 해상을 감지할 여부]
+    acceptCoolant: boolean [기본값: true][냉각액을 사용할 수 있는 여부, 만약 true 면 자동으로 hasLiquids가 true로 됨]
+    coolantMultiplier: float [기본값: 5][냉각 배수]
+    coolEffect: {Effect} [기본값: fuelburn][냉각 그래픽 이펙트]
+
+특이사항(기본값 필드)
+    priority: {TargetPriority} [기본값: turret][적들이 이 블록에 어그로 끌리는 정도]
+    update: boolean [기본값: true][Building을 가짐으로써 다른 엔티티와 상호작용하는 여부]
+    solid: boolean [기본값: true][지상 유닛이 지나갈 수 없는 여부]
+    group: {BlockGroup} [기본값: turrets][canReplace 가 재정의되지 않는 한, 같은 그룹의 블록들은 서로를 교체 가능]
+    outlineIcon: boolean [기본값: true][블록 스프라이트에 포탑처럼 외곽선(테두리)가 더해지는 여부]
+    liquidCapacity: float [기본값: 20][액체 저장용량]
+
+특이사항(스프라이트)
+    block-블록크기: 포신 바닥
+    이름-heat: 포신 과열 부분

@@ -1,10 +1,16 @@
+
 int : 정수
 float : 실수
 boolean : true/false
-this는 그 블록 자신을 말합니다. 모드일 경우 꼭 모드명-블록명 으로 작성하셔야 됩니다.
-중괄호{}로 감싸진 유형은 밑에 작성된 단어를 선택해야 하며, {}를 무조건 제외하고 작성하셔야 됩니다.
+{}목록은 txt파일로 다시 문서화할 계획
 
-js, json, hjson 파일의 경로는 content/blocks 안에서 자유롭게 하셔도 됩니다.
+액체는 *60
+전기는 *60
+시간은 *60
+거리는 /8 를 하셔야 인게임에 표시되는 양 또는 초, 타일 단위로 나옵니다.
+
+
+json, hjson 파일의 경로는 content/blocks 안에서 자유롭게 하셔도 됩니다.
 스프라이트 파일의 경로는 https://github.com/Anuken/Mindustry/tree/master/core/assets-raw/sprites/ 경로를 참고해주세요. (꼭 이 파일 경로대로 안해도 되지만, 랙이 줄어듭니다]
 
 {}목록은 txt파일로 다시 문서화할 계획입니다.

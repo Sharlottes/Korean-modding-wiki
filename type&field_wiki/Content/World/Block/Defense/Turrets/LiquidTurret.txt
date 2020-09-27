@@ -1,0 +1,25 @@
+2020-09-14
+
+타입 이름: LiquidTurret
+포함 대상: Turret
+타입 종류: 클래스
+
+설명:
+    파도 포탑
+
+일반 필드
+    ammoTypes: {ObjectMap} [기본값: ][탄환 소모 종류]
+
+특이사항(기본값 필드)
+    acceptCoolant: boolean [기본값: true][냉각액을 사용할 수 있는 여부, 만약 true 면 자동으로 hasLiquids가 true로 됨]
+    hasLiquids: boolean [기본값: true][액체를 보유하는 여부]
+    activeSound: {Sound} [기본값: spray][소리. 용도가 다다름]
+
+특이사항(스프라이트)
+    이름-liquid: 액체 부분
+특이사항(ammoTypes 문법)
+    "ammoTypes": {
+        "liquidA": "bulletA",
+        "liquidB": "bulletB",
+        "liquidC": "bulletC",
+    }
