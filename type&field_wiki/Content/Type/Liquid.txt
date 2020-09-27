@@ -1,0 +1,19 @@
+2020-05-24
+
+타입 이름: Liquid
+포함 대상: UnlockableContent
+타입 종류: 클래스
+
+설명:
+    액체의 스탯을 설정하는 핵심 클래스입니다.
+
+일반 필드
+    color: {Color} [기본값: ][파이프와 지면에서 쓰이는 색]
+    barColor: {Color} [기본값: ][ui 바에서 쓰이는 색]
+    lightColor: {Color} [기본값: ][빛으로 쓰이는 색]
+    flammability: float [기본값: ][0은 완전히 인화성이 없으며, 0.5 초과는 인화성이 매우 강함]
+    temperature: float [기본값: 0.5][0.5는 실온, 0은 매우 차갑고, 1은 녹을정도로 뜨거움]
+    heatCapacity: float [기본값: 0.5][이 액체가 얼마나 열을 수용하는지. 0.5은 물, 이보다 낮으면 냉각에 안좋고, 밀도가 낮음]
+    viscosity: float [기본값: 0.5][이 액체가 얼마나 두꺼운지. 0.5은 물, 1은 타르와 비슷하게 됨]
+    explosiveness: float [기본값: ][열을 가했을 때, 이 액체가 얼마나 폭발하기 쉬운지. 0은 아무것도 아니지만, 1은 핵과 버금감]
+    effect: {StatusEffect} [기본값: none][관련 상태 효과. 물은 wet, 타르는 tarred 등..]

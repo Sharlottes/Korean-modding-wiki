@@ -1,0 +1,17 @@
+2020-09-25
+
+타입 이름: AmmoTypes
+포함 대상: X
+타입 종류: 클래스
+
+설명:
+    유닛이 사용하는 탄약의 종류
+
+일반 필드
+
+특이사항(정적 필드)
+    powerLow: {AmmoType} [기본값: ][
+    power: {AmmoType} [기본값: ][
+    powerHigh: {AmmoType} [기본값: ][
+    copper: {AmmoType} [기본값: ][
+    thorium: {AmmoType} [기본값: ][

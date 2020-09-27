@@ -1,0 +1,13 @@
+2020-09-25
+
+타입 이름: AmmoType
+포함 대상: Content
+타입 종류: 클래스
+
+설명:
+    유닛이 사용하는 탄약
+
+일반 필드
+    icon: {String} [기본값: copper][
+    color: {Color} [기본값: ff8947][
+    barColor: {Color} [기본값: ff8947][
