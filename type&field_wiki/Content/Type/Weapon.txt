@@ -1,0 +1,48 @@
+2020-09-22
+
+타입 이름: Weapon
+포함 대상: X
+타입 종류: 클래스
+
+설명:
+    무기
+
+일반 필드
+    name: String [기본값: ][무기 이름]
+    bullet: {BulletType} [기본값: ][무기가 발사할 탄환]
+    ejectEffect: {Effect} [기본값: none][탄피 배출 그래픽 효과]
+    mirror: boolean [기본값: true][초기화할 떄 이 무기의 복제본을 만들 여부]
+    flipSprite: boolean [기본값: false][렌더링 시 무기의 스프라이트를 뒤집어야 할 여부]
+    alternate: boolean [기본값: true][미러 무기가 번갈아서 공격할 여부]
+    rotate: boolean [기본값: true][무기가 독립적으로 회전할 여부]
+    top: boolean [기본값: true][무기 외곽선을 그릴 여부]
+    continuous: boolean [기본값: ][발사하는 동안 총알을 제자리에 고정시킬 여부]
+    rotateSpeed: float [기본값: 20][rotate 활성화 시 무기 틱당 회전각]
+    reload: float [기본값: ][틱당 재장전]
+    shots: int [기본값: 1][발사당 탄환 수]
+    spacing: float [기본값: 0][여러발 발사의 탄간 간격]
+    inaccuracy: float [기본값: 0][오차 최대각]
+    shake: float [기본값: 0][탄환이 퍼지는 정도]
+    recoil: float [기본값: 1.5][포신 반동]
+    shootX: float [기본값: 0][무기 중심에서의 발사체/효과가 생기는 위치]
+    shootY: float [기본값: 3][무기 중심에서의 발사체/효과가 생기는 위치]
+    x: float [기본값: 5][유닛 중심에서의 무기 위치]
+    y: float [기본값: 0][유닛 중심에서의 무기 위치]
+    xRand: float [기본값: 0][탄환 발사 위치와 포신의 중앙과의 오차 최대 거리]
+    occlusion: float [기본값: -1][무기 밑에 그려진 원형그림자 반경]
+    velocityRnd: float [기본값: 0][무작위 속도 분율]
+    firstShotDelay: float [기본값: 0][발사간 딜레이]
+    shotDelay: float [기본값: 0][발사간 딜레이]
+    shootCone: float [기본값: 5][발사 제한 각]
+    cooldownTime: float [기본값: 20][heat 부분의 과열이 끝나는 시간]
+    ignoreRotation: boolean [기본값: false][발사 시 슈터 로테이션이 무시될 여부]
+    minShootVelocity: float [기본값: -1][이 무기가 쏘는 데 필요한 최소 속도]
+    otherSide: int [기본값: -1][무기 교대에 사용되는 내부 값. 절대 바꾸지 마시오]
+    shootSound: {Sound} [기본값: pew][발사 시 소리]
+    noAmmoSound:{Sound} [기본값: click][탄환 부족 시 소리]
+    region: {TextureRegion} [기본값: ][표시될 영억, 자동 로딩]
+    heatRegion: {TextureRegion} [기본값: ][열 영역, 선택사항. region와 같은 크기어야 함]
+    outlineRegion: {TextureRegion} [기본값: ][top 변수가 false일 경우에 가능한 외곽선 영역]
+    heatColor: {Color} [기본값: ab3400][heat 부분 과열 색]
+    shootStatus: {StatusEffect} [기본값: none][발사 시 적용되는 상태이상 효과]
+    shootStatusDuration: float [기본값: 300][상태이상 효과 지속시간]

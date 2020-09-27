@@ -1,0 +1,20 @@
+2020-09-25
+
+타입 이름: Weather
+포함 대상: UnlockableContent
+타입 종류: 클래스
+
+설명:
+    날씨
+
+일반 필드
+    duration: float [기본값: 28800][
+    opacityMultiplier: float [기본값: 1][
+    attrs: {Attributes} [기본값: ][상호작용 1차 배열]
+
+    rand: {Rand} [기본값: ][
+    type: {WeatherState} [기본값: ]
+    stats: {StatusEfffect} [none][
+    statusDuration: float [기본값: 120][
+    statusAir: boolean [기본값: true][
+    statusGround: boolean [기본값: true][
