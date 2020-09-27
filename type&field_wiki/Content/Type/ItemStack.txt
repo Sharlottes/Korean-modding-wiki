@@ -5,22 +5,8 @@
 타입 종류: 클래스
 
 설명:
-    문자열: 아이템/수량
-    객체:
-        item: 아이템
-        amount: 수량
+    아이템 소비에 있어서 중요한 클래스 입니다. ps. 문자열(아이템/수량) 로도 가능
 
-
-예시:
-    consumes: {
-      items: {
-        items: [
-          spore-pod/1
-          copper/5
-        ]
-        item: spore-pod
-        amount: 5
-        item: copper
-        amount: 1
-      }
-    }
+일반 필드
+    item: {Item} [기본값: ][아이템 이름]
+    amount: int [기본값: 0][아이템 수량]

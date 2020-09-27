@@ -1,0 +1,28 @@
+2020-09-17
+
+타입 이름: Planet
+포함 대상: UnlockableContent
+타입 종류: 클래스
+
+설명:
+    캠페인 행성. 아직 json으로 만들기엔 무리로 확인
+
+일반 필드
+    mesh: {PlanetMesh} [기본값: ][렌더링에 사용되는 Mesh, 로드 시 생성되지만 서버에선 null이 될 것]
+    position: {Vec3} [기본값: ][전역 좌표에서의 위치. 우주가 업데이트하기 전엔 0,0,0]
+    grid: {PlanetGrid} [기본값: ][행성상 섹터에 사용되는 그리드. 이 행성에 착륙시킬 수 없다면 Null]
+    generator: {PlanetGenerator} [기본값: ][행성을 만들 생성기. 착륙할 필요가 없는 행성의 경우에는 Null이 될 수 있음]
+    radius: float [기본값: ][이 행성의 반디름]
+    orbitRadius: float [기본값: ][이 행성의 공전 궤도 반지름. 당신이 무엇을 하고 있는지 정확히 알지 않는 한 변하지 않음]
+    totalRadius: float [기본값: ][모든 행성의 총 반지름]
+    orbitTime: float [기본값: ][행성 공전 주기. 1년]
+    rotateTime: float [기본값: 1440][행성 자전 주기. 1일]
+    sectorApproxRadius: float [기본값: ][한 섹터의 약 반지름]
+    tidalLock: boolean [기본값: flase][행성이 동주기 자전, 조석 고정을 할 여부]
+    startSector: int [기본값: 0][맵 다이얼로그에 표시되는 기본 시작 섹터]
+    bloom: boolean [기본값: flase][블룸 렌더 효과 사용 여부]
+    lightColor: {Color} [기본값: ][항성에게선 다른 행성을 비추는 색. 행성에게 직접적인 무언가는 하지 않음]
+    atmosphereColor: {Color} [기본값: ][착륙할 수 있는 행성의 대기 색]
+    hasAtmosphere: boolean [기본값: true][이 행성이 대기를 가질 여부]
+    parent: {Planet} [기본값: ][이 행성이 공전하는 모체. Null 일 경우 중앙의 항성으로 간주함]
+    solarSystem: {Planet} [기본값: ][이 행성이 있는 항성계 전체의 근원적 모체]
