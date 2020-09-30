@@ -1,0 +1,26 @@
+2020-09-25
+
+타입 이름: HealBulletType
+포함 대상: BulletType
+타입 종류: 클래스
+
+설명:
+    힐탄
+
+일반 필드
+    healPercent: float [기본값: 3][
+    height: float [기본값: 7][탄환 높이, 세로]
+    width: float [기본값: 2][탄환 너비, 가로]
+    backColor: {Color} [기본값: 98ffa9][후면 색]
+    frontColor: {Color} [기본값: ffffff][전면 색]
+
+특이사항(기본값 필드)
+    damage: float [기본값: 1][탄환 데미지]
+    speed: float [기본값: 1][탄환 속도]
+    shootEffect: {Effect} [기본값: shootHeal][발사할 때 생기는 그래픽 효과]
+    smokeEffect: {Effect} [기본값: hitLaser][발사 시 생기는 추가 연기 그래픽 효과]
+    hitEffect: {Effect} [기본값: hitLaser][명중 시 그래픽 효과]
+    despawnEffect: {Effect} [기본값: hitLaser][소멸 시 그래픽 효과]
+    collidesTeam: boolean [기본값: true][아군과 충돌할 여부]
+    hittable: boolean [기본값: false][세그먼트와 같은 포탑에 요격될 수 있을 여부]
+    reflectable: boolean [기본값: false][메타 벽과 같은 벽에 반사될 수 있을 여부]

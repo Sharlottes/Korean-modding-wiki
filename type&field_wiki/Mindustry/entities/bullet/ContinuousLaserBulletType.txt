@@ -1,0 +1,37 @@
+2020-09-22
+
+타입 이름: ContinuousLaserBulletType
+포함 대상: BulletType
+타입 종류: 클래스
+
+설명:
+
+
+일반 필드
+    length: float [기본값: 220][
+    shake: float [기본값: 1][
+    fadeTime: float [기본값: 16][
+    colors: [{Color}] [기본값: [ec745855, ec7458aa, ff9c5a, ffffff]][
+    tscales: [float] [기본값: [1, 0.7, 0.5, 0.2]][
+    strokes: [float] [기본값: [2, 1.5, 1, 0.2]][
+    lenscales: [float] [기본값: [1, 1.12, 1.15, 1.17]][
+    width: float [기본값: 9][
+    oscScl: float [기본값: 0.8][
+    oscMag: float [기본값: 1.5][
+    largeHit: boolean [기본값: true][
+
+특이사항(기본값 필드)
+    damage: float [기본값: 0][탄환 데미지]
+    speed: float [기본값: 0.001][탄환 속도]
+    hitSize: float [기본값: 4][탄환 명중 크기]
+    drawSize: float [기본값: 420][탄환 그래픽 크기]
+    lifetime: float [기본값: 16][탄환 지속시간]
+    keepVelocity: boolean [기본값: false][속도가 발사자로부터 물려받을 여부]
+    pierce: boolean [기본값: true][통과 여부]
+    hittable: boolean [기본값: false][세그먼트와 같은 포탑에 요격될 수 있을 여부]
+    hitColor: {Color} [기본값: ff9c5a][명중 시 색]
+    collidesTiles: boolean [기본값: false][타일과 충돌할 여부]
+    incendAmount: int [기본값: 1][탄환이 명중할 때, 불덩이가 생길 횟수]
+    incendSpread: float [기본값: 5][탄환이  명중할 때, 불덩이가 생길 범위]
+    incendChance: float [기본값: 0.4][탄환이 명중할 때, 불덩이가 생길 확률]
+    lightColor {Color} [기본값: ffa500ff][탄환 빛 색]

@@ -62,10 +62,10 @@
 
     splashDamageRadius: float [기본값: -1][광역 데미지 범주]
 
-    incendAmount: int [기본값: 0][탄환이 피격되었을 때, 불덩이가 생길 횟수]
-    incendSpread: float [기본값: 8][탄환이 피격되었을 때, 불덩이가 생길 범위]
-    incendChance: float [기본값: 1][탄환이 피격되었을 때, 불덩이가 생길 확률]
-    homingPower: float [기본값: 0][복잡한 작업은 하지 않는다. homingPower가 0.01보다 크면 UI에 렌더링되고, homingPower가 크면 0.0001보다 크면 homingRange가 작동할 수 있다.]
+    incendAmount: int [기본값: 0][탄환이 명중할 때, 불덩이가 생길 횟수]
+    incendSpread: float [기본값: 8][탄환이  명중할 때, 불덩이가 생길 범위]
+    incendChance: float [기본값: 1][탄환이 명중할 때, 불덩이가 생길 확률]
+    homingPower: float [기본값: 0][homingPower가 0.01보다 크면 UI에 렌더링되고, homingPower가 크면 0.0001보다 크면 homingRange가 작동할 수 있다.]
     homingRange: float [기본값: 50][유도 탐지 범위]
 
     lightningColor: {Color} [기본값: f3e979][전격 색]
