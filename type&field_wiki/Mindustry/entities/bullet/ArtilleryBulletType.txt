@@ -10,3 +10,15 @@
 일반 필드
     trailMult: float [기본값: 1][
     trailSize: float [기본값: 4][
+
+특이사항(기본값 필드)
+    collidesTiles: boolean [기본값: false][타일과 충돌할 여부]
+    collides: boolean [기본값: false][모든 것과 충돌할 여부]
+    collidesAir: boolean [기본값: false][공중과 충돌할 여부]
+    hitShake: float [기본값: 1][명중 시 흔들림]
+    hitSound: {Sound} [기본값: explosion][탄환이 사라지거나, 명중했을 때 생기는 소리]
+    shootEffect: {Effect} [기본값: shootBig][발사할 때 생기는 그래픽 효과]
+    trailEffect: {Effect} [기본값: artilleryTrail][꼬리효과]
+    speed: float [기본값: 1][탄환 속도]
+    damage: float [기본값: 1][탄환 데미지]
+    sprite: String [기본값: shell][스프라이트 이름]

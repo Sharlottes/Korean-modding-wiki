@@ -12,7 +12,7 @@
 특이사항(기본값 필드)
     splashDamageRadius: float [기본값: 1][광역 데미지 범주]
     splashDamage: float [기본값: 1][광역 데미지, 0은 비활성]
-    collidesTile: boolean [기본값: false][타일과 충돌할 여부]
+    collidesTiles: boolean [기본값: false][타일과 충돌할 여부]
     shrinkY: float [기본갑ㅆ: 0.7][
     lifetime: float [기본값: 30][탄환 지속시간]
     drag: float [기본값: 0.05][탄환 마찰력]

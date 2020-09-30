@@ -33,7 +33,7 @@
     knockback: float [기본값: ][속도 넉백]
     status: {StautusEffect} [기본값: none][맞으면 상대에게 추가될 상태이상 효과]
     statusDuration: float [기본값: 480][상태이상 지속시간]
-    collidesTile: boolean [기본값: true][타일과 충돌할 여부]
+    collidesTiles: boolean [기본값: true][타일과 충돌할 여부]
     collidesTeam: boolean [기본값: false][아군과 충돌할 여부]
     collidesAir: boolean [기본값: true][공중과 충돌할 여부]
     collidesGround: boolean [기본값: true][지상과 충돌할 여부]
