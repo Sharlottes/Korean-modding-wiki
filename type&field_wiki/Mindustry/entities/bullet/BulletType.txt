@@ -1,4 +1,4 @@
-2020-09-25
+2020-08-30
 
 타입 이름: BulletType
 포함 대상: Content
@@ -14,8 +14,8 @@
     hitSize: float [기본값: 4][탄환 명중 크기]
     drawSize: float [기본값: 40][탄환 그래픽 크기]
     drag: float [기본값: 0][탄환 마찰력]
-    pierce: boolean [기본값: ][
-    pierceBuilding: boolean [기본값: ][
+    pierce: boolean [기본값: ][통과 여부]
+    pierceBuilding: boolean [기본값: ][건물만 통과 여부]
     hitEffect: {Effect} [기본값: ][명중 시 그래픽 효과]
     despawnEffect: {Effect} [기본값: ][소멸 시 그래픽 효과]
 
