@@ -89,7 +89,7 @@
     canHeal boolean [기본값: false][블록을 수리할 수 있는 여부]
     singleTarget: boolean [기본값: false][
 
-    immunitites: {StatusEffect} [기본값: ][
+    immunities: {StatusEffect} [기본값: ][
     deathSound: {Sound} [기본값: bang][사망 소리]
 
     weapons: {Weapon} [기본값: ][값-쌍 1차 배열. README 참고]

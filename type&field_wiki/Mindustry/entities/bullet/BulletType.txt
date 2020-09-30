@@ -49,7 +49,7 @@
     fragAngle: float [기본값: 0][파편탄 발사각]
     fragBullets: int [기본값: 9][파편탄 수]
     fragVelocityMin: float [기본값: 0.2][파편탄 속도 최솟값]
-    fragVelocityMasx: float [기본값: 1][파편탄 속도 최댓값]
+    fragVelocityMax: float [기본값: 1][파편탄 속도 최댓값]
     fragLifeMin: float [기본값: 1][파편탄 지속시간 최솟값]
     fragLifeMax: float [기본값: 1][파편탄 지속시간 최댓값]
     fragBullet: {BulletType} [기본값: null][파편탄]

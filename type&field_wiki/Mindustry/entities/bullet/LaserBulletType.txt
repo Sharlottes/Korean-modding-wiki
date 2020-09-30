@@ -1,0 +1,24 @@
+2020-09-22
+
+타입 이름: LaserBulletType
+포함 대상: BulletType
+타입 종류: 클래스
+
+설명:
+    랜서 레이저
+
+일반 필드
+    colors: [{Color}] [기본값: [a9d8ff66, a9d8ff, ffffff]
+    laserEffect: {Effect} [기본값: lancerLaserShootSmoke][레이저 발사효과]
+    length: float [기본값: 160][레이저 길이]
+    width: float [기본값: 15][레이저 폭]
+    lengthFalloff: float [기본값: 0.5][
+    sideLength: float [기본값: 29][레이저 측면길이]
+    sideWidth: float [기본값: 0.7][레이저 측면폭]
+    sideAngle: float [기본값: 90][레이저 측면각]
+    lightningSpacing: float [기본값: -1][전격 발생 (그래픽)간격]
+    lightningDelay: float [기본값: 0.1][전격 발생 (시간)간격]
+    lightningAngleRand: float [기본값: ][전격 각도 불확정성]
+    largeHit: boolean [기본값: false][
+
+특이사항(기본값 필드)
