@@ -1,0 +1,23 @@
+2020-09-21
+
+타입 이름: BasicBulletType
+포함 대상: BulletType
+타입 종류: 클래스
+
+설명:
+    포탑과 유닛에서 발사되는 대부분의 탄약 기반 탄환을 위한 확장형 BulletType.
+
+일반 필드
+    backColor: {Color} [기본값:
+    frontColor: {Color} [기본값:
+    mixColorFrom: {Color} [기본값: ffffff00][
+    mixColorTo: {Color} [기본값: ffffff00][
+    width: float [기본값: 5][
+    height: float [기본값: 7][
+    shrinkX: float [기본값: 0][
+    shrinkY: float [기본값: 0.5][
+    spin: float [기본값: 0][
+    sprite: String [기본값: ][
+
+    backRegion: {TextureRegion} [기본값: ][
+    frontRegion: {TextureRegion} [기본값: ][

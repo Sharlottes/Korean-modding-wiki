@@ -34,3 +34,6 @@ json, hjson 파일의 경로는 content/blocks 안에서 자유롭게 하셔도 
 
 {Category} 목록
     turret, production, distribution, liquid, power, defense, crafting, units, effect, logic
+
+자잘한 잡식1
+-인화성이 0.3 이상이고 열 보유량이 0.7 초과인 두 액체가 만나면 불덩이가 생깁니다!

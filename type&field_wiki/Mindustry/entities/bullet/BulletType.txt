@@ -1,0 +1,91 @@
+2020-09-25
+
+타입 이름: BulletType
+포함 대상: Content
+타입 종류: 클래스
+
+설명:
+
+
+일반 필드
+    lifetime: float [기본값: 40][탄환 지속시간]
+    speed: float [기본값: ][탄환 속도]
+    damage: float [기본값: ][탄환 데미지]
+    hitSize: float [기본값: 4][탄환 명중 크기]
+    drawSize: float [기본값: 40][탄환 그래픽 크기]
+    drag: float [기본값: 0][탄환 마찰력]
+    pierce: boolean [기본값: ][
+    pierceBuilding: boolean [기본값: ][
+    hitEffect: {Effect} [기본값: ][명중 시 그래픽 효과]
+    despawnEffect: {Effect} [기본값: ][소멸 시 그래픽 효과]
+
+    shootEffect: {Effect} [기본값: shootSmall][발사할 때 생기는 그래픽 효과]
+    smokeEffect: {Effect} [기본값: shootSmallSmoke][발사 시 생기는 추가 연기 그래픽 효과]
+    hitSound: {Sound} [기본값: none][탄환이 사라지거나, 명중했을 때 생기는 소리]
+    inaccuracy: float [기본값: 0][발사 시 추가 부정확성]
+    ammoMultiplier: float [기본값: 2][아이템/액체당 만들어지는 탄약 수]
+    reloadMultiplier: float [기본값: 1][Turret 재장전 속도를 곱하여 최종 사격 속도를 얻음]
+    tileDamageMultiplier: float [기본값: 1][타일에 대한 기본 손상 정도를 곱할 배수]
+    recoil: float [기본값: ][발사한 엔티티로부터의 반동]
+    killShooter: boolean [기본값: ][발사하면 발사한 엔티티를 죽일 여부. 자폭 유닛들을 위한 변수]
+    instantDisapper: boolean [기본값: ][총알을 즉시 사라지게 할 여부]
+    splashDamage: float [기본값: 0][광역 데미지, 0은 비활성]
+    knockback: float [기본값: ][속도 넉백]
+    status: {StautusEffect} [기본값: none][맞으면 상대에게 추가될 상태이상 효과]
+    statusDuration: float [기본값: 480][상태이상 지속시간]
+    collidesTile: boolean [기본값: true][타일과 충돌할 여부]
+    collidesTeam: boolean [기본값: false][아군과 충돌할 여부]
+    collidesAir: boolean [기본값: true][공중과 충돌할 여부]
+    collidesGround: boolean [기본값: true][지상과 충돌할 여부]
+    collides: boolean [기본값: true][모든 것과 충돌할 여부]
+    keepVelocity: boolean [기본값: true][속도가 발사자로부터 물려받을 여부]
+    scaleVelocity: boolean [기본값: ][목표 위치에서 사라지도록 속도를 조절할지 여부. 포병용으로 사용됨]
+    hittable: boolean [기본값: true][세그먼트와 같은 포탑에 요격될 수 있을 여부]
+    reflectable: boolean [기본값: true][메타 벽과 같은 벽에 반사될 수 있을 여부]
+    range: float [기본값: -1][재정의된 탄환 사거리?]
+
+    ----부가효과----
+    fragCone: float [기본값: 360][파편탄 발사 제한 각]
+    fragAngle: float [기본값: 0][파편탄 발사각]
+    fragBullets: int [기본값: 9][파편탄 수]
+    fragVelocityMin: float [기본값: 0.2][파편탄 속도 최솟값]
+    fragVelocityMasx: float [기본값: 1][파편탄 속도 최댓값]
+    fragLifeMin: float [기본값: 1][파편탄 지속시간 최솟값]
+    fragLifeMax: float [기본값: 1][파편탄 지속시간 최댓값]
+    fragBullet: {BulletType} [기본값: null][파편탄]
+    hitColor: {Color} [기본값: ffffff][명중 시 색]
+
+    trailColor: {Color} [기본값: e58956][꼬리효과 색]
+    trailChance: float [기본값: -0.0001][꼬리효과 확률]
+    trailEffect: {Effect} [기본값: missileTrail][꼬리효과]
+    trailParam: float [기본값: 2][꼬리효과 매개변수]
+
+    splashDamageRadius: float [기본값: -1][광역 데미지 범주]
+
+    incendAmount: int [기본값: 0][탄환이 피격되었을 때, 불덩이가 생길 횟수]
+    incendSpread: float [기본값: 8][탄환이 피격되었을 때, 불덩이가 생길 범위]
+    incendChance: float [기본값: 1][탄환이 피격되었을 때, 불덩이가 생길 확률]
+    homingPower: float [기본값: 0][복잡한 작업은 하지 않는다. homingPower가 0.01보다 크면 UI에 렌더링되고, homingPower가 크면 0.0001보다 크면 homingRange가 작동할 수 있다.]
+    homingRange: float [기본값: 50][유도 탐지 범위]
+
+    lightningColor: {Color} [기본값: f3e979][전격 색]
+    lightning: int [기본값: ][전격 수]
+    lightningLength: int [기본값: 5][전격 길이]
+    lightningLengthRand: int [기본값: 0][전격 길이 랜덤성]
+    lightningDamage: float [기본값: -1][전격 데미지]
+    lightningCone: float [기본값: 360][전격 최대각]
+    lightningAngle: float [기본값: 0][전격 발사각]
+
+    weaveScale: float [기본값: 1][흔들림 길이]
+    weaveMag: float [기본값: -1][흔들림 폭]
+    hitShake: float [기본값: 0][명중 시 흔들림]
+    despawnShake: float [기본값: 0][탄환 사망 시 흔들림]
+
+    puddles: int [기본값: ][명중 시 웅덩이 수]
+    puddleRange: float [기본값: ][명중 시 웅덩이 범주]
+    puddleAmount: float [기본값: 5][명중 시 효과 빈도]
+    puddleLiquid: {Liquid} [기본값: water][액체 웅덩이 종류]
+
+    lightRadius: float [기본값: 16][탄환 빛 범주]
+    lightOpacity: float [기본값: 0.3][빛 불투명도]
+    lightColor {Color} [기본값: fbd367][탄환 빛 색]
