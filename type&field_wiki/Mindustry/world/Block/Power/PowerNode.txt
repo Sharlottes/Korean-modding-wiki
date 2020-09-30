@@ -10,6 +10,8 @@
 일반 필드
     laserRange: float [기본값: 6][연결 범위]
     maxNodes: int [기본값: 3][최대 연결 수]
+    laserColor1: Color [기본값: ffffff][레이저 색깔 1. 켜져있을 때 색깔(인 듯). 위대하신 써니님의 필드]
+    laserColor2: Color [기본값: Pal.powerLaser][레이저 색깔 2. 꺼져있을 때 색깔(인 듯). 위대하신 써니님의 필드]
 
 특이사항(기본값 필드)
     expanded: boolean [기본값: true][화면 밖으로 나갈 때 8블록쯤까지 그려지는 여부]
