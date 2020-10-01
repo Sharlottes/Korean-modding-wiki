@@ -1,0 +1,22 @@
+2020-07-11
+
+타입 이름: LightningBulletType
+포함 대상: BulletType
+타입 종류: 클래스
+
+설명:
+    아크나 설금같은 전격
+
+일반 필드
+    lightningColor: {Color} [기본값: a9d8ff][전격 색]
+    lightningLength: int [기본값: 25][전격 길이]
+    lightningLengthRand: int [기본값: 0][전격 길이 오차]
+
+특이사항(기본값 필드)
+    damage: float [기본값: 1][탄환 데미지]
+    speed: float [기본값: 0.0001][탄환 속도]
+    lifetime: float [기본값: 1][탄환 지속시간]
+    despawnEffect: {Effect} [기본값: none][소멸 시 그래픽 효과]
+    hitEffect: {Effect} [기본값: hitLancer][명중 시 그래픽 효과]
+    keepVelocity: boolean [기본값: false][속도가 발사자로부터 물려받을 여부]
+    hittable: boolean [기본값: false][세그먼트와 같은 포탑에 요격될 수 있을 여부]
