@@ -1,0 +1,25 @@
+2020-08-18
+
+타입 이름: MissileBulletType
+포함 대상: BasicBulletType
+타입 종류: 클래스
+
+설명:
+    미사일
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    damage: float [기본값: 1][탄환 데미지]
+    speed: float [기본값: 1][탄환 속도]
+    sprite: String [기본값: missile][스프라이트 이름]
+    backColor: {Color} [기본값: e58956][후면 색]
+    frontColor: {Color} [기본값: ffd2ae][전면 색]
+    homingPower: float [기본값: 0.08][homingPower가 0.01보다 크면 UI에 렌더링되고, homingPower가 크면 0.0001보다 크면 homingRange가 작동할 수 있다.]
+    shrinkY: float [기본값: 0][
+    width: float [기본값: 8][탄환 너비, 가로]
+    height: float [기본값: 8][탄환 높이, 세로]
+    hitSound: {Sound} [기본값: explosion][탄환이 사라지거나, 명중했을 때 생기는 소리]
+    trailChance: float [기본값: 0.2][꼬리효과 확률]
+    lifetime: float [기본값: 49][탄환 지속시간]
