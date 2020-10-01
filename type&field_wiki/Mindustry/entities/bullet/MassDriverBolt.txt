@@ -1,0 +1,19 @@
+2020-07-15
+
+타입 이름: MassDriverBolt
+포함 대상: BulletType
+타입 종류: 클래스
+
+설명:
+    매스 드라이버의 탄환
+
+일반 필드
+
+
+특이사항(기본값 필드)
+    damage: float [기본값: 50][탄환 데미지]
+    speed: float [기본값: 1][탄환 속도]
+    collidesTiles: boolean [기본값: false][타일과 충돌할 여부]
+    lifetime: float [기본값: 1][탄환 지속시간]
+    despawnEffect: {Effect} [기본값: smeltsmoke][소멸 시 그래픽 효과]
+    hitEffect: {Effect} [기본값: hitBulletBig][명중 시 그래픽 효과]
