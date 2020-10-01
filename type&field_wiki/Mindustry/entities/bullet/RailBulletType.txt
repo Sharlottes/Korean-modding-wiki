@@ -1,0 +1,20 @@
+2020-09-23
+
+타입 이름: PointBulletType
+포함 대상: BulletType
+타입 종류: 클래스
+
+설명:
+    이 타입은 여러가지 이유로 안좋으며, 교체되거나 제거될 예정
+
+일반 필드
+    pierceEffect: {Effect} [기본값: hitBulletSmall][뭔가를 통과할 때 생기는 그래픽 효과]
+    updateEffect: {Effect} [기본값: none][
+    pierceDamageFactor: float [기본값: 1][관통할 때마다 데미지가 낮아질 배수]
+
+특이사항(기본값 필드)
+    pierceBuilding: boolean [기본값: true][건물만 통과 여부]
+    pierce: boolean [기본값: true][통과 여부]
+    reflectable: boolean [기본값: false][메타 벽과 같은 벽에 반사될 수 있을 여부]
+    hitEffect: {Effect} [기본값: none][명중 시 그래픽 효과]
+    despawnEffect: {Effect} [기본값: none][소멸 시 그래픽 효과]
