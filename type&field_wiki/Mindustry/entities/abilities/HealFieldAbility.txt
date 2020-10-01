@@ -1,0 +1,15 @@
+2020-09-22
+
+타입 이름: HealFieldAbility
+포함 대상: Ability
+타입 종류: 클래스
+
+설명:
+    치료 필드 능력
+
+일반 필드
+    amount: float [기본값: 1][필드 수?]
+    reload: float [기본값: 100][필드 주기]
+    range: float [기본값: 60][필드 범주]
+    healEffect: {Effect} [기본값: heal][필드 그래픽 효과]
+    activeEffect: {Effect} [기본값: healWaveDynamic][활성화 효과?]
