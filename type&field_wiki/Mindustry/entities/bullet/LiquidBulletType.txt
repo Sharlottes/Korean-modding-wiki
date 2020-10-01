@@ -1,0 +1,28 @@
+2020-10-01
+
+타입 이름: LiquidBulletType
+포함 대상: BulletType
+타입 종류: 클래스
+
+설명:
+    파도 포탑에 나오는 물방울들
+
+일반 필드
+    liquid: {Liquid} [기본값: ][액체 종류]
+    puddleSize: float [기본값: 6][액체 웅덩이 크기]
+
+특이사항(기본값 필드)
+    damage: float [기본값: 0][탄환 데미지]
+    speed: float [기본값: 3.5][탄환 속도]
+    ammoMultiplier: float [기본값: 1][아이템/액체당 만들어지는 탄약 수]
+    lifetime: float [기본값: 34][탄환 지속시간]
+    statusDuration: float [기본값: 120][상태이상 지속시간]
+    despawnEffect: {Effect} [기본값: none][소멸 시 그래픽 효과]
+    hitEffect: {Effect} [기본값: hitLiquid][명중 시 그래픽 효과]
+    smokeEffect: {Effect} [기본값: none][발사 시 생기는 추가 연기 그래픽 효과]
+    shootEffect: {Effect} [기본값: none][발사할 때 생기는 그래픽 효과]
+    drag: float [기본값: 0.001][탄환 마찰력]
+    knockback: float [기본값: 0.55][속도 넉백]
+    (만약 liquid 가 null 이 아니라면)
+    status: {StautusEffect} [기본값: /액체의 상태이상 효과\][맞으면 상대에게 추가될 상태이상 효과]
+
