@@ -31,7 +31,7 @@
     canBoost: boolean [기본값: flase][
     destructibleWreck: boolean [기본값: true][
     groundLayer: float [기본값: 60][지상 레이어값]
-    payloadCapacity: float [기본값: 8][매스 이동 크기]
+    payloadCapacity: float [기본값: 8][유닛 수송 최대값]
     commandLimit: int [기본값: 24][지휘유닛 제한 수]
     visualElevation: float [기본값: -1][시각적 고도값]
     allowLegStep: boolean [기본값: false][
