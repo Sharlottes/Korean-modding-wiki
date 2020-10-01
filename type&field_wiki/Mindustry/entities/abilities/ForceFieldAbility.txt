@@ -1,0 +1,14 @@
+2020-09-22
+
+타입 이름: ForceFieldAbility
+포함 대상: Ability
+타입 종류: 클래스
+
+설명:
+    방어막 필드 능력
+
+일반 필드
+    radius: float [기본값: 60][방어막 범주]
+    regen: float [기본값: 0.1][틱당 딜 방어막 리젠 속도]
+    max: float [기본값: 200][방어막 최대 hp]
+    cooldown: float [기본값: 300][방어막이 깨질 시 복구 속도]
