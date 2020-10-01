@@ -22,3 +22,15 @@
     largeHit: boolean [기본값: false][
 
 특이사항(기본값 필드)
+    speed: float [기본값: 0.01][탄환 속도]
+    damage: float [기본값: 1][탄환 데미지]
+    keepVelocity: boolean [기본값: false][속도가 발사자로부터 물려받을 여부]
+    hitEffect: {Effect} [기본값: hitLancer][명중 시 그래픽 효과]
+    despawnShake: float [기본값: none][탄환 사망 시 흔들림]
+    shootEffect: {Effect} [기본값: hitLancer][발사할 때 생기는 그래픽 효과]
+    smokeEffect: {Effect} [기본값: none][발사 시 생기는 추가 연기 그래픽 효과]
+    collides: boolean [기본값: false][모든 것과 충돌할 여부]
+    hitSize: float [기본값: 4][탄환 명중 크기]
+    lifetime: float [기본값: 16][탄환 지속시간]
+    pierce: boolean [기본값: true][통과 여부]
+    hittable: boolean [기본값: false][세그먼트와 같은 포탑에 요격될 수 있을 여부]
