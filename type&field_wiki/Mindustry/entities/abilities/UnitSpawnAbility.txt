@@ -1,0 +1,15 @@
+2020-09-18
+
+타입 이름: UnitSpawnAbility
+포함 대상: Ability
+타입 종류: 클래스
+
+설명:
+    유닛생성 능력
+
+일반 필드
+    type: {UnitType} [기본값: ][생성할 유닛]
+    spawnTime: float [기본값: 60][유닛 생성 주기]
+    spawnX: float [기본값: ][유닛 생성 위치]
+    spawnY: float [기본값: Y][유닛 생성 위치]
+    spawnEffect: {Effect} [기본값: spawn][생성 그래픽 효과]
