@@ -1,6 +1,6 @@
 2020-09-23
 
-타입 이름: PointBulletType
+타입 이름: RailBulletType
 포함 대상: BulletType
 타입 종류: 클래스
 

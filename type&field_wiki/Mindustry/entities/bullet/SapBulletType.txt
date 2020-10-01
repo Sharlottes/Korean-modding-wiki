@@ -1,0 +1,24 @@
+2020-09-16
+
+타입 이름: SapBulletType
+포함 대상: BulletType
+타입 종류: 클래스
+
+설명:
+    약화 탄
+
+일반 필드
+    length: float [기본값: 100][빔 길이]
+    sapStrength: float [기본값: 0.5][
+    color: {Color} [기본값: ffffff][빔 색]
+    width: float [기본값: 0.4][빔 폭]
+
+특이사항(기본값 필드)
+    speed: float [기본값: 0.0001][탄환 속도]
+    despawnEffect: {Effect} [기본값: none][소멸 시 그래픽 효과]
+    pierce: boolean [기본값: true][통과 여부]
+    hitSize: float [기본값: 0][탄환 명중 크기]
+    hittable: boolean [기본값: false][세그먼트와 같은 포탑에 요격될 수 있을 여부]
+    hitEffect: {Effect} [기본값: hitLiquid][명중 시 그래픽 효과]
+    status: {StautusEffect} [기본값: sapped][맞으면 상대에게 추가될 상태이상 효과]
+    statusDuration: float [기본값: 180][상태이상 지속시간]
