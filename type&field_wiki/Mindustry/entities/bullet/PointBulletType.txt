@@ -1,0 +1,18 @@
+2020-09-30
+
+타입 이름: PointBulletType
+포함 대상: BulletType
+타입 종류: 클래스
+
+설명:
+    저격탄?
+
+일반 필드
+    trailSpacing: float [기본값: 10][trail 효과 간격]
+
+특이사항(기본값 필드)
+    scaleVelocity: boolean [기본값: ][목표 위치에서 사라지도록 속도를 조절할지 여부. 포병용으로 사용됨]
+    lifetime: float [기본값: 40][탄환 지속시간]
+    collides: boolean [기본값: true][모든 것과 충돌할 여부]
+    keepVelocity: boolean [기본값: true][속도가 발사자로부터 물려받을 여부]
+    backMove: boolean [기본값: false][델타 시간 실현 문제를 수정하기 위해 델타에 따라 총알을 다시 이동시킬지 여부. *경고: 관련 코드를 잘 모르면 사용하는걸 추천하지 않습니다]
