@@ -1,0 +1,16 @@
+2020-09-18
+
+타입 이름: StatusFieldAbility
+포함 대상: Ability
+타입 종류: 클래스
+
+설명:
+    상태이상 필드 능력
+
+일반 필드
+    effect: {StatusEffect} [기본값: ][상태이상 종류]
+    duration: float [기본값: 60][상태이상 지속시간]
+    reload: float [기본값: 100][필드 주기]
+    range: float [기본값: 20][필드 사거리]
+    applyEffect: {Effect} [기본값: heal][상태이상 추가 그래픽 효과]
+    activeEffect: {Effect} [기본값: overdriveWave][활성화 효과?]
