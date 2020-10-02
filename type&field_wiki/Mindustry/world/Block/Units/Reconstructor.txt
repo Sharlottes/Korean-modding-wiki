@@ -9,7 +9,7 @@
 
 일반 필드
     constructTime: float [기본값: 120][
-    upgrades: {UnitType} [기본값: ][경고! 2차 배열입니다. 아래의 문법을 참고해주세요]
+    upgrades: {UnitType} [기본값: ][아래의 문법을 참고해주세요]
     capacities: int [기본값: ][1차배열이지만, 재정의되기 때문에 사용 불가]
 
 특이사항(upgread 작성 문법)

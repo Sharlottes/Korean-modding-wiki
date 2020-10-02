@@ -37,3 +37,31 @@ json, hjson 파일의 경로는 content/blocks 안에서 자유롭게 하셔도 
 
 자잘한 잡식1
 -인화성이 0.3 이상이고 열 보유량이 0.7 초과인 두 액체가 만나면 불덩이가 생깁니다!
+
+consumes 작성문법
+
+consumes: {
+    items: [
+        {
+            item: copper
+            amount: 3
+        },
+        {
+            item: lead
+            amount: 5
+        },
+        silicon/10
+    ]
+    liquid: {
+        liquid: water
+        amount: 10
+        timePeriod: 60
+    }
+    power: {
+        usage: 10
+        capacity: 10
+        buffered: true
+    }
+    or
+    10
+}

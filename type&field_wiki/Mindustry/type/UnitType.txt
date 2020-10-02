@@ -39,7 +39,7 @@
     omniMovement: boolean [기본값: true][
     fallEffect: {Effect} [기본값: fallSmoke][공중에서 낙하할 때 그래픽 이펙트]
     fallThrusterEffect: {Effect} [기본값: fallSmoke][
-    abilities: {Ability} [기본값: ][값-쌍 1차 배열. README 참고]
+    abilities: [{Ability}] [기본값: ][대상 클래스를 파싱할 키를 찾을 수 없었습니다.. json 으로는 불가능]
 
     legCount: int [기본값: 4][다리 수]
     legGroupSize: int [기본값: 2][다리 크기]
@@ -89,10 +89,10 @@
     canHeal boolean [기본값: false][블록을 수리할 수 있는 여부]
     singleTarget: boolean [기본값: false][
 
-    immunities: {StatusEffect} [기본값: ][
+    immunities: [{StatusEffect}] [기본값: ][
     deathSound: {Sound} [기본값: bang][사망 소리]
 
-    weapons: {Weapon} [기본값: ][값-쌍 1차 배열. README 참고]
+    weapons: [{Weapon}] [기본값: ][값-쌍 1차 배열. README 참고]
 
 특이사항(텍스쳐 부위)
     baseRegion, legRegion, region, shadowRegion, cellRegion, occlusionRegion, jointRegion, footRegion, legBaseRegion, baseJointRegion, outlineRegion
