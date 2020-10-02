@@ -41,17 +41,19 @@ json, hjson 파일의 경로는 content/blocks 안에서 자유롭게 하셔도 
 consumes 작성문법
 
 consumes: {
-    items: [
-        {
-            item: copper
-            amount: 3
-        },
-        {
-            item: lead
-            amount: 5
-        },
-        silicon/10
-    ]
+    items: {
+        items: [
+            {
+                item: copper
+                amount: 3
+            },
+            {
+                item: lead
+                amount: 5
+            },
+            silicon/10
+        ]
+    }
     liquid: {
         liquid: water
         amount: 10
