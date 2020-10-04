@@ -9,7 +9,7 @@
 
 일반 필드
     launchTime: float [기본값: ][아이템을 출격하는 주기]
-    lightColor: {Color} [기본값: eab678][
+    lightColor: {Color} [기본값: eab678][light 부분 색]
 
 특이사항(기본값 필드)
     hasItems: boolean [기본값: true][아이템을 보유하는 여부]
