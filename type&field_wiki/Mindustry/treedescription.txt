@@ -1,0 +1,28 @@
+**6.0 Class Mapping by Sharlotte**
+--Legend--
+
+Shapes
+Round Square -> `final class`
+Dotted Square -> `abstract class`
+Square -> `class`
+Super-imposed Square -> `interface`
+Rectangle with Another Rectangle -> `enum`
+
+Text
+Centeral Text -> name of this `class`
+Right-Bottom Text -> name of `class` in this `class`
+Marks (A -> B)
+Arrow  -> `extend` relation (B extends A)
+Curved Arrow -> `extend` relation, but extends `generic class` (B extends A<T>)
+Translucent Polygon -> `directory` where the class is. (The higher the transparency&text size, the higher the parent directory)
+
+Color Mapping
+White Shapes -> normal `class`
+Cyan Shapes -> added `class`
+Red Shapes -> removed `class`
+Purple Shapes -> `directory` change or extend relation
+Purple Text -> extends `class` called Building in gen `directory`
+
+
+Github to view
+https://github.com/sharlotte-mobile/Korean-modding-wiki/blob/master/type%26field_wiki/Mindustry/6.0%20extend%20tree.png
